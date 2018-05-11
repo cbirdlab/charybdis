@@ -1,0 +1,116 @@
+---
+title: 'Simon''s Fish Gut Content: SAP Evaluation'
+author: "Evan Krell"
+date: "August 10, 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE, echo=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+# Load packages
+suppressPackageStartupMessages(library("Vennerable"))
+library (knitr)
+library (ggplot2)
+library(MASS)
+
+# Load data 
+sapTbl <- read.csv(file = "classification_exp3.csv", header = TRUE)
+fastaLen = 199
+
+# Delete unneeded rows
+sapTbl$BranchCount <- NULL # Is not needed since equivalent to 'SpeciesCount'
+sapTbl$TreeDepth <- NULL # Completetly dependent on the assignment rank level. Not interesting?
+# Type conversions
+sapTbl$SpeciesLevel <- as.logical (sapTbl$SpeciesLevel)
+sapTbl$HasHomologuesSuspiciousRecords <- as.logical(sapTbl$HasHomologuesSuspiciousRecords)
+sapTbl$DatabaseNotExhausted <- as.logical (sapTbl$DatabaseNotExhausted)
+```
+
+[Statistical Assignment Package (SAP)](https://github.com/kaspermunch/sap) was used for taxonomic assignment of the gut contents of several Gulf of Mexico species. 
+These samples were collected by [Jim Simons' lab](http://gomexsi.tamucc.edu/gomexsi-partners/dr-james-simon/) and processed by the [Genomics Core Lab](http://genomics.tamucc.edu/). 
+
+The companion script evaluateSAP/evaluateSAP.py has been used to quantify several attributes related to the SAP results. 
+The goal is to analyze this table to learn which assignments are plausible and what factors affect the ability to make a species-level assignment. 
+
+SAP was run with the default parameters. The most important parameters are these:
+
+| Parameter       | Selected | Description                         | 
+| --------------- | -------- | ----------------------------------- |
+| Assignment | Barcoder | A Bayesian method for taxonomic assignment that used Markov chain monte carlo. |
+| Posterior Probability Cutoff | 0.95 | Only report assignments with posterior probability at least 0.95 |
+| Min Significance | 10 | "Lower E-value bound for accepting homologue sequences" |
+| **Significance** | 50 | "E-value cutoff for significant hits." |
+| **Min Identity** | 0.5 | "Minimum global alignment similarity of best blast hit." |
+| Best Hits | 30 | "Maximal number of homologues to add to alignment purely based on significant E-value." |
+
+Command used:
+
+      sap --project Exp2 --database ../nr_mito.SAP2.fasta \
+          --minidentity 0.97 --significance 0.5 \
+          ../SAPexplore-OTU.fasta
+
+
+## Data overview
+```{r overview, fig.width=10,fig.height=5, echo = FALSE}
+
+# Display first 10 rows (the 'head') as example
+sapTblHead <- head(sapTbl)
+kable (sapTblHead)
+
+# Summarize data set
+summary(sapTbl[2:ncol(sapTbl),])
+```
+
+### Species Assignment
+```{r speciesAssignment, fig.width=10,fig.height=5, echo = FALSE}
+numSpeciesLevel = nrow (sapTbl[sapTbl$SpeciesLevel  == TRUE, ])
+numHigherLevel = nrow (sapTbl[sapTbl$SpeciesLevel  == FALSE, ])
+numUnassigned = fastaLen - (numSpeciesLevel + numHigherLevel)
+slices <- c(numSpeciesLevel, numHigherLevel, numUnassigned)
+labels <- c("Species-Level", "Nonspecies-Level", "Unassigned")
+pie(slices, labels = labels, main="Assignment rank")
+
+```
+
+### Compare posterior probabilties
+```{r comparePosteriorProbabilities, fig.width=10,fig.height=5, echo = FALSE}
+# Box plots comparing whether or not species rank
+VariableNames <- c ("Species Assigned", "Higher Rank Assigned")
+# Compare posterior probabilities 
+mm_probabilities = melt(sapTbl, id.vars = 'SpeciesLevel', measure.vars = c ('SpeciesProbMax', 'SpeciesProbMin'))
+ggplot(mm_probabilities)+geom_boxplot(aes(x=SpeciesLevel, y=value, color=variable))
+```
+
+### Compare tree topology
+```{r compareTreeTopology, fig.width=10,fig.height=5, echo = FALSE}
+# Compare tree topology
+mm_branches = melt(sapTbl, id.vars = 'SpeciesLevel', measure.vars = c ('BranchLeafCount', 'BranchInteriorCount'))
+ggplot(mm_branches)+geom_boxplot(aes(x=SpeciesLevel, y=value, color=variable))
+```
+
+### Compare homologues
+```{r compareHomologues, fig.width=10,fig.height=5, echo = FALSE}
+# Compare homologues
+mm_homologues = melt(sapTbl, id.vars = 'SpeciesLevel', measure.vars = c ('HomologueCount','HomologuesSuspiciousRecordsCount'))
+ggplot(mm_homologues)+geom_boxplot(aes(x=SpeciesLevel, y=value, color=variable))
+
+```
+
+### Database not Exhausted 
+```{r databaseNotExhausted, echo = FALSE}
+numDBnotExhausted = nrow (sapTbl[sapTbl$DatabaseNotExhausted == TRUE, ]) 
+numDBnotExhausted_SpeciesLevel = length (which(sapTbl[sapTbl$DatabaseNotExhausted == TRUE, ]$SpeciesLevel == TRUE))
+numDBnotExhausted_HigherLevel = length (which(sapTbl[sapTbl$DatabaseNotExhausted == TRUE, ]$SpeciesLevel == FALSE))
+slices <- c(numDBnotExhausted_SpeciesLevel, numDBnotExhausted_HigherLevel)
+labels <- c("Species-Level", "Nonspecies-Level")
+pie(slices, labels = labels, main="Assignment rank when database not exhausted")
+
+numDBnotExhausted_Suspicious = length(which(sapTbl[sapTbl$DatabaseNotExhausted == TRUE, ]$HasHomologuesSuspiciousRecords == TRUE))
+numDBnotExhausted_NotSuspicious = length(which(sapTbl[sapTbl$DatabaseNotExhausted == TRUE, ]$HasHomologuesSuspiciousRecords == FALSE))
+slices <- c(numDBnotExhausted_Suspicious, numDBnotExhausted_NotSuspicious )
+labels <- c("Suspicious", "Not Suspicious")
+pie(slices, labels = labels, main="Whether or not suspicious homologues\n are present when database is not exhausted\n(But assignment at some rank made)")
+
+```
+
