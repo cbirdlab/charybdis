@@ -18,6 +18,7 @@ CHUNKS=1        # -n  Number of instances of parallel execution
 BLAST_DB=""     # -b  Path to BLAST database
 BLAST_IGNORE="" # -d  List of NCBI TAXIDs to ignore from BLAST database
 VSEARCH_DB=""   # -v  Path to VSEARCH database
+SAP_DB=""       # -s  Path to SAP database (SAP-formatted FASTA)
 CHIMERA_DB=""   # -c  Path to Chimera database
 BASEPAIRS=-1    # -x  Number of basepairs in target genetic region
 GCL_BIN=""      # -g  Where the pipeline scripts are stored
@@ -49,6 +50,9 @@ while getopts ":p:i:o:n:b:d:v:f:c:s:x:g:t:e:" opt; do
 			;;
 		c)
 			CHIMERA_DB=$OPTARG
+			;;
+		s)
+			SAP_DB=$OPTARG
 			;;
 		x)
 			BASEPAIRS=$OPTARG
@@ -251,11 +255,26 @@ then
 	echo "SAP not yet implemented"
 
 	# Taxonomic assignment with SAP
+	JOB_ID4S=$(sbatch --dependency=afterany:$JOB_ID3 \
+		$GCL_BIN""/SAP.slurm \
+		$PREFIX $INDIR $OUTDIR 0.95 $SAP_DB \
+		| grep -oh "[0-9]*")
+	echo Submitted job: $JOB_ID4S
 
 	# Create OTUvsTubes
-
+	JOB_ID5S=$(sbatch --dependency=afterany:$JOB_ID4S \
+		$GCL_BIN""/OTUvsTube.slurm \
+		$PREFIX $INDIR $OUTDIR $TAXON_DIR $GCL_BIN sap \
+		| grep -oh "[0-9]*")
+	echo Submitted job: $JOB_ID5S
+	
 	# Add predator names to OTUvsTubes
-
+	JOB_ID6S=$(sbatch --dependency=afterany:$JOB_ID5S \
+		Rscript $GCL_BIN""/OTU_CVT_addSampleDescs.slurm \
+		$PREFIX $INDIR $OUTDIR sap \
+		| grep -oh "[0-9]*")
+	echo Submitted job: $JOB_ID6S
+	
 	# Classify SAP results into categories
 
 	# Add SAP information
