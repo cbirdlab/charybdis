@@ -17,7 +17,7 @@ echo "IDENTITY,ALI_LENGTH,NUM_MISMATCH,NUM_GAP_OPENS,START_POS_Q,END_POS_Q,START
 #	$OUTDIR""/$PREFIX"".OTU.vsearchB6out.txt \
 #	>> $OUTDIR""/$PREFIX"".OTU.vsearchStats.csv
 
-awk -F',' '{print $1}' $OUTDIR""/$PREFIX"".OTUvsTubes_S.csv \
+awk -F',' '{print $1}' $OUTDIR""/$PREFIX"".OTUvsTubes.vsearch.SP.csv \
 	| sed -e 's/"//g' \
 	| while read line; do grep $line \
 		$OUTDIR""/$PREFIX"".OTU.vsearchB6out.txt \
@@ -25,8 +25,8 @@ awk -F',' '{print $1}' $OUTDIR""/$PREFIX"".OTUvsTubes_S.csv \
 		>> $OUTDIR""/$PREFIX"".OTU.vsearchStats.csv ; \
 	done
 
-paste -d',' $OUTDIR""/$PREFIX"".OTUvsTubes_S.csv \
+paste -d',' $OUTDIR""/$PREFIX"".OTUvsTubes.vsearch.SP.csv \
 	$OUTDIR""/$PREFIX"".OTU.vsearchStats.csv \
-	> $OUTDIR""/$PREFIX"".OTUvsTubes_SV.csv 
+	> $OUTDIR""/$PREFIX"".OTUvsTubes.vsearch.SPA.csv 
 
 

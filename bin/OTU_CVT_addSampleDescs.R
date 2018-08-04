@@ -1,4 +1,6 @@
-# Add row of predator names
+# Modified the column names for samples to also include the descriptive sample name, 
+# rather than just the unique identification value
+
 
 # !!!!!!!!!!!!!!!!!!!!!!!!!!!!
 # CANNOT have column name starting with 'X' after the tube names
@@ -28,21 +30,25 @@ for(c in colnames){
 }
 
 startPos <- which(colnames == "sample") + 1
-stopPos  <- lowest
+stopPos  <- lowest + 1
 
 names <- colnames[startPos:stopPos]
 PRED$Tube <- make.names(PRED$Tube)
 
 predNames <- list()
+newCols <- list()
 for (t in names){
         prow = PRED[PRED$Tube == t, ]
-        predNames <- c(predNames, prow$Predator)
+        predNames <- c(predNames, prow$Description)
+	newCols <- c(newCols, paste(prow$Description, t, sep=" - "))
 }
 predNames <- unlist(predNames)
+newCols <- unlist(newCols)
 
-newRow <- rep("", length(colnames))
-newRow[startPos:stopPos] <- predNames
+newColsFMT <- colnames(CVT)
+newColsFMT[startPos:stopPos] <- newCols
 
-CVT_PRED <- rbind( newRow, CVT )
+CVT_PRED <- CVT
+colnames(CVT_PRED) <- newColsFMT
 
 write.csv (x = CVT_PRED, quote = FALSE, file = OUT_FILE)

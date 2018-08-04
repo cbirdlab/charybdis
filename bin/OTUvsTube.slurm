@@ -14,18 +14,19 @@ INDIR=$2
 OUTDIR=$3
 TAXON_DIR=$4
 GCL_BIN=$5
+METHODS=$6
 
 Rscript $GCL_BIN""/crittersVStubes_OTU.R \
 	$PREFIX \
 	$INDIR/$PREFIX.samples.txt \
 	$OUTDIR/$PREFIX.total_counts.csv \
-	$OUTDIR/$PREFIX.OTU.charon \
+	$OUTDIR/$PREFIX.OTU.$METHOD"".charon \
 	$OUTDIR/$PREFIX.full.nonchimeras.clean.OTU.cluster.size_fix \
-	$OUTDIR/$PREFIX.OTUvsTubes.csv \
+	$OUTDIR/$PREFIX.OTUvsTubes.$METHOD"".csv \
 	$TAXON_DIR
 
 # Add sequences
-awk -F',' '{print $1}' $OUTDIR/$PREFIX.OTUvsTubes.csv | \
+awk -F',' '{print $1}' $OUTDIR/$PREFIX.OTUvsTubes.$METHOD"".csv | \
 	sed 's/"//g' \
 	> $OUTDIR/$PREFIX.OTU.queries.txt
 echo "SEQUENCE" > $OUTDIR""/$PREFIX"".OTU.seqeuences.txt
@@ -39,5 +40,5 @@ cat $OUTDIR""/$PREFIX"".OTU.queries.txt \
 	>> $OUTDIR""/$PREFIX"".OTU.seqeuences.txt
 
 
-paste -d',' $OUTDIR""/$PREFIX"".OTUvsTubes.csv $OUTDIR""/$PREFIX"".OTU.seqeuences.txt \
-	> $OUTDIR""/$PREFIX"".OTUvsTubes_S.csv 
+paste -d',' $OUTDIR""/$PREFIX"".OTUvsTubes.$METHOD"".csv $OUTDIR""/$PREFIX"".OTU.seqeuences.txt \
+	> $OUTDIR""/$PREFIX"".OTUvsTubes.$METHOD"".S.csv 

@@ -35,5 +35,5 @@ cat $OUTDIR""/$PREFIX.OTU.blastOut.* \
 Rscript $GCL_BIN""/blast_10custom_to_charon_OTU.R \
 	$OUTDIR/$PREFIX.OTU.blastOut \
 	$OUTDIR/$PREFIX.full.nonchimeras.clean.OTU.cluster.size_fix \
-	$OUTDIR/$PREFIX.OTU.charon \
+	$OUTDIR/$PREFIX.OTU.blast.charon \
 	$TAXON_DIR
