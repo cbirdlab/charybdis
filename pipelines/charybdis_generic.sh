@@ -222,7 +222,7 @@ then
 	# Taxonomic Assignment with VSEARCH
 	JOB_ID4V=$(sbatch --dependency=afterany:$JOB_ID3 \
 		$GCL_BIN""/Vsearch.slurm \
-		$PREFIX $INDIR $OUTDIR 0.7 $VSEARCH_DB \
+		$PREFIX $INDIR $OUTDIR 0.7 $VSEARCH_DB $TAXON_DIR \
 		| grep -oh "[0-9]*")
 	echo Submitted job: $JOB_ID4V
 

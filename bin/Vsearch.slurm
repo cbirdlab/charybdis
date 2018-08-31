@@ -5,21 +5,22 @@
 #SBATCH -p normal 
 #SBATCH --nodes=1
 
-module load vsearch
-module load R
-
 PREFIX=$1
 INDIR=$2
 OUTDIR=$3
 ID=$4
 DB=$5
 GCL_BIN=$6
+TAXDIR=$7
 
-TAXDIR="/work/hobi/GCL/db/TAXO/"
+module load vsearch
 
 # VSEARCH
 bash $GCL_BIN""/Vsearch.sh \
 	$PREFIX $INDIR $OUTDIR $ID $DB
+
+module unload vsearch
+module load R
 
 # Convert to Charon format
 bash $GCL_BIN""/vsearch_getTAXIDfromBOLDseqid.sh $OUTDIR""/$PREFIX"".OTU.vsearchB6out.txt \
