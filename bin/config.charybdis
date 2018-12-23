@@ -1,0 +1,33 @@
+Settings File for charybdis
+
+96:00:00		#SBATCH --time (d-HH:MM:SS)					Time allocation for compute node
+normal			#SBATCH -p (string)							Compute queue to send job to
+313				BASEPAIRS									Length of target amplicon
+15				BPWINDOW									Remove aligned read pairs this much longer or shorter than the target amplicon length
+20				CHUNKS										Number of threads
+
+----------mergeReads.slurm | mergeReads.sh----------------
+40				illuminapairedend --score-min (integer) 			Minimum alignment score to keep aligned read pairs
+20				obigrep -p 'ali_length>=MIN_ALIGN' (integer)		Minimum length of overlapping between aligned read pairs to keep a read pairad pairs
+2				ngsfilter -e (integer)								Number of barcode mismatches allowed
+----------------------------------------------------------
+
+----------filterReads.slurm | ObiToolsPipeline.sh---------
+obitools		module load obitools								Name of module with obitools
+parallel		module load parallel								Name of module with parallel
+vsearch			module load vsearch									Name of module with vsearch
+fastx_toolkit	module load fastx_toolkit							Name of module with fastx_toolkit
+#298			obigrep	-l MARKER_LEN_LOWER (integer)				Remove aligned read pairs shorter than this
+#328			obigrep -L MARKER_LEN_HIGHER (integer)				Remove aligned read pairs longer than this
+0.5				obiclean -r --ratio (0-1)							Threshold ratio between counts (rare/abundant counts) of two sequence records so that the less abundant one is a variant of the more abundant (default: 1, i.e. all less abundant sequences are variants).
+1				obiclean -d --distance (integer)					Maximum numbers of differences between two variant sequences
+yes				obiclean -H --head									Select only sequences with the head status in a least one sample.
+no				obiclean -s --sample								Attribute containing sample descriptions
+----------------------------------------------------------
+
+----------ClusterOTU.slurm | ClusterOTU.sh----------------
+bio-misc		module load XXXXXXX									Name of module with XXXXXXX
+gsl				module load gsl										Name of module with gsl
+obitools		module load obitools								Name of module with obitools
+
+----------------------------------------------------------

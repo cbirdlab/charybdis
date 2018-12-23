@@ -51,7 +51,7 @@ CMD="$CMD > $OUTDIR/$PREFIX.ali.assigned.ann.{.}.fasta"
 cat $SAMPLES_FILE | parallel -j $CHUNKS $CMD
 
 ###
-echo "oniuniq"
+echo "obiuniq"
 echo "   Keep only unique sequences"
 ###
 CMD="obiuniq -m sample $OUTDIR/$PREFIX.ali.assigned.ann.{.}.fasta"
@@ -135,10 +135,10 @@ fasta_formatter -i $OUTDIR/$PREFIX.full.nonchimeras.clean.fasta -t \
 	> $OUTDIR/$PREFIX.full.nonchimeras.clean.csv
 
 # Get sequence counts for various steps
-#$GCL_PATH/ObiToolsPipeline_stats.sh $PREFIX $INDIR $OUTDIR > $OUTDIR/$PREFIX.seq_stats.txt
+$GCL_PATH/ObiToolsPipeline_stats.sh $PREFIX $INDIR $OUTDIR > $OUTDIR/$PREFIX.seq_stats.txt
 
 # Get csv of total number of seqs per sample after obigrep-len
-#awk '/\[obigrep-len\]/{flag=1;next}/\[chimeras\]/{flag=0}flag' $OUTDIR/$PREFIX.seq_stats.txt > \
-#	$OUTDIR/$PREFIX.total_counts.csv
+awk '/\[obigrep-len\]/{flag=1;next}/\[chimeras\]/{flag=0}flag' $OUTDIR/$PREFIX.seq_stats.txt > \
+	$OUTDIR/$PREFIX.total_counts.csv
 
 echo "done: Quality Filter"

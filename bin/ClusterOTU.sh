@@ -19,13 +19,13 @@ E_PARAM=$((Z_PARAM * 10))
 echo "CROP (Clustering reads into OTUs)"
 ####
 
-#CROPLinux -i $OUTDIR/$PREFIX.full.nonchimeras.clean.fasta \
-#	-o $OUTDIR/$PREFIX.full.nonchimeras.clean.OTU \
-#	-b $B_PARAM \
-#	-e $E_PARAM \
-#	-z $Z_PARAM \
-#	-m $CHUNKS \
-#	-r 5 -s
+CROPLinux -i $OUTDIR/$PREFIX.full.nonchimeras.clean.fasta \
+	-o $OUTDIR/$PREFIX.full.nonchimeras.clean.OTU \
+	-b $B_PARAM \
+	-e $E_PARAM \
+	-z $Z_PARAM \
+	-m $CHUNKS \
+	-r 5 -s
 
 ####
 echo "OTU size correction"
