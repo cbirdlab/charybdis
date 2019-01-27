@@ -14,7 +14,7 @@ INDIR=$2
 OUTDIR=$3
 TAXON_DIR=$4
 GCL_BIN=$5
-METHODS=$6
+METHOD=$6
 
 Rscript $GCL_BIN""/crittersVStubes_OTU.R \
 	$PREFIX \

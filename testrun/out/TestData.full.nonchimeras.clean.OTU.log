@@ -1,0 +1,17 @@
+-i out/TestData.full.nonchimeras.clean.fasta.unique -b 13 -e 4310 -m 20 -z 431 Threshold: 1 1.5
+664
+Round: 0 Block: 7: 1
+Round: 0 Block: 10: 2
+Round: 0 Block: 12: 5
+Round: 0 Block: 5: 1
+Round: 0 Block: 2: 1
+Round: 0 Block: 8: 2
+Round: 0 Block: 9: 3
+Round: 0 Block: 4: 4
+Round: 0 Block: 6: 3
+Round: 0 Block: 13: 10
+Round: 0 Block: 3: 7
+Round: 0 Block: 11: 9
+Round: 0 Block: 1: 4
+Merging Using BC
+Writing Output

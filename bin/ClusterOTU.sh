@@ -31,10 +31,19 @@ CROPLinux -i $OUTDIR/$PREFIX.full.nonchimeras.clean.fasta \
 echo "OTU size correction"
 ####
 
-cd $OUTDIR/CROP_$PREFIX
-$GCL_BIN""/CROP_size_fix.sh \
-	$OUTDIR/$PREFIX.full.nonchimeras.clean.OTU.cluster.list $OUTDIR/$PREFIX.full.nonchimeras.clean.fasta \
-	> $OUTDIR/$PREFIX.full.nonchimeras.clean.OTU.cluster.size_fix
+
+SOURCE_PATH=$(pwd)
+cd $GCL_BIN
+GCL_BIN_ABS=$(pwd)
+cd $SOURCE_PATH
+cd $OUTDIR
+OUTDIR_ABS=$(pwd)
+echo "OUTDIR_ABS: $OUTDIR_ABS"
+cd $OUTDIR_ABS/CROP_$PREFIX
+$GCL_BIN_ABS""/CROP_size_fix.sh \
+	$OUTDIR_ABS/$PREFIX.full.nonchimeras.clean.OTU.cluster.list $OUTDIR_ABS/$PREFIX.full.nonchimeras.clean.fasta \
+	> $OUTDIR_ABS/$PREFIX.full.nonchimeras.clean.OTU.cluster.size_fix
+cd $SOURCE_PATH
 
 echo "done: Cluster into OTUs"
 

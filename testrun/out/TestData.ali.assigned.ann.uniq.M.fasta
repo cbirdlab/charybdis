@@ -1,0 +1,1162 @@
+>MISEQ01:208:000000000-BFL3R:1:1101:9649:2798_CONS_SUB_SUB_CMP merged_sample={'M': 2}; count=2; seq_ab_match=124; seq_a_mismatch=0; ali_length=124; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=314; seq_b_insertion=0; seq_a_insertion=0; 
+cactcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactac
+atctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaata
+taaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaa
+cagccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttctta
+cagatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctat
+accaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:15830:2804_CONS_SUB_SUB merged_sample={'M': 2}; count=2; seq_ab_match=122; seq_a_mismatch=3; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcctctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:12521:2805_CONS_SUB_SUB merged_sample={'M': 160}; count=160; seq_b_insertion=0; seq_b_deletion=0; seq_a_deletion=0; seq_length=313; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:12481:2808_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=125; seq_a_mismatch=0; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtagc
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattcttta
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:10591:2822_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=124; seq_a_mismatch=1; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagcagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccggccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:20236:2828_CONS_SUB_SUB_CMP merged_sample={'M': 1}; count=1; seq_ab_match=125; seq_a_mismatch=0; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctacttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:13209:2833_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=119; seq_a_mismatch=6; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagaatcaaacacccctctccgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+tgatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:18541:2837_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=124; seq_a_mismatch=1; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggggacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:15572:2852_CONS_SUB_SUB_CMP merged_sample={'M': 2}; count=2; seq_ab_match=124; ali_length=125; seq_b_deletion=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgggccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:9823:2853_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=119; seq_a_mismatch=6; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtacgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgatcctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:18235:2858_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=121; seq_a_mismatch=4; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttgttaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:12276:2886_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=126; seq_a_mismatch=0; ali_length=126; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=312; seq_b_insertion=0; seq_a_insertion=0; 
+ttatcaggccctcaaacccattctggtggatcagtagatctggccatttttagtttacac
+acagcaggagcttcctctattatgggtgctataaactttataacaactatatttaatatg
+agagctcctggtatgtcttttgataagttaccattgtttgtatggtcggtgttaattacc
+gctttcttattattactttccctacctgtattggcaggggccataaccatgcttttaacc
+gataggaattttaatactagcttttttgaccctgcaggtggtggtgatccagttttatac
+caacacttattt
+>MISEQ01:208:000000000-BFL3R:1:1101:18541:2894_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=122; seq_a_mismatch=3; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcgggggaaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:10636:2897_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=123; seq_a_mismatch=1; ali_length=125; seq_b_deletion=0; seq_b_mismatch=1; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+cctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtctgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:12189:2900_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=119; seq_a_mismatch=6; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcgggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:20272:2901_CONS_SUB_SUB merged_sample={'M': 3}; count=3; seq_b_insertion=0; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctaccactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:10101:2902_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=121; seq_a_mismatch=6; ali_length=127; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctata
+ccaacacctgtta
+>MISEQ01:208:000000000-BFL3R:1:1101:17242:2909_CONS_SUB_SUB merged_sample={'M': 2}; count=2; seq_ab_match=126; seq_a_mismatch=0; ali_length=126; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=312; seq_b_insertion=0; seq_a_insertion=0; 
+ttatcaggccctcaaacccattctggtggatcagtagatctggccatttttagtttacac
+acagcaggagcttcctctattatgggtgctataaactttataacaactatatttaatatg
+agagctcctggtatgtcttttgataaattaccattgtttgtatggtcggtgttaattacc
+gctttcttattattactttccctacctgtattggcaggagccataaccatgcttttaacc
+gataggaattttaatactagcttttttgaccctgcaggtggtggtgatccagttttatac
+caacacttattt
+>MISEQ01:208:000000000-BFL3R:1:1101:10984:2919_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=125; seq_a_mismatch=0; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+tcttgctggtaatctcgcccatgcaggagcatcaggtgatttaacaattttctcattaca
+tttagctggaatttcatctatcttagcatccattaattttattaccacaattattaatat
+aaaatccccatcaattacacaataccaaacaccccttttcgtatgatcattacttgtaac
+cacaattctattactcttatccttaccagtcttagcagcaggtattactatattattaac
+agaccgaaatcttaatacaaccttttttgatccagcaggaggtggtgatccaatcttata
+tcaacatctattc
+>MISEQ01:208:000000000-BFL3R:1:1101:15781:2921_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=113; seq_a_mismatch=12; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaacttcattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtacgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:16083:2953_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=124; seq_a_mismatch=1; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacagtcttctcactaca
+tctggcaggtgtctcatcaattttaggggctgtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattccttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:20085:2958_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=122; seq_a_mismatch=3; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacagttattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:9428:2971_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=129; seq_a_mismatch=4; ali_length=133; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcgtcttac
+agatcgaaatctgaacaccacattctttgatcccgcggggggaggagacccgattctata
+ctaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:20857:3002_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=131; seq_a_mismatch=2; ali_length=133; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgataccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:11095:3005_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=122; seq_a_mismatch=3; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattatttatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacgttctttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:9297:3028_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=117; seq_a_mismatch=6; ali_length=125; seq_b_deletion=0; seq_b_mismatch=2; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagaacacgccggagcatcagtagatctaacaattttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagctgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctata
+ccaacacccgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:15994:3054_CONS_SUB_SUB merged_sample={'M': 2}; count=2; seq_b_insertion=0; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaacttcattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:13143:3066_CONS_SUB_SUB_CMP merged_sample={'M': 1}; count=1; seq_ab_match=125; seq_a_mismatch=0; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactacg
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:21024:3067_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=124; seq_a_mismatch=1; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcgacctagcccacgccggagcatcagtagatctaacaatcttctcactgca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:11096:3090_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=118; seq_a_mismatch=7; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcctctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:10917:3094_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=128; seq_a_mismatch=5; ali_length=133; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctata
+ccaacaactgtta
+>MISEQ01:208:000000000-BFL3R:1:1101:11380:3098_CONS_SUB_SUB merged_sample={'M': 2}; count=2; seq_b_insertion=0; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttggtcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:17180:3134_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=120; seq_a_mismatch=3; ali_length=124; seq_b_deletion=0; seq_b_mismatch=1; seq_a_deletion=0; seq_length=314; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaaccccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaa
+cagccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttctta
+cagatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctat
+accaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:12294:3160_CONS_SUB_SUB_CMP merged_sample={'M': 1}; count=1; seq_ab_match=125; seq_a_mismatch=0; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+tcttgctggtaatctcgcccatgcaggagcatcagttgatttaacaattttctcattaca
+tttagctggaatttcatctatcttagcatccattaattttattaccacaattattaatat
+aaaatccccatcaattacacaataccaaacaccccttttcgtatgatcattacttgtaac
+cacaattctattactcttatctttaccagtcttagcagcaggtattactatattattaac
+agaccgaaatcttaatacaaccttttttgatccagcaggaggtggtgatccaatattata
+tcaacatctattc
+>MISEQ01:208:000000000-BFL3R:1:1101:16029:3163_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=120; seq_a_mismatch=7; ali_length=127; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgagcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:12960:3178_CONS_SUB_SUB_CMP merged_sample={'M': 1}; count=1; seq_ab_match=125; seq_a_mismatch=0; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaactcccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:20347:3184_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=115; seq_a_mismatch=11; ali_length=126; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccccgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccatccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:15348:3210_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=122; seq_a_mismatch=3; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagacctaacaatcttctcactaca
+tctggcaagtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:17954:3239_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=124; seq_a_mismatch=1; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagacctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:13696:3258_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=124; seq_a_mismatch=1; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctata
+caaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:16640:3264_CONS_SUB_SUB_CMP merged_sample={'M': 1}; count=1; seq_ab_match=125; seq_a_mismatch=0; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaagctttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:11093:3284_CONS_SUB_SUB merged_sample={'M': 3}; count=3; seq_b_insertion=0; ali_length=126; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=312; seq_a_insertion=0; 
+ctcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactacat
+ctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatata
+aaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaaca
+gccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttaca
+gatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctatac
+caacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:14999:3285_CONS_SUB_SUB_CMP merged_sample={'M': 1}; count=1; seq_ab_match=125; seq_a_mismatch=0; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttctcgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccaattcttta
+ccaacacctattc
+>MISEQ01:208:000000000-BFL3R:1:1101:14919:3288_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=109; seq_a_mismatch=16; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacgatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgactctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:14199:3294_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=119; seq_a_mismatch=6; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaaccccaagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:9017:3314_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=118; seq_a_mismatch=7; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttatcaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcctac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:12770:3333_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=124; seq_a_mismatch=1; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacgatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgtttttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgctacttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:21271:3335_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=116; seq_a_mismatch=9; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccatgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:9140:3360_CONS_SUB_SUB_CMP merged_sample={'M': 1}; count=1; seq_ab_match=125; seq_a_mismatch=0; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+aggtcgaaatcttaacaccacgttctttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:18478:3361_CONS_SUB_SUB_CMP merged_sample={'M': 1}; count=1; seq_ab_match=127; seq_a_mismatch=0; ali_length=127; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttctcgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:9710:3365_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=128; seq_a_mismatch=3; ali_length=131; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaaccctctcactaca
+tctggcaggtgtctcgtcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgattcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:12870:3372_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=110; seq_a_mismatch=14; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=1; seq_length=313; seq_b_insertion=0; seq_a_insertion=1; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctctccgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgactctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:21824:3411_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=118; seq_a_mismatch=7; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaaccacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:15249:3429_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=125; seq_a_mismatch=0; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcttcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:10387:3442_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=124; seq_a_mismatch=0; ali_length=125; seq_b_deletion=0; seq_b_mismatch=1; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+tcttgctggtaacctcgcccatgcaggagcatcagttgatttaacaattttctcattaca
+tttagctggaatttcatctatcttagcatccattaattttattaccacaattattaatat
+aaaatccccatcaattacacaataccaaacaccccttttcgtatgatcattacttgtaac
+cacaattctattactcttatctttaccagtcttagcagcaggtatcactatattattaac
+agaccgaaatcttaatacaaccttttttgatccagcaggaggtggtgatccaatcttata
+tcaacatctattc
+>MISEQ01:208:000000000-BFL3R:1:1101:20420:3457_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=123; seq_a_mismatch=2; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatctcaacaccacattctttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:10634:3470_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=125; seq_a_mismatch=1; ali_length=126; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=312; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccactccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaaccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaaca
+gccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttaca
+gatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctatac
+caacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:18642:3477_CONS_SUB_SUB merged_sample={'M': 2}; count=2; seq_b_insertion=0; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggcgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:10669:3509_CONS_SUB_SUB merged_sample={'M': 2}; count=2; seq_b_insertion=0; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaagagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:20724:3511_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=120; seq_a_mismatch=5; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttctactatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccccattctttgatcccgcggggggaggagacccgattctata
+ccaccacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:10022:3518_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=122; seq_a_mismatch=3; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactgca
+tctggcgggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:14076:3520_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=124; seq_a_mismatch=2; ali_length=126; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=312; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaatttaggggcagtaaactttattaccacaattattaatata
+aaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaaca
+gccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttaca
+gatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctatac
+caacaccagttc
+>MISEQ01:208:000000000-BFL3R:1:1101:18378:3526_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=124; seq_a_mismatch=1; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtagc
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:14763:3528_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=119; seq_a_mismatch=5; ali_length=124; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgattcttaa
+agatcgaaatcttaacaccacattttttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:8392:3529_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=124; seq_a_mismatch=0; ali_length=125; seq_b_deletion=0; seq_b_mismatch=1; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgtgcttgtaac
+agcagttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:15087:3556_CONS_SUB_SUB_CMP merged_sample={'M': 1}; count=1; seq_ab_match=125; seq_a_mismatch=1; ali_length=126; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=312; seq_b_insertion=0; seq_a_insertion=0; 
+ttatcaggccctcaaacccattctggtggatcagtaggtctggccatttttagtttacac
+acagcaggagcttcctctattatgggtgctataaactttataacaactatatttaatatg
+agagctcctggtatgtcttttgataaattaccattgtttgtatggtcggtgttaattacc
+gctttcttattattactttccctacctgtattggcaggagccataaccatgcttttaacc
+gataggaattttaatactagctttttcgaccctgcaggtggtggtgatccagttttatac
+caacacttattt
+>MISEQ01:208:000000000-BFL3R:1:1101:18277:3563_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=123; seq_a_mismatch=4; ali_length=127; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=311; seq_b_insertion=0; seq_a_insertion=0; 
+tcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactacatc
+tggcaggtgtcccatcaattttaggggcagtaaactttattaccacaattattaatataa
+aacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaacag
+ccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttacag
+atcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctatacc
+aacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:8948:3567_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=125; seq_a_mismatch=0; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccaatgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:11328:3577_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=124; seq_a_mismatch=1; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtgac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:9347:3584_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=123; seq_a_mismatch=2; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcaggagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:13546:3608_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=123; seq_a_mismatch=6; ali_length=129; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctatcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:12562:3617_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=127; seq_a_mismatch=0; ali_length=127; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=309; seq_b_insertion=0; seq_a_insertion=0; 
+tcaggcaacctagcccactccggagcatcagtagatctaacaatcttctcactacatctg
+gcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatataaaa
+cccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaacagct
+gttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttacagat
+cgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctataccaa
+cacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:15812:3628_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=122; seq_a_mismatch=3; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacagtgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:18159:3634_CONS_SUB_SUB_CMP merged_sample={'M': 1}; count=1; seq_ab_match=125; seq_a_mismatch=0; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcaccaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:8213:3634_CONS_SUB_SUB_CMP merged_sample={'M': 1}; count=1; seq_ab_match=124; seq_a_mismatch=0; ali_length=125; seq_b_deletion=0; seq_b_mismatch=1; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttaa
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:8701:3643_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=129; seq_a_mismatch=4; ali_length=133; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatctgaacaccacattctttgatcccgcggggggaggagacccgattctata
+ccaacgcctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:19597:3653_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=119; seq_a_mismatch=8; ali_length=127; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctata
+cctacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:16258:1744_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=125; seq_a_mismatch=0; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+attagctggtaacatagctcacgctggaccatctgttgatctggctattttctcccttca
+tttagccggtgtttcatcaattttagcctcaattaactttattacaaccattatcaacat
+aaaaccaccagctatttcccaatatcaaacacctttatttatttgatctattcttgtaac
+tactattctccttctcctttcacttccagtccttgcagcaggaattacaatattacttac
+agatcgcaaccttaataccacattctttgatcctgcaggtgggggagacccaattcttta
+ccaacacctattc
+>MISEQ01:208:000000000-BFL3R:1:1101:16617:1795_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=122; seq_a_mismatch=3; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtattaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:17912:1817_CONS_SUB_SUB_CMP merged_sample={'M': 1}; count=1; seq_ab_match=125; seq_a_mismatch=0; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacatagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttgacaccacattctttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:16891:1818_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=125; seq_a_mismatch=1; ali_length=126; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=312; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttataccacaattattaatata
+aaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaaca
+gccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttaca
+gatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctatac
+caacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:18492:3665_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=122; seq_a_mismatch=3; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtattagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggagtagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:19975:3669_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=122; seq_a_mismatch=3; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcgtcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:17542:3669_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=118; seq_a_mismatch=7; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgctggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattatcacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:21619:3670_CONS_SUB_SUB merged_sample={'M': 3}; count=3; seq_ab_match=125; seq_a_mismatch=0; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+tcttgctggtaatctcgcccatgcaggagcatcagttgatttaacaattttctcattaca
+tttagctggaatttcatctatcttagcatccattaattttattaccacaattattaatat
+aaaatccccatcaattacacaataccaaacaccccttttcgtatgatcattacttgtaac
+cacaattctattactcttatctttaccagtcttagcagcaggtattactatattattaac
+agaccgaaatcttaatacaaccttttttgatccagcaggaggtggtgatccaatcttata
+tcaacatctattc
+>MISEQ01:208:000000000-BFL3R:1:1101:17029:3685_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=122; seq_a_mismatch=3; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattcaata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:12168:3685_CONS_SUB_SUB_CMP merged_sample={'M': 1}; count=1; seq_ab_match=125; seq_a_mismatch=0; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaaccttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:20222:3690_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=122; seq_a_mismatch=3; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgtaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttaataccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:15042:3705_CONS_SUB_SUB_CMP merged_sample={'M': 1}; count=1; seq_ab_match=124; seq_a_mismatch=0; ali_length=125; seq_b_deletion=0; seq_b_mismatch=1; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagcgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:23479:3706_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=122; seq_a_mismatch=1; ali_length=124; seq_b_deletion=0; seq_b_mismatch=1; seq_a_deletion=0; seq_length=311; seq_b_insertion=0; seq_a_insertion=0; 
+tcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactacatc
+tgcccggtgtctcatcaattttaggggcagcaaactttattaccacaattattaatataa
+aacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaacag
+ccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttacag
+atcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctatacc
+aacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:8880:3721_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=110; seq_a_mismatch=15; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagaccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacgattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtacgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:15754:1824_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=123; seq_a_mismatch=2; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaacttttttaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:18121:1849_CONS_SUB_SUB_CMP merged_sample={'M': 1}; count=1; seq_ab_match=128; seq_a_mismatch=0; ali_length=128; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=314; seq_b_insertion=0; seq_a_insertion=0; 
+cactcgcgggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactac
+atctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaata
+taaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaa
+cagccgttctccttattctatcactaccagtgctggctgccggaatcacaatgcttctta
+cagatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctat
+accaacacatgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:12144:1856_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=125; seq_a_mismatch=1; ali_length=126; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggcgcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:18660:1858_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=121; seq_a_mismatch=4; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcgcaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:14880:1885_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=121; seq_a_mismatch=4; ali_length=126; seq_b_deletion=0; seq_b_mismatch=1; seq_a_deletion=0; seq_length=312; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaactatcttctcactaca
+tctggcaggcgtctcatcaattttaggggcagtaaactttattacacaattattaatata
+aaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaaca
+gccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttaca
+gatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctatac
+caacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:16326:1892_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=118; seq_a_mismatch=7; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccagaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:16726:1900_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=125; seq_a_mismatch=0; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+cttatcaggccctcaaacccattctggtggatcagtagatctggccatttttagtttaca
+cacagcaggagcttcctctattatgggtgctataaactttataacaactatatttaatat
+gagagctcctggtatgtcttttgataaattaccattgtttgtatggtcggtgttaattac
+cgctttcttattattactttccctacctgtattggcaggagccataaccatgcttttaac
+cgataggaattttaatactagcttttttgaccctgcaggtggtggtgatccagttttata
+ccaacacttattt
+>MISEQ01:208:000000000-BFL3R:1:1101:12831:1941_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=122; seq_a_mismatch=3; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctaatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctata
+ccaacacccgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:17007:2008_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=126; seq_a_mismatch=0; ali_length=126; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=312; seq_b_insertion=0; seq_a_insertion=0; 
+ttatcaggccctcaaacccattctggtggatcagtagatctggccatttttagtttacac
+acagcaggagcttcctctattatgggtgctataaactttataacaactatatttaatatg
+agagctcctggcatgtcttttgataaattaccattgtttgtatggccggtgttaattacc
+gctttcttattattactttccctacctgtattggcaggagccataaccatgcttttaacc
+gataggaattttaatactagcttttttgaccctgcaggtggtggtgatccagttttatac
+caacacttattt
+>MISEQ01:208:000000000-BFL3R:1:1101:18083:2009_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=123; seq_a_mismatch=2; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcaccaccagtgctggctgccgtaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:18945:2016_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=123; seq_a_mismatch=2; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=311; seq_b_insertion=0; seq_a_insertion=0; 
+tcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactacatc
+tggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatataa
+aacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaacag
+ccgttctccttcttctatcactaccagtgctggctgccagaatcacaatgcttcttacag
+atcgaaatcttaacaccacattctttgataccgcggggggaggagacccgattctatacc
+aacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:15804:2025_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=122; seq_a_mismatch=3; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacacaacattctttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:12874:2033_CONS_SUB_SUB_CMP merged_sample={'M': 1}; count=1; seq_ab_match=126; seq_a_mismatch=0; ali_length=126; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=312; seq_b_insertion=0; seq_a_insertion=0; 
+ttatcaggccctcaaacccattctggtggatcagtagatctggccatttttagtttacac
+acagcaggagcttcctctattatgggtcctataaactttataacaactatatttaatatg
+agagctcctggtatgtcttttgataaattaccattgtttgtatggtcggtgttaattacc
+gctttcttattattactttccctacctgtattggcaggagccataaccatgcttttaacc
+gataggaattttaatactagcttttttgaccctgcaggtggtggtgatccagttttatac
+caacacttattt
+>MISEQ01:208:000000000-BFL3R:1:1101:14041:2038_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=121; seq_a_mismatch=4; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactgca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:16359:2064_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=125; seq_a_mismatch=0; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgagaggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:13464:2071_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=124; seq_a_mismatch=1; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcgtggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:16902:2075_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=125; seq_a_mismatch=0; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctgttaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:17507:2084_CONS_SUB_SUB_CMP merged_sample={'M': 1}; count=1; seq_ab_match=125; seq_a_mismatch=0; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccgtctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:14865:2109_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=123; seq_a_mismatch=3; ali_length=126; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=312; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctccagtatcaaacacccctcttcgtatgagccgttcttgtaaca
+gccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttaca
+gatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctatac
+caacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:15138:2112_CONS_SUB_SUB_CMP merged_sample={'M': 1}; count=1; seq_ab_match=125; seq_a_mismatch=0; ali_length=126; seq_b_deletion=0; seq_b_mismatch=1; seq_a_deletion=0; seq_length=314; seq_b_insertion=0; seq_a_insertion=0; 
+cactcgcaggcaacctagcccccgccggagcatccgtagatctaacaatcttctcactac
+atctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaata
+taaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaa
+cagccgttctccttcttctaccactaccagtgctggctgccggaatcacaatgcttctta
+cagatcgaaatcttaacaccacattctttgatcacgcggggggaggagacccgattctat
+aacaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:15408:2113_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=124; seq_a_mismatch=1; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcaccaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgcatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:19746:2131_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=121; seq_a_mismatch=4; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttagtggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:12379:2151_CONS_SUB_SUB_CMP merged_sample={'M': 1}; count=1; seq_ab_match=128; seq_a_mismatch=0; ali_length=128; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagacacgattctata
+ccaacacatgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:13374:2173_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=125; seq_a_mismatch=1; ali_length=126; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=312; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccgagcatcagtagatctaacaatcttctcactgcat
+ctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatata
+aaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttattgtaaca
+gccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttaca
+gatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctatac
+caacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:14296:2173_CONS_SUB_SUB_CMP merged_sample={'M': 1}; count=1; seq_ab_match=125; seq_a_mismatch=0; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaat
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:18447:2222_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=123; seq_a_mismatch=2; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagtccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:14280:2229_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=123; seq_a_mismatch=2; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaagtcttaacaccacattctttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:13439:2253_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=124; seq_a_mismatch=1; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactacctgtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:15252:2258_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=122; seq_a_mismatch=7; ali_length=129; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgcaggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatccagcggggggaggaggcccgattctaca
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:10985:2272_CONS_SUB_SUB_CMP merged_sample={'M': 1}; count=1; seq_ab_match=125; seq_a_mismatch=0; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttatgggcagtaaactttattaccacaattattaatat
+gaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:12635:2284_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=112; seq_a_mismatch=13; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+tctgtccagaaatataacccatgcaggcccctctgtagaccttgctatcttctcacttca
+ccttgccggggcatcctctattttagcatcattaaactttattactacaacaataaacat
+acgaatagaaggaatagtaatggaacgagttcctctgtttgtctgatcagttcttatcac
+cgccattctcttactactatctttaccagttctagctggagctattactatactcctaac
+agaccgtaatcttaacacttctttcttcgacccggcaggaggaggagaccctgttctatt
+tcagcatatcttc
+>MISEQ01:208:000000000-BFL3R:1:1101:12596:2311_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=122; seq_a_mismatch=3; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcgggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aagacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:13435:2327_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=118; seq_a_mismatch=2; ali_length=125; seq_b_deletion=0; seq_b_mismatch=5; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctcgcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaaccccctgccatctcccagtatcaaacacccctcttcgtatgagccgtccttataac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:19075:2330_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=125; seq_a_mismatch=0; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaattacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggtgggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:17142:2335_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=108; seq_a_mismatch=16; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=1; seq_length=313; seq_b_insertion=0; seq_a_insertion=1; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaattcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:21015:2408_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=124; seq_a_mismatch=1; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccttcttcgtatgagccgttcttgtaac
+agccgttctccttcttctataactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:20137:2410_CONS_SUB_SUB_CMP merged_sample={'M': 1}; count=1; seq_ab_match=125; seq_a_mismatch=0; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actggccgggaatcttgcccacgccggagcatctgttgacctcacaattttctcccttca
+tctggccggaatctcatcaattcttggggctattaactttattaccacaattattaatat
+aaaaccccctgccatttcacaataccagacacctttgttcgtgtgggccgtcctaattac
+cgctgttcttcttcttttatcccttcccgtactggcagccggaattacaatgcttcttac
+tgaccgtaaccttaatactaccttcttcgacccagcagggggaggggacccaattcttta
+ccaacacctattc
+>MISEQ01:208:000000000-BFL3R:1:1101:16911:2429_CONS_SUB_SUB_CMP merged_sample={'M': 1}; count=1; seq_ab_match=124; seq_a_mismatch=0; ali_length=125; seq_b_deletion=0; seq_b_mismatch=1; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcgggggtaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:16045:2434_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=122; seq_a_mismatch=3; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggacacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:12226:2452_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=119; seq_a_mismatch=5; ali_length=125; seq_b_deletion=0; seq_b_mismatch=1; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcagacacccctcttcgtatgaactgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:20328:2458_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=125; seq_a_mismatch=0; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaagtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgctggaatcacaatgcttcttac
+agatcgaaatctcaacaccacattctttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:17189:2467_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=123; seq_a_mismatch=2; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctagcaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggccgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:16882:2472_CONS_SUB_SUB_CMP merged_sample={'M': 1}; count=1; seq_ab_match=125; seq_a_mismatch=0; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+agaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:20750:2484_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=118; seq_a_mismatch=7; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttctcctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:14689:2489_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=124; seq_a_mismatch=1; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattatcacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagatccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:15113:2499_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=117; seq_a_mismatch=8; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgcttgctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:16385:2536_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=125; seq_a_mismatch=2; ali_length=127; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=311; seq_b_insertion=0; seq_a_insertion=0; 
+tcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactacatc
+tggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatataa
+aacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaacag
+ccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttacag
+atcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctatacc
+aacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:11254:2537_CONS_SUB_SUB_CMP merged_sample={'M': 1}; count=1; seq_ab_match=125; seq_a_mismatch=0; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacacctcattctttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:20389:2544_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=107; seq_a_mismatch=19; ali_length=127; seq_b_deletion=0; seq_b_mismatch=1; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagccaacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgtgcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacgccacattcgctgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:11127:2552_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=119; seq_a_mismatch=6; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggcggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:14943:2579_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=121; seq_a_mismatch=4; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcctgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:11955:2587_CONS_SUB_SUB_CMP merged_sample={'M': 1}; count=1; seq_ab_match=118; seq_a_mismatch=4; ali_length=125; seq_b_deletion=0; seq_b_mismatch=3; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggaccatcagtagatctaacaaacttctcactaca
+tctggcaggcgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggagtcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:20022:2591_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=124; seq_a_mismatch=3; ali_length=127; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgtccttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:20555:2600_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=121; seq_a_mismatch=4; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+atatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:14258:2605_CONS_SUB_SUB_CMP merged_sample={'M': 1}; count=1; seq_ab_match=125; seq_a_mismatch=0; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcgctaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:14632:2608_CONS_SUB_SUB_CMP merged_sample={'M': 1}; count=1; seq_ab_match=126; seq_a_mismatch=0; ali_length=126; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagaccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgtttcttac
+agatcgaaatcttaacaccacattctttgatccagcggggggaggagacccgattctata
+caaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:14570:2609_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=118; seq_a_mismatch=7; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=1; seq_length=312; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaacccccagccatctcccagtaccaaacacccctcttcgtatgagccgttcttgtaaca
+gccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttaca
+gatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctatac
+caacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:15730:2612_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=124; seq_a_mismatch=1; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtggatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctata
+ccaacacctgttt
+>MISEQ01:208:000000000-BFL3R:1:1101:17206:2618_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=123; seq_a_mismatch=2; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtaggtctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:17834:2618_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=124; seq_a_mismatch=1; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctaccccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:18521:2620_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=114; seq_a_mismatch=5; ali_length=125; seq_b_deletion=0; seq_b_mismatch=6; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaatcttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatttcccaatatcaaacacccctcttcgtttgagctattcttgtaac
+agccgttctccttcttctttcactcccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:19757:2622_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=120; seq_a_mismatch=5; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+ggatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:10505:2624_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=118; seq_a_mismatch=6; ali_length=125; seq_b_deletion=0; seq_b_mismatch=1; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaacat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcgggggggggaggcccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:18915:2630_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=124; seq_a_mismatch=1; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacgccacattctttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:14831:2671_CONS_SUB_SUB_CMP merged_sample={'M': 1}; count=1; seq_ab_match=125; seq_a_mismatch=0; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgattccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:13291:2700_CONS_SUB_SUB_CMP merged_sample={'M': 1}; count=1; seq_ab_match=123; seq_a_mismatch=1; ali_length=125; seq_b_deletion=0; seq_b_mismatch=1; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgtgccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggtatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:12743:2700_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=124; seq_a_mismatch=1; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccatcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:12483:2704_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=123; seq_a_mismatch=2; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagccctcgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtagactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:11819:2708_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=125; seq_a_mismatch=0; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattctaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcgggtggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:9724:2712_CONS_SUB_SUB_CMP merged_sample={'M': 1}; count=1; seq_ab_match=124; seq_a_mismatch=0; ali_length=126; seq_b_deletion=0; seq_b_mismatch=2; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgcctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagcatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:21120:2717_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=121; seq_a_mismatch=4; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcatgtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:15010:2726_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=122; seq_a_mismatch=3; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agaccgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:13396:2735_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=124; seq_a_mismatch=1; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgcaggctgccggaatcgcaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:20912:2742_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=123; seq_a_mismatch=2; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatctaacaatcttctcactaca
+tctggcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatccctcggggggaggagacccgattctata
+ccaacacctgttc
+>MISEQ01:208:000000000-BFL3R:1:1101:18689:2753_CONS_SUB_SUB merged_sample={'M': 1}; count=1; seq_ab_match=123; seq_a_mismatch=2; ali_length=125; seq_b_deletion=0; seq_b_mismatch=0; seq_a_deletion=0; seq_length=313; seq_b_insertion=0; seq_a_insertion=0; 
+actcgcaggcaacctagcccacgccggagcatcagtagatttaacaatcttctcactaca
+tcttgcaggtgtctcatcaattttaggggcagtaaactttattaccacaattattaatat
+aaaacccccagccatctcccagtatcaaacacccctcttcgtatgagccgttcttgtaac
+agccgttctccttcttctatcactaccagtgctggctgccggaatcacaatgcttcttac
+agatcgaaatcttaacaccacattctttgatcccgcggggggaggagacccgattctata
+ccaacacctgttc

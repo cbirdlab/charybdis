@@ -1,0 +1,107 @@
+Warning: [blastn] Taxonomy name lookup from taxid requires installation of taxdb database with ftp://ftp.ncbi.nlm.nih.gov/blast/db/taxdb.tar.gz
+Warning: [blastn] Taxonomy name lookup from taxid requires installation of taxdb database with ftp://ftp.ncbi.nlm.nih.gov/blast/db/taxdb.tar.gz
+Warning: [blastn] Taxonomy name lookup from taxid requires installation of taxdb database with ftp://ftp.ncbi.nlm.nih.gov/blast/db/taxdb.tar.gz
+Warning: [blastn] Taxonomy name lookup from taxid requires installation of taxdb database with ftp://ftp.ncbi.nlm.nih.gov/blast/db/taxdb.tar.gz
+Warning: [blastn] Taxonomy name lookup from taxid requires installation of taxdb database with ftp://ftp.ncbi.nlm.nih.gov/blast/db/taxdb.tar.gz
+Warning: [blastn] Taxonomy name lookup from taxid requires installation of taxdb database with ftp://ftp.ncbi.nlm.nih.gov/blast/db/taxdb.tar.gz
+Warning: [blastn] Taxonomy name lookup from taxid requires installation of taxdb database with ftp://ftp.ncbi.nlm.nih.gov/blast/db/taxdb.tar.gz
+Warning: [blastn] Taxonomy name lookup from taxid requires installation of taxdb database with ftp://ftp.ncbi.nlm.nih.gov/blast/db/taxdb.tar.gz
+Warning: [blastn] Taxonomy name lookup from taxid requires installation of taxdb database with ftp://ftp.ncbi.nlm.nih.gov/blast/db/taxdb.tar.gz
+Warning: [blastn] Taxonomy name lookup from taxid requires installation of taxdb database with ftp://ftp.ncbi.nlm.nih.gov/blast/db/taxdb.tar.gz
+Warning: [blastn] Taxonomy name lookup from taxid requires installation of taxdb database with ftp://ftp.ncbi.nlm.nih.gov/blast/db/taxdb.tar.gz
+Warning: [blastn] Taxonomy name lookup from taxid requires installation of taxdb database with ftp://ftp.ncbi.nlm.nih.gov/blast/db/taxdb.tar.gz
+Warning: [blastn] Taxonomy name lookup from taxid requires installation of taxdb database with ftp://ftp.ncbi.nlm.nih.gov/blast/db/taxdb.tar.gz
+Warning: [blastn] Taxonomy name lookup from taxid requires installation of taxdb database with ftp://ftp.ncbi.nlm.nih.gov/blast/db/taxdb.tar.gz
+Warning: [blastn] Taxonomy name lookup from taxid requires installation of taxdb database with ftp://ftp.ncbi.nlm.nih.gov/blast/db/taxdb.tar.gz
+Warning: [blastn] Taxonomy name lookup from taxid requires installation of taxdb database with ftp://ftp.ncbi.nlm.nih.gov/blast/db/taxdb.tar.gz
+Warning: [blastn] Taxonomy name lookup from taxid requires installation of taxdb database with ftp://ftp.ncbi.nlm.nih.gov/blast/db/taxdb.tar.gz
+Warning: [blastn] Taxonomy name lookup from taxid requires installation of taxdb database with ftp://ftp.ncbi.nlm.nih.gov/blast/db/taxdb.tar.gz
+Warning: [blastn] Taxonomy name lookup from taxid requires installation of taxdb database with ftp://ftp.ncbi.nlm.nih.gov/blast/db/taxdb.tar.gz
+Warning: [blastn] Taxonomy name lookup from taxid requires installation of taxdb database with ftp://ftp.ncbi.nlm.nih.gov/blast/db/taxdb.tar.gz
+Warning: [blastn] Taxonomy name lookup from taxid requires installation of taxdb database with ftp://ftp.ncbi.nlm.nih.gov/blast/db/taxdb.tar.gz
+Warning: [blastn] Taxonomy name lookup from taxid requires installation of taxdb database with ftp://ftp.ncbi.nlm.nih.gov/blast/db/taxdb.tar.gz
+Warning: [blastn] Taxonomy name lookup from taxid requires installation of taxdb database with ftp://ftp.ncbi.nlm.nih.gov/blast/db/taxdb.tar.gz
+Warning: [blastn] Taxonomy name lookup from taxid requires installation of taxdb database with ftp://ftp.ncbi.nlm.nih.gov/blast/db/taxdb.tar.gz
+Warning: [blastn] Taxonomy name lookup from taxid requires installation of taxdb database with ftp://ftp.ncbi.nlm.nih.gov/blast/db/taxdb.tar.gz
+Warning: [blastn] Taxonomy name lookup from taxid requires installation of taxdb database with ftp://ftp.ncbi.nlm.nih.gov/blast/db/taxdb.tar.gz
+Warning: [blastn] Taxonomy name lookup from taxid requires installation of taxdb database with ftp://ftp.ncbi.nlm.nih.gov/blast/db/taxdb.tar.gz
+Warning: [blastn] Taxonomy name lookup from taxid requires installation of taxdb database with ftp://ftp.ncbi.nlm.nih.gov/blast/db/taxdb.tar.gz
+Warning: [blastn] Taxonomy name lookup from taxid requires installation of taxdb database with ftp://ftp.ncbi.nlm.nih.gov/blast/db/taxdb.tar.gz
+Read 1544258 records
+Read 2296463 records
+                                                   OTU_SEQID
+1 MISEQ01:208:000000000-BFL3R:1:1101:15680:2799_CONS_SUB_SUB
+2 MISEQ01:208:000000000-BFL3R:1:1101:15680:2799_CONS_SUB_SUB
+3 MISEQ01:208:000000000-BFL3R:1:1101:15680:2799_CONS_SUB_SUB
+4 MISEQ01:208:000000000-BFL3R:1:1101:15680:2799_CONS_SUB_SUB
+5 MISEQ01:208:000000000-BFL3R:1:1101:15680:2799_CONS_SUB_SUB
+6 MISEQ01:208:000000000-BFL3R:1:1101:15680:2799_CONS_SUB_SUB
+                                                      QSEQID SAMPLE_ID COUNT
+1 MISEQ01:208:000000000-BFL3R:1:1101:11352:2802_CONS_SUB_SUB         F   377
+2 MISEQ01:208:000000000-BFL3R:1:1101:10464:3712_CONS_SUB_SUB         F     1
+3 MISEQ01:208:000000000-BFL3R:1:1101:10763:2967_CONS_SUB_SUB         F     1
+4 MISEQ01:208:000000000-BFL3R:1:1101:10811:2609_CONS_SUB_SUB         F     1
+5 MISEQ01:208:000000000-BFL3R:1:1101:10889:2573_CONS_SUB_SUB         F     1
+6 MISEQ01:208:000000000-BFL3R:1:1101:10926:3046_CONS_SUB_SUB         F     1
+[1] 29
+                                                           OTU_SEQID
+1         MISEQ01:208:000000000-BFL3R:1:1101:15680:2799_CONS_SUB_SUB
+501       MISEQ01:208:000000000-BFL3R:1:1101:13178:2824_CONS_SUB_SUB
+1001      MISEQ01:208:000000000-BFL3R:1:1101:15905:2827_CONS_SUB_SUB
+1501      MISEQ01:208:000000000-BFL3R:1:1101:16328:2805_CONS_SUB_SUB
+2001      MISEQ01:208:000000000-BFL3R:1:1101:13337:3526_CONS_SUB_SUB
+2501      MISEQ01:208:000000000-BFL3R:1:1101:19198:1838_CONS_SUB_SUB
+3001      MISEQ01:208:000000000-BFL3R:1:1101:18026:2560_CONS_SUB_SUB
+3501      MISEQ01:208:000000000-BFL3R:1:1101:12635:2284_CONS_SUB_SUB
+4001  MISEQ01:208:000000000-BFL3R:1:1101:11294:2530_CONS_SUB_SUB_CMP
+4501      MISEQ01:208:000000000-BFL3R:1:1101:21175:2702_CONS_SUB_SUB
+5001      MISEQ01:208:000000000-BFL3R:1:1101:10387:3442_CONS_SUB_SUB
+5501       MISEQ01:208:000000000-BFL3R:1:1101:8465:3590_CONS_SUB_SUB
+6001      MISEQ01:208:000000000-BFL3R:1:1101:18589:3476_CONS_SUB_SUB
+6501      MISEQ01:208:000000000-BFL3R:1:1101:11427:2261_CONS_SUB_SUB
+7001      MISEQ01:208:000000000-BFL3R:1:1101:15165:3282_CONS_SUB_SUB
+7504  MISEQ01:208:000000000-BFL3R:1:1101:20137:2410_CONS_SUB_SUB_CMP
+8004      MISEQ01:208:000000000-BFL3R:1:1101:16371:3224_CONS_SUB_SUB
+8504      MISEQ01:208:000000000-BFL3R:1:1101:13079:2815_CONS_SUB_SUB
+9004      MISEQ01:208:000000000-BFL3R:1:1101:13199:2598_CONS_SUB_SUB
+9504      MISEQ01:208:000000000-BFL3R:1:1101:12495:2478_CONS_SUB_SUB
+10004     MISEQ01:208:000000000-BFL3R:1:1101:21633:3574_CONS_SUB_SUB
+10504     MISEQ01:208:000000000-BFL3R:1:1101:17007:2008_CONS_SUB_SUB
+10879      MISEQ01:208:000000000-BFL3R:1:1101:8705:3498_CONS_SUB_SUB
+11379      MISEQ01:208:000000000-BFL3R:1:1101:9077:3231_CONS_SUB_SUB
+11879 MISEQ01:208:000000000-BFL3R:1:1101:11808:2672_CONS_SUB_SUB_CMP
+12379     MISEQ01:208:000000000-BFL3R:1:1101:13568:3350_CONS_SUB_SUB
+12879     MISEQ01:208:000000000-BFL3R:1:1101:19550:2621_CONS_SUB_SUB
+13379     MISEQ01:208:000000000-BFL3R:1:1101:15276:3128_CONS_SUB_SUB
+13879     MISEQ01:208:000000000-BFL3R:1:1101:13753:2722_CONS_SUB_SUB
+                            SSEQID                       SSCINAMES STAXIDS
+1      gi|831180770|gb|KT075313.1|      Rhizoprionodon_terraenovae  303945
+501    gi|554521260|gb|KF461152.1|           Carcharhinus_limbatus   61865
+1001  gi|1386678616|gb|MF508682.1|           Carcharhinus_plumbeus    7808
+1501  gi|1411195580|gb|MH378639.1|              Balistes_capriscus  303685
+2001  gi|1335827988|gb|MF972070.1|   Siphateles_bicolor_mohavensis  180523
+2501  gi|1016562122|gb|KU925203.1|          Coptotermes_formosanus   36987
+3001   gi|554521260|gb|KF461152.1|           Carcharhinus_limbatus   61865
+3501   gi|384383010|gb|JN086546.1|                 Chloeia_viridis 1173526
+4001   gi|386687375|gb|JQ842388.1|                  Ariopsis_felis   75286
+4501   gi|217031117|gb|FJ447380.1|             Nesippus_orientalis  578969
+5001   gi|983635873|gb|KT119411.1|              Narcine_bancroftii 1343680
+5501   gi|429141067|gb|KC015879.1|      Rhizoprionodon_terraenovae  303945
+6001   gi|918768411|gb|KP331684.1|               Lutjanus_synagris   40496
+6501  gi|1335827988|gb|MF972070.1|   Siphateles_bicolor_mohavensis  180523
+7001    gi|87042872|gb|DQ373942.1| Illex_cf._illecebrosus_DBC-2006  370612
+7504   gi|407946921|gb|JX519394.1|            Saurida_brasiliensis 1226401
+8004  gi|1185245518|gb|KY176620.1|                Scomber_scombrus   13677
+8504  gi|1035662351|gb|KU905964.1|               Achelous_gibbesii  372818
+9004  gi|1191080167|gb|MF041551.1|          Fowlerichthys_radiosus 1311548
+9504    gi|58700686|gb|AY861370.1|             Caligus_centrodonti  311544
+10004 gi|1411195590|gb|MH378644.1|              Balistes_capriscus  303685
+10504   gi|62866999|gb|AY937373.1|                  Nanomia_bijuga  168759
+10879  gi|768105859|gb|KP177306.1|                  Sphyrna_lewini    7823
+11379  gi|831180770|gb|KT075313.1|      Rhizoprionodon_terraenovae  303945
+11879 gi|1386678616|gb|MF508682.1|           Carcharhinus_plumbeus    7808
+12379  gi|584295286|gb|KF929640.1|              Balistes_capriscus  303685
+12879 gi|1386678610|gb|MF508679.1|             Carcharhinus_leucas   46612
+13379 gi|1390040085|gb|MG703545.1|         Rhizoprionodon_lalandii  587731
+13879 gi|1371547973|gb|KY984984.1|               Thunnus_albacares    8236
+[1] 681

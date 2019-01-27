@@ -1,0 +1,14 @@
+vsearch v2.3.4_linux_x86_64, 252.3GB RAM, 20 cores
+https://github.com/torognes/vsearch
+
+Reading file out/TestData.ali.assigned.ann.uniq.clean.len.size.nospace.J.fasta 100%
+2504 nt in 8 seqs, min 313, max 313, avg 313
+Masking 100%
+Sorting by abundance 100%
+Counting unique k-mers 100%
+Detecting chimeras 100%
+Found 0 (0.0%) chimeras, 8 (100.0%) non-chimeras,
+and 0 (0.0%) borderline sequences in 8 unique sequences.
+Taking abundance information into account, this corresponds to
+0 (0.0%) chimeras, 29 (100.0%) non-chimeras,
+and 0 (0.0%) borderline sequences in 29 total sequences.

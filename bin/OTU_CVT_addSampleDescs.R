@@ -23,24 +23,25 @@ colnames <- colnames(CVT)
 count = 0
 lowest = 0
 for(c in colnames){
-        if (grepl("^X", c)){
+        if (grepl("^(suborder)", c)){
                 lowest = count
         }
         count = count + 1
 }
-
-startPos <- which(colnames == "sample") + 1
-stopPos  <- lowest + 1
+print (lowest)
+startPos <- which(colnames == "Sample") + 1
+stopPos  <- lowest
 
 names <- colnames[startPos:stopPos]
-PRED$Tube <- make.names(PRED$Tube)
+PRED$Sample <- make.names(PRED$Sample)
+print (names)
 
 predNames <- list()
 newCols <- list()
 for (t in names){
-        prow = PRED[PRED$Tube == t, ]
+        prow = PRED[PRED$Sample == t, ]
         predNames <- c(predNames, prow$Description)
-	newCols <- c(newCols, paste(prow$Description, t, sep=" - "))
+	newCols <- c(newCols, paste(prow$Description, t, sep="."))
 }
 predNames <- unlist(predNames)
 newCols <- unlist(newCols)

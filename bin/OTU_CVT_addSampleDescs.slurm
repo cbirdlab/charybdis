@@ -5,13 +5,17 @@
 #SBATCH -p normal
 #SBATCH --nodes=1
 
+module load R
+
 PREFIX=$1
 INDIR=$2
 OUTDIR=$3
-METHOD=$4
+GCL_BIN=$4
+METHOD=$5
+
 
 Rscript $GCL_BIN""/OTU_CVT_addSampleDescs.R \
 	$OUTDIR""/$PREFIX.OTUvsTubes.$METHOD"".S.csv \
-	$INDIR""/$PREFIX.sampledesc.csv \
+	$INDIR""/$PREFIX.sampledescs.csv \
 	$OUTDIR""/$PREFIX.OTUvsTubes.$METHOD"".SP.csv \
 

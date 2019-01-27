@@ -1,0 +1,203 @@
+>MISEQ01:208:000000000-BFL3R:1:1101:13708:2815_CONS_SUB_SUB_CMP ali_length=125; seq_ab_match=125; sminR=40.0; reverse_match=tagacctcgggatggccaaagaatca; seq_a_deletion=0; sample=I; forward_match=ggtactggatgaacagtatatccccc; forward_primer=ggwacwggwtgaacwgtwtayccycc; reverse_primer=tanacytcnggrtgnccraaraayca; sminL=40.0; forward_score=104.0; seq_a_mismatch=0; forward_tag=atcacg; seq_b_mismatch=0; score=499.694419677; seq_a_single=126; score_norm=3.99755535741; reverse_score=104.0; direction=reverse; seq_b_insertion=0; experiment=Depredation; seq_b_deletion=0; seq_a_insertion=0; seq_length_ori=377; reverse_tag=acttga; seq_length=313; status=full; mode=alignment; seq_b_single=126; 
+attagctagtaacatagctcacgctggaccatctgttgatctggctattttctcccttca
+tttagccggtgtttcatcaattttagcctcaattaactttattacaaccattatcaacat
+aaaaccaccagctatttcccaatatcaaacacctttatttgtttgatctattcttgtaac
+tactattctccttctcctttcacttccagtccttgcagcaggaattacaatattacttac
+agatcgcaaccttaataccacattctttgatcctgcaggtgggggagacccaattctcta
+ccaacacctattc
+>MISEQ01:208:000000000-BFL3R:1:1101:15614:2929_CONS_SUB_SUB status=full; seq_ab_match=125; sminR=40.0; ali_length=125; reverse_match=tagacttcggggtggccgaagaatca; seq_a_deletion=0; sample=I; forward_match=ggtactggttgaactgtataccctcc; forward_primer=ggwacwggwtgaacwgtwtayccycc; reverse_primer=tanacytcnggrtgnccraaraayca; sminL=40.0; forward_score=104.0; seq_a_mismatch=0; forward_tag=atcacg; seq_b_mismatch=0; score=499.712378677; seq_a_single=126; score_norm=3.99769902941; reverse_score=104.0; direction=forward; seq_b_insertion=0; experiment=Depredation; seq_b_deletion=0; seq_a_insertion=0; seq_length_ori=377; reverse_tag=acttga; seq_length=313; mode=alignment; seq_b_single=126; 
+attagctagtaacatagctcacgctggaccatctgttgatctggctattttctcccttca
+tttagccggtgtttcatcaattttagcctcaattaactttattacaaccattatcaacat
+aaaaccaccagctatttcccaatatcaaacacctttatttgtttgatctattcttgtaac
+tactattctccttctcctttcacttccagtccttgcagcaggaattacaatattacttac
+agatcgcaaccttaataccacattctttgatcctgcaggtgggggagacccaattcttta
+ccaacacctattc
+>MISEQ01:208:000000000-BFL3R:1:1101:20059:3151_CONS_SUB_SUB_CMP ali_length=125; seq_ab_match=125; sminR=40.0; reverse_match=tagacctcgggatggccaaagaatca; seq_a_deletion=0; sample=I; forward_match=ggtacaggatgaactgtttatcctcc; forward_primer=ggwacwggwtgaacwgtwtayccycc; reverse_primer=tanacytcnggrtgnccraaraayca; sminL=40.0; forward_score=104.0; seq_a_mismatch=0; forward_tag=atcacg; seq_b_mismatch=0; score=494.632732847; seq_a_single=126; score_norm=3.95706186277; reverse_score=104.0; direction=reverse; seq_b_insertion=0; experiment=Depredation; seq_b_deletion=0; seq_a_insertion=0; seq_length_ori=377; reverse_tag=acttga; seq_length=313; status=full; mode=alignment; seq_b_single=126; 
+attagctagtaacatagctcacgctggaccatctgttgatctggctattttctcccttca
+tttagccggtgtttcatcaattttagcctcaattaactttattacaaccattatcaacat
+aaaaccaccagctatttcccaatatcaaacacctttatttgtttgatctattcttgtaac
+tactattctccttctcctttcacttccagtccttgcagcaggaattacaatattacttac
+agatcgcaaccttaataccacattctttgaccctgcaggtgggggagacccaattcttta
+ccaacacctattc
+>MISEQ01:208:000000000-BFL3R:1:1101:10504:3356_CONS_SUB_SUB status=full; seq_ab_match=125; sminR=40.0; ali_length=125; reverse_match=tagacttcgggatggccgaaaaatca; seq_a_deletion=0; sample=I; forward_match=ggtactggttgaactgtttatcctcc; forward_primer=ggwacwggwtgaacwgtwtayccycc; reverse_primer=tanacytcnggrtgnccraaraayca; sminL=40.0; forward_score=104.0; seq_a_mismatch=0; forward_tag=atcacg; seq_b_mismatch=0; score=498.886696783; seq_a_single=126; score_norm=3.99109357426; reverse_score=104.0; direction=forward; seq_b_insertion=0; experiment=Depredation; seq_b_deletion=0; seq_a_insertion=0; seq_length_ori=377; reverse_tag=acttga; seq_length=313; mode=alignment; seq_b_single=126; 
+attagctagtaatatagctcacgctggaccatctgttgatctggctattttctcccttca
+tttagccggtgtttcatcaattttagcctcaattaactttattacaaccattatcaacat
+aaaaccaccagctatttcccaatatcaaacacctttatttgtttgatctattcttgtaac
+tactattctccttctcctttcacttccagtccttgcagcaggaattacaatattacttac
+agatcgcaaccttaataccacattctttgaccctgcaggtgggggagacccaattcttta
+ccaacacctactc
+>MISEQ01:208:000000000-BFL3R:1:1101:20634:3367_CONS_SUB_SUB status=full; seq_ab_match=125; sminR=40.0; ali_length=125; reverse_match=tagacctcggggtggccgaagaacca; seq_a_deletion=0; sample=I; forward_match=ggtacaggtagaactgtttatcctcc; forward_primer=ggwacwggwtgaacwgtwtayccycc; reverse_primer=tanacytcnggrtgnccraaraayca; sminL=40.0; forward_score=98.0; seq_a_mismatch=0; forward_tag=atcacg; seq_b_mismatch=0; score=497.647038546; seq_a_single=126; score_norm=3.98117630837; reverse_score=104.0; direction=forward; seq_b_insertion=0; experiment=Depredation; seq_b_deletion=0; seq_a_insertion=0; seq_length_ori=377; reverse_tag=acttga; seq_length=313; mode=alignment; seq_b_single=126; 
+atcagctagtaacatagctcacgctggaccatctgttgatctggctattttctcccttca
+tttagccggtgtttcatcaattttagcctcaattaactttattacaaccattatcaacat
+aaaaccaccagctatttcccaatatcaaacacctttatttgtttgatctatccttgtaac
+tactattctccttctcctttcacttccagtccttgcagcaggaattacaatattacttac
+agatcgcaaccttaataccacattctttgatcctgcaggtgtgggagacccaattcttta
+ccaacacctattc
+>MISEQ01:208:000000000-BFL3R:1:1101:14316:3375_CONS_SUB_SUB_CMP ali_length=125; seq_ab_match=125; sminR=40.0; reverse_match=tagacttcggggtggccaaaaaatca; seq_a_deletion=0; sample=I; forward_match=ggtactggttgaactgtttaccctcc; forward_primer=ggwacwggwtgaacwgtwtayccycc; reverse_primer=tanacytcnggrtgnccraaraayca; sminL=40.0; forward_score=104.0; seq_a_mismatch=0; forward_tag=atcacg; seq_b_mismatch=0; score=499.693053849; seq_a_single=126; score_norm=3.9975444308; reverse_score=104.0; direction=reverse; seq_b_insertion=0; experiment=Depredation; seq_b_deletion=0; seq_a_insertion=0; seq_length_ori=377; reverse_tag=acttga; seq_length=313; status=full; mode=alignment; seq_b_single=126; 
+attagctagtaacatagctcacgctggaccatctgttgatctggctattttctcccttca
+tttagccggtgtttcatcaattttagcctcaattaactttattacaaccattatcaacat
+aaaaccaccagctatttcccaatatcaaacacctttatttgtttgatctattcttgtaac
+tactattctccttctcctttcacttccagtccttgcagcaggaattacaatattacttac
+agatcgcaaccttaataccacattctttgaccctgcaggtgggggagacccaattcttta
+ccaacacctattc
+>MISEQ01:208:000000000-BFL3R:1:1101:19983:3409_CONS_SUB_SUB status=full; seq_ab_match=125; sminR=40.0; ali_length=125; reverse_match=tagacttcggggtggccgaagaatca; seq_a_deletion=0; sample=I; forward_match=ggtactggatgaacagtatatcctcc; forward_primer=ggwacwggwtgaacwgtwtayccycc; reverse_primer=tanacytcnggrtgnccraaraayca; sminL=40.0; forward_score=104.0; seq_a_mismatch=0; forward_tag=atcacg; seq_b_mismatch=0; score=499.325431235; seq_a_single=126; score_norm=3.99460344988; reverse_score=104.0; direction=forward; seq_b_insertion=0; experiment=Depredation; seq_b_deletion=0; seq_a_insertion=0; seq_length_ori=377; reverse_tag=acttga; seq_length=313; mode=alignment; seq_b_single=126; 
+attagctagcaacttagcacatgctggaccatctgttgatttagccattttctctcttca
+cttagctggtgtttcatcaattttagcttcaattaattttattacaactattattaatat
+aaaaccaccagccatttcccaatatcaaacaccattatttgtttgatctattcttgtaac
+tactattcttcttctcctttcacttccagttcttgcagcagggattacaatattacttac
+agatcgtaacctcaataccacattctttgatcctgcaggtggaggagatccaatccttta
+tcaacatttattt
+>MISEQ01:208:000000000-BFL3R:1:1101:20565:3472_CONS_SUB_SUB_CMP ali_length=125; seq_ab_match=125; sminR=40.0; reverse_match=tagacctcgggatggccgaagaacca; seq_a_deletion=0; sample=I; forward_match=ggaactggttgaactgtttacccccc; forward_primer=ggwacwggwtgaacwgtwtayccycc; reverse_primer=tanacytcnggrtgnccraaraayca; sminL=40.0; forward_score=104.0; seq_a_mismatch=0; forward_tag=atcacg; seq_b_mismatch=0; score=494.584493472; seq_a_single=126; score_norm=3.95667594777; reverse_score=104.0; direction=reverse; seq_b_insertion=0; experiment=Depredation; seq_b_deletion=0; seq_a_insertion=0; seq_length_ori=377; reverse_tag=acttga; seq_length=313; status=full; mode=alignment; seq_b_single=126; 
+attagctagtaacatagctcacgctggaccatctgttgatctggctattttctcccttca
+tttagccggtgtttcatcaattttagcctcaattaactttattacaaccattatcaacat
+aaaaccaccagctatttcccaatatcaaacacctttatttgtttgatctattcttgtaac
+tactattctccttctcctttcacttccagtccttgcagcaggaattacaatattacttac
+agatcgcaaccttaataccacattctttgatcctgcaggtgggggagacccaattcttta
+ccaacacctattc
+>MISEQ01:208:000000000-BFL3R:1:1101:11734:3522_CONS_SUB_SUB_CMP ali_length=125; seq_ab_match=125; sminR=40.0; reverse_match=tagacttcggggtggccaaagaacca; seq_a_deletion=0; sample=I; forward_match=ggaacaggatgaactgtatatcctcc; forward_primer=ggwacwggwtgaacwgtwtayccycc; reverse_primer=tanacytcnggrtgnccraaraayca; sminL=40.0; forward_score=104.0; seq_a_mismatch=0; forward_tag=atcacg; seq_b_mismatch=0; score=499.431587188; seq_a_single=126; score_norm=3.9954526975; reverse_score=104.0; direction=reverse; seq_b_insertion=0; experiment=Depredation; seq_b_deletion=0; seq_a_insertion=0; seq_length_ori=377; reverse_tag=acttga; seq_length=313; status=full; mode=alignment; seq_b_single=126; 
+attagctagtaacatagctcacgctggaccatctgttgatctggctattttctcccttca
+tttagccggtgtttcatcaattttagcctcaattaactttattacaaccattatcaacat
+aaaaccaccagctatttcccaatatcaaacacctttatttgtttgatctattcttgtaac
+tactatcctccttctcctttcacttccagtccttgcagcaggaattacaatattacttac
+agatcgcaaccttaataccacattctttgatcctgcaggtgggggagacccaattcttta
+ccaacacctattc
+>MISEQ01:208:000000000-BFL3R:1:1101:12512:1738_CONS_SUB_SUB_CMP ali_length=125; seq_ab_match=125; sminR=40.0; reverse_match=tagacctcggggtggccgaagaacca; seq_a_deletion=0; sample=I; forward_match=ggaactggatgaactgtttatcctcc; forward_primer=ggwacwggwtgaacwgtwtayccycc; reverse_primer=tanacytcnggrtgnccraaraayca; sminL=40.0; forward_score=104.0; seq_a_mismatch=0; forward_tag=atcacg; seq_b_mismatch=0; score=499.701436232; seq_a_single=126; score_norm=3.99761148985; reverse_score=104.0; direction=reverse; seq_b_insertion=0; experiment=Depredation; seq_b_deletion=0; seq_a_insertion=0; seq_length_ori=377; reverse_tag=acttga; seq_length=313; status=full; mode=alignment; seq_b_single=126; 
+attagctagtaacatagctcacgctggaccatctgttgatctggctattttctcccttca
+tttagccggtgtttcatcaattttagcctcaattaactttattacaaccattatcaacat
+aaaaccaccagctatttcccaatatcaaacacctttatttgtttgatctattcttgtaac
+tactattctccttctcctttcacttccagtccttgcagcaggaattacaatattacttac
+agatcgcaaccttaataccacattctttgatcctgcaggtgggggagacccaattcttta
+ccaacacctattc
+>MISEQ01:208:000000000-BFL3R:1:1101:16542:3667_CONS_SUB_SUB status=full; seq_ab_match=125; sminR=40.0; ali_length=125; reverse_match=tagacctcggggtggccaaagaatca; seq_a_deletion=0; sample=I; forward_match=ggtactggttgaactgtttatcctcc; forward_primer=ggwacwggwtgaacwgtwtayccycc; reverse_primer=tanacytcnggrtgnccraaraayca; sminL=40.0; forward_score=104.0; seq_a_mismatch=0; forward_tag=atcacg; seq_b_mismatch=0; score=499.162352477; seq_a_single=126; score_norm=3.99329881981; reverse_score=104.0; direction=forward; seq_b_insertion=0; experiment=Depredation; seq_b_deletion=0; seq_a_insertion=0; seq_length_ori=377; reverse_tag=acttga; seq_length=313; mode=alignment; seq_b_single=126; 
+attagctagtaacatagctcacgctggaccatctgttgatctggctattttctcccttca
+tttagccggtgtttcatcaattttagcctcaattaactttattacaaccattatcaacat
+aaaaccaccagctatttcccaatatcaaacacctttatttgtttgatctattcttgtaac
+tactattctccttctcctttcacttccagtccttgcagcaggaattacaatattacttac
+agatcgcaaccttaataccacattctttgatcctgcaggtgggggagacccaattcttta
+ccaacacctattc
+>MISEQ01:208:000000000-BFL3R:1:1101:23240:3667_CONS_SUB_SUB status=full; seq_ab_match=125; sminR=40.0; ali_length=125; reverse_match=tagacttcggggtgaccgaagaatca; seq_a_deletion=0; sample=I; forward_match=ggaactggttgaactgtttaccctcc; forward_primer=ggwacwggwtgaacwgtwtayccycc; reverse_primer=tanacytcnggrtgnccraaraayca; sminL=40.0; forward_score=104.0; seq_a_mismatch=0; forward_tag=atcacg; seq_b_mismatch=0; score=499.462113695; seq_a_single=126; score_norm=3.99569690956; reverse_score=104.0; direction=forward; seq_b_insertion=0; experiment=Depredation; seq_b_deletion=0; seq_a_insertion=0; seq_length_ori=377; reverse_tag=acttga; seq_length=313; mode=alignment; seq_b_single=126; 
+attagctagcaacttagcacatgctggaccatctgttgatttagccattttctctcttca
+cttagctggtgtttcatcaattttagcttcaattaattttattacaactattattaatat
+aaaaccaccagccatttcccaatatcaaacaccattatttgtttgatctattcttgtaac
+tactattcttcttctcctttcacctccagttcttgcagcagggattacaatattacttac
+agatcgtaacctcaataccacattctttgatcctgcaggtggaggagatccaatccttta
+tcaacatttattc
+>MISEQ01:208:000000000-BFL3R:1:1101:16384:3671_CONS_SUB_SUB status=full; seq_ab_match=125; sminR=40.0; ali_length=125; reverse_match=tagacctcggggtggccgaagaacca; seq_a_deletion=0; sample=I; forward_match=ggaacaggttgaactgtttatccccc; forward_primer=ggwacwggwtgaacwgtwtayccycc; reverse_primer=tanacytcnggrtgnccraaraayca; sminL=40.0; forward_score=104.0; seq_a_mismatch=0; forward_tag=atcacg; seq_b_mismatch=0; score=499.39471377; seq_a_single=126; score_norm=3.99515771016; reverse_score=104.0; direction=forward; seq_b_insertion=0; experiment=Depredation; seq_b_deletion=0; seq_a_insertion=0; seq_length_ori=377; reverse_tag=acttga; seq_length=313; mode=alignment; seq_b_single=126; 
+attagctagtaacctagcacatgctggaccatctgttgatttagctattttctctcttca
+cttagccggtatttcatcaattttagcttcaattaattttattacaacaattattaacat
+aaaaccaccagccatttcacaatatcaaacaccattatttgtttgatctattcttgtaac
+cactattcttcttctcctctcacttccagttcttgcagcagggattacaatactacttac
+agatcgtaacctcaacactacattctttgaccctgcgggtggaggagatccaattcttta
+tcaacatttattt
+>MISEQ01:208:000000000-BFL3R:1:1101:15059:1873_CONS_SUB_SUB_CMP ali_length=125; seq_ab_match=125; sminR=40.0; reverse_match=tagacttcggggtggccgaagaatca; seq_a_deletion=0; sample=I; forward_match=ggaacaggttgaactgtttatcctcc; forward_primer=ggwacwggwtgaacwgtwtayccycc; reverse_primer=tanacytcnggrtgnccraaraayca; sminL=40.0; forward_score=104.0; seq_a_mismatch=0; forward_tag=atcacg; seq_b_mismatch=0; score=499.163558312; seq_a_single=126; score_norm=3.9933084665; reverse_score=104.0; direction=reverse; seq_b_insertion=0; experiment=Depredation; seq_b_deletion=0; seq_a_insertion=0; seq_length_ori=377; reverse_tag=acttga; seq_length=313; status=full; mode=alignment; seq_b_single=126; 
+attagctagtaacatagctcacgctggaccatctgttgatctggctattttctcccttca
+tttagccggtgtttcatcaattttagcctcaattaactttattacaaccattatcaacat
+aaaaccaccagctatttcccaatatcaaacacctttatttgtttgatctattcttgtaac
+tactattctccttctcctttcacttccagtccttgcagcaggaattacaatattacttac
+agatcgcaaccttaataccacattctttgatcctgcaggtgggggagacccaattcttta
+ccaacacctattc
+>MISEQ01:208:000000000-BFL3R:1:1101:18192:1891_CONS_SUB_SUB_CMP ali_length=125; seq_ab_match=125; sminR=40.0; reverse_match=tagacctcgggatggccgaaaaatca; seq_a_deletion=0; sample=I; forward_match=ggaacaggatgaactgtttaccctcc; forward_primer=ggwacwggwtgaacwgtwtayccycc; reverse_primer=tanacytcnggrtgnccraaraayca; sminL=40.0; forward_score=104.0; seq_a_mismatch=0; forward_tag=atcacg; seq_b_mismatch=0; score=499.661561825; seq_a_single=126; score_norm=3.9972924946; reverse_score=104.0; direction=reverse; seq_b_insertion=0; experiment=Depredation; seq_b_deletion=0; seq_a_insertion=0; seq_length_ori=377; reverse_tag=acttga; seq_length=313; status=full; mode=alignment; seq_b_single=126; 
+attagctagtaacatagctcacgctggaccatctgttgatctggctattttctcccttca
+tttagccggtgtttcatcaattttagcctcaattaactttattacaaccattatcaacat
+aaaaccaccagctatttcccaatatcaaacacctttatttgtttgatctattcttgtaac
+tactattctccttctcctttcacttccagtccttgcagcaggaattacaatattacttac
+agatcgcaaccttaataccacattctttgatcctgcaggtgggggagacccaattcttta
+ccaacacctattc
+>MISEQ01:208:000000000-BFL3R:1:1101:14857:2051_CONS_SUB_SUB status=full; seq_ab_match=125; sminR=40.0; ali_length=125; reverse_match=tagacctcggggtggccgaagaacca; seq_a_deletion=0; sample=I; forward_match=ggtacaggatgaactgtttacccccc; forward_primer=ggwacwggwtgaacwgtwtayccycc; reverse_primer=tanacytcnggrtgnccraaraayca; sminL=40.0; forward_score=104.0; seq_a_mismatch=0; forward_tag=atcacg; seq_b_mismatch=0; score=499.26339064; seq_a_single=126; score_norm=3.99410712512; reverse_score=104.0; direction=forward; seq_b_insertion=0; experiment=Depredation; seq_b_deletion=0; seq_a_insertion=0; seq_length_ori=377; reverse_tag=acttga; seq_length=313; mode=alignment; seq_b_single=126; 
+attagctagcaacttagcacatgctggaccatctgttgatttagccattttctctcttca
+cttagctggtgtttcatcaattttagcttcaattaattttattacaactattattaatat
+aaaaccaccagccatttcccaatatcaaacaccattatttgtttgatctattcttgtaac
+tactattcttcttctcctttcacttccagttcttgcagcagggattacaatattacttac
+agatcgtaacctcaataccacattctttgatcctgcaggtggaggagatccaatccttta
+tcaacatttattt
+>MISEQ01:208:000000000-BFL3R:1:1101:18121:2107_CONS_SUB_SUB_CMP ali_length=125; seq_ab_match=125; sminR=40.0; reverse_match=tagacctcggggtggccgaagaatca; seq_a_deletion=0; sample=I; forward_match=ggaactggatgaactgtttatcctcc; forward_primer=ggwacwggwtgaacwgtwtayccycc; reverse_primer=tanacytcnggrtgnccraaraayca; sminL=40.0; forward_score=104.0; seq_a_mismatch=0; forward_tag=atcacg; seq_b_mismatch=0; score=498.280091227; seq_a_single=126; score_norm=3.98624072982; reverse_score=104.0; direction=reverse; seq_b_insertion=0; experiment=Depredation; seq_b_deletion=0; seq_a_insertion=0; seq_length_ori=377; reverse_tag=acttga; seq_length=313; status=full; mode=alignment; seq_b_single=126; 
+attagctagtaacatagctcacgctggaccatctgttgatctggctattttctcccttca
+tttagccggtgtttcatcaattttagcctcaattaactttattacaaccattatcaacat
+aaaaccaccagctatttcccaatatcaaacacctttatttgtttgatctattcttgtaac
+tactattctccttctcctttcacttccagtccttgcagcaggaattacaatattacttac
+agatcgcaaccttaataccacattctttgatcctgcaggtgggggagacccaattcttta
+ccaacacctattc
+>MISEQ01:208:000000000-BFL3R:1:1101:11173:2115_CONS_SUB_SUB_CMP ali_length=125; seq_ab_match=124; sminR=40.0; reverse_match=tagacctcggtgtggccgaagaacca; seq_a_deletion=0; sample=I; forward_match=ggaactggttgaactgtttaccctcc; forward_primer=ggwacwggwtgaacwgtwtayccycc; reverse_primer=tanacytcnggrtgnccraaraayca; sminL=40.0; forward_score=104.0; seq_a_mismatch=1; forward_tag=atcacg; seq_b_mismatch=0; score=475.378104511; seq_a_single=126; score_norm=3.80302483609; reverse_score=98.0; direction=reverse; seq_b_insertion=0; experiment=Depredation; seq_b_deletion=0; seq_a_insertion=0; seq_length_ori=377; reverse_tag=acttga; seq_length=313; status=full; mode=alignment; seq_b_single=126; 
+attagctagtaacatagctcacgctggaccatctgttgatctagctattttctcccttca
+tttagccggtgtttcatcaattttagcctcaattaactttattacaaccattatcaacat
+aaaaccaccagctatttcccaatatcaaacacctttatttgtttgatctattcttgtaac
+tactattctccttctcctttcacttccagtccttgcagcaggaattacaatattacttac
+agatcgcaaccttaataccacattctttgatcctgcaggtgggggagacccaattcttta
+ccaacacctattc
+>MISEQ01:208:000000000-BFL3R:1:1101:17202:2117_CONS_SUB_SUB status=full; seq_ab_match=125; sminR=40.0; ali_length=125; reverse_match=tagacttcggggtggccgaagaacca; seq_a_deletion=0; sample=I; forward_match=ggtacaggatgaactgtatatccccc; forward_primer=ggwacwggwtgaacwgtwtayccycc; reverse_primer=tanacytcnggrtgnccraaraayca; sminL=40.0; forward_score=104.0; seq_a_mismatch=0; forward_tag=atcacg; seq_b_mismatch=0; score=499.714028655; seq_a_single=126; score_norm=3.99771222924; reverse_score=104.0; direction=forward; seq_b_insertion=0; experiment=Depredation; seq_b_deletion=0; seq_a_insertion=0; seq_length_ori=377; reverse_tag=acttga; seq_length=313; mode=alignment; seq_b_single=126; 
+attagctagtaacatagctcacgctggaccatctgttgatctggctattttctcccttca
+tttagccggtgtttcatcaattttagcctcaattaactttattacaaccattatcaacat
+aaaaccactagctatttcccaatatcaaacacctttatttgtttgatctattcttgtaac
+tactattctccttctcctttcacttccagtccttgcagcaggaattacaatattacttac
+agatcgcaaccttaataccacattctttgatcctgcaggtgggggagacccaattcttta
+ccaacacctattc
+>MISEQ01:208:000000000-BFL3R:1:1101:18112:2277_CONS_SUB_SUB status=full; seq_ab_match=125; sminR=40.0; ali_length=125; reverse_match=tagacctcggggtggccgaagaacca; seq_a_deletion=0; sample=I; forward_match=ggaactggatgaactgtttatcctcc; forward_primer=ggwacwggwtgaacwgtwtayccycc; reverse_primer=tanacytcnggrtgnccraaraayca; sminL=40.0; forward_score=104.0; seq_a_mismatch=0; forward_tag=atcacg; seq_b_mismatch=0; score=499.68105362; seq_a_single=126; score_norm=3.99744842896; reverse_score=104.0; direction=forward; seq_b_insertion=0; experiment=Depredation; seq_b_deletion=0; seq_a_insertion=0; seq_length_ori=377; reverse_tag=acttga; seq_length=313; mode=alignment; seq_b_single=126; 
+attagctagtaaaatagctcacgctggaccatctgttgatctggctattttctcccttca
+tttagccggtgtttcatcaattttagcctcaattaactttattacaaccattatcaacat
+aaaaccaccagctatttcccaatatcaaacacctttatttgtttgatctattcttgtaac
+tactattctccttctcctttcacttccagtccttgcagcaggaattacaatattacttac
+agatcgcaaccttaataccacattctttgatcctgcaggtgggggagacccaattcttta
+ccaacacctattc
+>MISEQ01:208:000000000-BFL3R:1:1101:13615:2352_CONS_SUB_SUB status=full; seq_ab_match=125; sminR=40.0; ali_length=125; reverse_match=tagacctcggggtggccgaagaatca; seq_a_deletion=0; sample=I; forward_match=ggaactggatgaactgtatacccccc; forward_primer=ggwacwggwtgaacwgtwtayccycc; reverse_primer=tanacytcnggrtgnccraaraayca; sminL=40.0; forward_score=104.0; seq_a_mismatch=0; forward_tag=atcacg; seq_b_mismatch=0; score=499.722283058; seq_a_single=126; score_norm=3.99777826446; reverse_score=104.0; direction=forward; seq_b_insertion=0; experiment=Depredation; seq_b_deletion=0; seq_a_insertion=0; seq_length_ori=377; reverse_tag=acttga; seq_length=313; mode=alignment; seq_b_single=126; 
+attagctagtaacatagctcacgctggaccatctgttgatctggctattttctcccttca
+tttagccggtgtttcatcaattttagcctcaattaactttattacaaccattatcaacat
+aaaaccaccagctatttcccaatatcaaacacctttatttgtttgatctattcttgtaac
+tactattctccttctcctttcacttccagtccttgcagcaggaattacaatattacttac
+agatcgcaaccttaataccacattctttgatcctgcaggtggggaagacccaattcttta
+ccaacacctattc
+>MISEQ01:208:000000000-BFL3R:1:1101:18963:2375_CONS_SUB_SUB status=full; seq_ab_match=125; sminR=40.0; ali_length=125; reverse_match=tagacctcggggtggccgaagaatca; seq_a_deletion=0; sample=I; forward_match=ggtactggatgaactgtttacccccc; forward_primer=ggwacwggwtgaacwgtwtayccycc; reverse_primer=tanacytcnggrtgnccraaraayca; sminL=40.0; forward_score=104.0; seq_a_mismatch=0; forward_tag=atcacg; seq_b_mismatch=0; score=499.113207291; seq_a_single=126; score_norm=3.99290565833; reverse_score=104.0; direction=forward; seq_b_insertion=0; experiment=Depredation; seq_b_deletion=0; seq_a_insertion=0; seq_length_ori=377; reverse_tag=acttga; seq_length=313; mode=alignment; seq_b_single=126; 
+attagctagtaacatagctcacgctggaccatctgttgatctggctattttctcccttca
+tttagccggtgtttcatcaattttagcctcaattaactttattacaaccattatcaacat
+aaaaccaccagctatttcccaatatcaaacacctttatttgtttgatctattcttgtaac
+tactattctccttctcctttcacttccagtccttgcagcaggaattacaatattacttac
+agatcgcaaccttaataccacattctttgatcctgcaggtgggggagacccaattcttta
+ccaacacctattc
+>MISEQ01:208:000000000-BFL3R:1:1101:20589:2442_CONS_SUB_SUB status=full; seq_ab_match=125; sminR=40.0; ali_length=125; reverse_match=tagacttcggggtggccgaagaatca; seq_a_deletion=0; sample=I; forward_match=ggtactggatgaactgtttatcctcc; forward_primer=ggwacwggwtgaacwgtwtayccycc; reverse_primer=tanacytcnggrtgnccraaraayca; sminL=40.0; forward_score=104.0; seq_a_mismatch=0; forward_tag=atcacg; seq_b_mismatch=0; score=499.688569121; seq_a_single=126; score_norm=3.99750855297; reverse_score=104.0; direction=forward; seq_b_insertion=0; experiment=Depredation; seq_b_deletion=0; seq_a_insertion=0; seq_length_ori=377; reverse_tag=acttga; seq_length=313; mode=alignment; seq_b_single=126; 
+attagctagtaacatagctcacgctggaccatctgttgatctggctattttctcccttca
+tttagccggtgtttcatcaattttagcctcaattaactttattacaaccattatcaacat
+aaaaccaccagctatttcccaatatcaaacacctttatttgtttgatctattcttgtaac
+tactattctccttctcctttcacttccagtccttgcagcaggaattacaatattacttac
+agatcgcaaccttaataccacattctttgatcctgcaggtgggggagacccaattcttta
+ccaacacctattc
+>MISEQ01:208:000000000-BFL3R:1:1101:13269:2524_CONS_SUB_SUB_CMP ali_length=125; seq_ab_match=125; sminR=40.0; reverse_match=tagacctcggggtggccgaagaacca; seq_a_deletion=0; sample=I; forward_match=ggtactggttgaactgtatatcctcc; forward_primer=ggwacwggwtgaacwgtwtayccycc; reverse_primer=tanacytcnggrtgnccraaraayca; sminL=40.0; forward_score=104.0; seq_a_mismatch=0; forward_tag=atcacg; seq_b_mismatch=0; score=497.741835008; seq_a_single=126; score_norm=3.98193468006; reverse_score=104.0; direction=reverse; seq_b_insertion=0; experiment=Depredation; seq_b_deletion=0; seq_a_insertion=0; seq_length_ori=377; reverse_tag=acttga; seq_length=313; status=full; mode=alignment; seq_b_single=126; 
+attagctagtaacatagctcacgctggaccatctgttgatctggctattttctcccttca
+tttagccggtgtttcatcaattttagcctcaattaactttattacaaccattatcaacat
+aaaaccaccagctatttcccaatatcgaacacctttatttgtttgatctattcttgtaac
+tactatcctccttctcctttcacttccagtccttgcagcaggaattacaatattacttac
+agatcgcaaccttaataccacattctttgatcctgcaggtgggggagacccaattctcta
+ccaacacctattc
+>MISEQ01:208:000000000-BFL3R:1:1101:17290:2541_CONS_SUB_SUB status=full; seq_ab_match=125; sminR=40.0; ali_length=125; reverse_match=tagacttcggggtggccgaagaacca; seq_a_deletion=0; sample=I; forward_match=ggtactggttgaactgtttatccccc; forward_primer=ggwacwggwtgaacwgtwtayccycc; reverse_primer=tanacytcnggrtgnccraaraayca; sminL=40.0; forward_score=104.0; seq_a_mismatch=0; forward_tag=atcacg; seq_b_mismatch=0; score=498.665742402; seq_a_single=126; score_norm=3.98932593922; reverse_score=104.0; direction=forward; seq_b_insertion=0; experiment=Depredation; seq_b_deletion=0; seq_a_insertion=0; seq_length_ori=377; reverse_tag=acttga; seq_length=313; mode=alignment; seq_b_single=126; 
+attagctagtaacatagctcacgctggaccatctgttgatctggctattttctcccttca
+tttagccggtgtttcatcaattttagcctcaattagctttattacaaccattatcaacat
+aaaaccaccagctatttcccaatatcaaacacctttatttgtttgatctattcttgtaac
+tactattctccttctcctttcacttccagtccttgcagcaggaattacaatattacttac
+agatcgcaaccttaataccacattctttgaccctgcaggtgggggagacccaattcttta
+ccaacacctattc
+>MISEQ01:208:000000000-BFL3R:1:1101:20532:2592_CONS_SUB_SUB_CMP ali_length=125; seq_ab_match=125; sminR=40.0; reverse_match=tagacctcggggtggccgaagaacca; seq_a_deletion=0; sample=I; forward_match=ggtacaggatgaactgtttacccccc; forward_primer=ggwacwggwtgaacwgtwtayccycc; reverse_primer=tanacytcnggrtgnccraaraayca; sminL=40.0; forward_score=104.0; seq_a_mismatch=0; forward_tag=atcacg; seq_b_mismatch=0; score=494.521867215; seq_a_single=126; score_norm=3.95617493772; reverse_score=104.0; direction=reverse; seq_b_insertion=0; experiment=Depredation; seq_b_deletion=0; seq_a_insertion=0; seq_length_ori=377; reverse_tag=acttga; seq_length=313; status=full; mode=alignment; seq_b_single=126; 
+attagctagtaacatagctcacgctggaccatctgttgatctggctattttctcccttca
+tttagccggtgtttcatcaattttagcctcaattaactttattacgaccattatcaacat
+aaaaccaccagctatttcccaatatcaaacacctttatttgtttgatctattcttgtaac
+tactattctccttctcctttcacttccagtccttgcagcaggaattacaatattacttac
+agatcgcaaccttaataccacattctttgatcctgcaggtgggggagacccaattcttta
+ccaacacctattc
+>MISEQ01:208:000000000-BFL3R:1:1101:12438:2678_CONS_SUB_SUB status=full; seq_ab_match=125; sminR=40.0; ali_length=125; reverse_match=tagacttcggggtggccgaagaacca; seq_a_deletion=0; sample=I; forward_match=ggaactggttgaacagtttatccccc; forward_primer=ggwacwggwtgaacwgtwtayccycc; reverse_primer=tanacytcnggrtgnccraaraayca; sminL=40.0; forward_score=104.0; seq_a_mismatch=0; forward_tag=atcacg; seq_b_mismatch=0; score=499.302618283; seq_a_single=126; score_norm=3.99442094626; reverse_score=104.0; direction=forward; seq_b_insertion=0; experiment=Depredation; seq_b_deletion=0; seq_a_insertion=0; seq_length_ori=377; reverse_tag=acttga; seq_length=313; mode=alignment; seq_b_single=126; 
+attagctagtaacatagctcacgctggaccatctgttgatctggctattttctcccttca
+tttagccggtgtttcatcaattttagcctcaattaactttattacaaccattatcaacat
+aaaaccaccagctatttcccaatatcaaacacctttatttgtttgatctattcttgtaac
+tactattctccttctcctttcacttccagtccttgcagcaggaattacaatattacttac
+agatcgcaaccttaataccacattctttgatcctgcaggtgggggagacccaattcttta
+ccaacacctattc
+>MISEQ01:208:000000000-BFL3R:1:1101:13053:2731_CONS_SUB_SUB_CMP ali_length=125; seq_ab_match=125; sminR=40.0; reverse_match=tagacttcggggtggccaaagaatca; seq_a_deletion=0; sample=I; forward_match=ggtacaggatgaacagtatacccccc; forward_primer=ggwacwggwtgaacwgtwtayccycc; reverse_primer=tanacytcnggrtgnccraaraayca; sminL=40.0; forward_score=104.0; seq_a_mismatch=0; forward_tag=atcacg; seq_b_mismatch=0; score=499.106024851; seq_a_single=126; score_norm=3.99284819881; reverse_score=104.0; direction=reverse; seq_b_insertion=0; experiment=Depredation; seq_b_deletion=0; seq_a_insertion=0; seq_length_ori=377; reverse_tag=acttga; seq_length=313; status=full; mode=alignment; seq_b_single=126; 
+attagctagtaacatagctcacgctggaccatctgttgatctggctattttctcccttca
+tttagccggtgtttcatcaattttagcctcaattaactttattacaaccattatcaacat
+aaaaccaccagctatttcccaatatcaaacacctttatttgtttgatctattcttgtaac
+tactattctccttctcctttcacttccagtccttgcagcaggaattacaatattacttac
+agatcgcaaccttaataccacattctttgaccctgcaggtgggggagacccaattcttta
+ccaacacctattc
+>MISEQ01:208:000000000-BFL3R:1:1101:15383:2771_CONS_SUB_SUB status=full; seq_ab_match=125; sminR=40.0; ali_length=125; reverse_match=tagacttcggggtggccgaaaaatca; seq_a_deletion=0; sample=I; forward_match=ggtactggatgaacagtttacccccc; forward_primer=ggwacwggwtgaacwgtwtayccycc; reverse_primer=tanacytcnggrtgnccraaraayca; sminL=40.0; forward_score=104.0; seq_a_mismatch=0; forward_tag=atcacg; seq_b_mismatch=0; score=482.636207405; seq_a_single=126; score_norm=3.86108965924; reverse_score=104.0; direction=forward; seq_b_insertion=0; experiment=Depredation; seq_b_deletion=0; seq_a_insertion=0; seq_length_ori=377; reverse_tag=acttga; seq_length=313; mode=alignment; seq_b_single=126; 
+attagctagtaacatagctcacgctggaccatctgttgatctggctattttctcccttca
+tttagccggtgtttcatcaattttagcctcaattaactttattacaaccattatcaacat
+aaaaccaccagctatttcccgatatcaaacacctttatttgtttgatctattcttgtaac
+tactattctccttctcctttcacttccagtccttgcagcaggaattacaatatgacttac
+agatcgcaaccttaataccacattctttgaccctgcaggtgggggagacccaattcttta
+ccaacacctattc

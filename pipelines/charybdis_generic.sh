@@ -168,6 +168,7 @@ JOB_ID1=$(sbatch $GCL_BIN""/mergeReads.slurm \
 	$PREFIX $INDIR $OUTDIR $CHUNKS $GCL_BIN | grep -oh "[0-9]*")
 echo Submitted job: $JOB_ID1
 
+
 # Filter Reads
 JOB_ID2=$(sbatch --dependency=afterany:$JOB_ID1 \
 	$GCL_BIN""/filterReads.slurm \
@@ -187,12 +188,12 @@ then
 	# Taxonomic Assignment with BLAST
 	JOB_ID4B=$(sbatch --dependency=afterany:$JOB_ID3 \
 		$GCL_BIN""/BlastMeta.slurm \
-		$PREFIX $INDIR $OUTDIR $CHUNKS 0.7 \
+ 		$PREFIX $INDIR $OUTDIR $CHUNKS 0.7 \
 		$BLAST_DB $GCL_BIN $TAXON_DIR $BLAST_IGNORE \
 		| grep -oh "[0-9]*")
 	echo Submitted job: $JOB_ID4B
 
-	# Create OTUvsTubes
+     	# Create OTUvsTubes
 	JOB_ID5B=$(sbatch --dependency=afterany:$JOB_ID4B \
 		$GCL_BIN""/OTUvsTube.slurm \
 		$PREFIX $INDIR $OUTDIR $TAXON_DIR $GCL_BIN blast\
@@ -201,8 +202,8 @@ then
 
 	# Add descriptive names to OTUvsTubes
 	JOB_ID6B=$(sbatch --dependency=afterany:$JOB_ID5B \
-		Rscript $GCL_BIN""/OTU_CVT_addSampleDescs.slurm \
-		$PREFIX $INDIR $OUTDIR blast \
+		$GCL_BIN""/OTU_CVT_addSampleDescs.slurm \
+		$PREFIX $INDIR $OUTDIR $GCL_BIN blast \
 		| grep -oh "[0-9]*")
 	echo Submitted job: $JOB_ID6B
 
@@ -219,6 +220,7 @@ fi
 # VSEARCH
 if [ "$VSEARCH_DB" != "" ]
 then
+
 	# Taxonomic Assignment with VSEARCH
 	JOB_ID4V=$(sbatch --dependency=afterany:$JOB_ID3 \
 		$GCL_BIN""/Vsearch.slurm \
@@ -235,7 +237,7 @@ then
 	
 	# Add descriptive names to OTUvsTubes
 	JOB_ID6V=$(sbatch --dependency=afterany:$JOB_ID5V \
-		Rscript $GCL_BIN""/OTU_CVT_addSampleDescs.slurm \
+		$GCL_BIN""/OTU_CVT_addSampleDescs.slurm \
 		$PREFIX $INDIR $OUTDIR vsearch \
 		| grep -oh "[0-9]*")
 	echo Submitted job: $JOB_ID6V
@@ -270,7 +272,7 @@ then
 	
 	# Add predator names to OTUvsTubes
 	JOB_ID6S=$(sbatch --dependency=afterany:$JOB_ID5S \
-		Rscript $GCL_BIN""/OTU_CVT_addSampleDescs.slurm \
+		$GCL_BIN""/OTU_CVT_addSampleDescs.slurm \
 		$PREFIX $INDIR $OUTDIR sap \
 		| grep -oh "[0-9]*")
 	echo Submitted job: $JOB_ID6S
