@@ -23,8 +23,9 @@ colnames <- colnames(CVT)
 count = 0
 lowest = 0
 for(c in colnames){
-        if (grepl("^(suborder)", c)){
-                lowest = count
+        if (grepl("^(suborder)", c)){   #try using something besides suborder such as number of samples to get the column number that ends the samples columns
+                			#need to reliably identify the column after the last sample in critters vs tubes (CVT)
+		lowest = count
         }
         count = count + 1
 }
