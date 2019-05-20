@@ -27,11 +27,11 @@ The computing environment may be a standard Linux workstation/laptop or an HPC u
 
 Using Charybdis is associated with a _project_, which has a unique name.
 This is required to simplify handling the paths of files created and accessed.
-In the following, <projname> refers to your unique project name.
+In the following, <\projname\> refers to your unique project name.
 
 When you see paths reference charybdis (i.e.: charybdis/bin),
 the absolute path to charybdis is left out since we can't know 
-where you downloaded it to. Similarly, <projname> as a directory name
+where you downloaded it to. Similarly, \<projname\> as a directory name
 could be located anywhere on your system.
 
 ### Download, setup BLAST nucleotide database
@@ -47,7 +47,7 @@ Download, decompress nucleotide (nt) database
 
 [Optional] Update COI filter.
 Before running this, you need to see how many GIs exist.
-Go to this link and note the number of database entries. We call that <NUM\_COI>.
+Go to this link and note the number of database entries. We call that \<NUM\_COI\>.
 Optional only because you could instead use the list provided with Charybdis. 
 
         cd ..
