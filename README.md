@@ -49,9 +49,18 @@ See the documentation on [BLAST databases](ftp://ftp.ncbi.nlm.nih.gov/blast/docu
 
 Download, decompress nucleotide (nt) database
 
-        cd ..../charybdis/data/blastdb
+        cd charybdis/data
+        mkdir blastdb
+        cd blastdb
         wget ftp://ftp.ncbi.nlm.nih.gov/blast/db/nt* 
         for a in `ls -1 nt*.tar.gz`; do gzip -dc $a | tar xf -; done
+
+Download NCBI taxonomy database (Warning: >100 GB!)
+
+        cd charybdis/data
+        mkdir taxo
+        cd taxo
+        wget ftp://ftp.ncbi.nih.gov/pub/taxonomy/*
 
 Create COI filter GI list.
 Before running this, you need to see how many GIs exist.
@@ -104,7 +113,15 @@ Your directory should like this:
         │   ├── <projname>_reverse.fastq
         └── └── <projname>.sampledescs.csv
 
+# Run pipeline
 
+        bash charybdis_generic.sh \
+            -p <projname> -i in -o out -n 20 \
+            -x 313 -g charybdis/bin \
+            -t charybdis/data/taxo \
+            -b charybdis/data/blastdb_coi \
+            -d charybdis/data/env.NCBI_NT_<MONTHYEARETC>.gi \
+            -c !!! NEED TO REMOVE THIS CHIMERA DEPENDENCY !!!
 
 
 ## Pipelines Directory
