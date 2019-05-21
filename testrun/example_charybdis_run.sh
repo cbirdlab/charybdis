@@ -2,7 +2,7 @@
 # See charybdis/charybdis_man.pdf for creating the needed databases
 # You will need to manually set the database paths below
 
-bash ../pipelines/charybdis_generic.sh \
+bash ../charybdis_generic.sh \
     -p TestData -i . -o out -n 20 \
     -x 313 -g ../bin \
     -t <Path to NCBI Taxonomy Database> \
