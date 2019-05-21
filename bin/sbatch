@@ -1,0 +1,23 @@
+# pseudo-sbatch so that the slurm scripts
+# can be run with or without slurm
+# even if sbatch was called in a pipeline/script.
+
+
+
+if command -v sbatch; then
+    # Run with sbatch
+    sbatch "$@"
+else
+    # Run with bash
+    # Need to remove sbatch options
+    ARGS=()
+    for var in "$@"; do
+        # Ignore options that start with a dash
+        if [[ "$var" != -* ]] ; then
+            ARGS+=("$var")
+            echo "$var"
+        fi
+    done
+
+    bash "${ARGS[@]}"
+fi
