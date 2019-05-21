@@ -34,7 +34,6 @@ the absolute path to charybdis is left out since we can't know
 where you downloaded it to. Similarly, \<projname\> as a directory name
 could be located anywhere on your system.
 
-<<<<<<< HEAD
 # Install dependencies
 
 Dependencies:
@@ -43,8 +42,6 @@ Dependencies:
 
         sudo apt-get install r-base sudo apt install ncbi-blast+
 
-=======
->>>>>>> e382172487ddd1222546555b16f387ff1e07326d
 ### Download, setup BLAST nucleotide database
 
 Note that we download the nucleotide database because we are working with COI sequences.
@@ -54,20 +51,11 @@ Download, decompress nucleotide (nt) database
 
         cd ..../charybdis/data/blastdb
         wget ftp://ftp.ncbi.nlm.nih.gov/blast/db/nt* 
-<<<<<<< HEAD
         for a in `ls -1 nt*.tar.gz`; do gzip -dc $a | tar xf -; done
 
-[Optional] Update COI filter GI list.
+Create COI filter GI list.
 Before running this, you need to see how many GIs exist.
 Go to this [link](https://www.ncbi.nlm.nih.gov/nuccore/?term=mitochondria+or+cytochrome+or+coi+or+co1+or+cox1+or+coxi+or+mitochondrial+genome+or+mitochondria+genome) and note the number of database entries. We call that \<NUM\_COI\>.
-=======
-        tar xvzf nt* 
-
-[Optional] Update COI filter.
-Before running this, you need to see how many GIs exist.
-Go to this link and note the number of database entries. We call that \<NUM\_COI\>.
->>>>>>> e382172487ddd1222546555b16f387ff1e07326d
-Optional only because you could instead use the list provided with Charybdis. 
 
         cd ..
         bash ../bin/get_mito_coi_gi_list.sh <NUM_COI>
@@ -75,25 +63,17 @@ Optional only because you could instead use the list provided with Charybdis.
 
 Filter BLAST database with list of GIs of COI sequences
 
-<<<<<<< HEAD
         blastdb_aliastool -db charybdis/data/blastdb/nt -gilist \
             mitochondrial_coi.NCBI_NT_<MONTHYEARETC>.gi \
             -dbtype nucl -out blastdb_coi -title "blastdb_coi"
 
-[Optional] Update environmental sequence GI list.
+Update environmental sequence GI list.
 Before running this, you need to see how many GIs exist.
 Go to this [link](https://www.ncbi.nlm.nih.gov/nuccore/?term=%22environmental+samples%22%5Borganism%5D+OR+metagenomes%5Borgn%5D+OR+sp%5BTitle%5D) and note the number of database entries. We call that \<NUM\_ENV\>.
 Optional only because you could instead use the list provided with Charybdis. 
 
         bash ../bin/get_env_gi_list.sh <NUM_ENV>
         mv env.NCBI_nucl.gi env.NCBI_NT_MAY2019.gi
-=======
-        blastdb_aliastool -db charybdis/data/blastdb/nt gilist \
-            mitochondrial_coi.NCBI_NT_<MONTHYEARETC>.gi \
-            -dbtype nucl -out blastdb_coi -title "blastdb_coi"
-        
-
->>>>>>> e382172487ddd1222546555b16f387ff1e07326d
 
 ### Get required data, setup directory
 
