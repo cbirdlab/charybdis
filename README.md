@@ -44,7 +44,7 @@ Dependencies:
 - [GenomeTools](https://github.com/genometools/genometools):
 - [Obitools](https://pythonhosted.org/OBITools/welcome.html#installing-the-obitools): 
 - [CROP](https://github.com/tingchenlab/CROP): Clustering Sequences for OTU Prediction
-- [Vsearch](wget https://github.com/torognes/vsearch/archive/v2.13.4.tar.gz): 
+- [Vsearch](https://github.com/torognes/vsearch/archive/v2.13.4.tar.gz): 
 
         sudo apt-get install r-base ncbi-blast+ genometools parallel 
         sudo apt-get install libcurl4-openssl-dev libxml2-dev
