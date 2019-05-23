@@ -61,6 +61,7 @@ Add the following to ~/.bashrc:
 
 Install CROP
 
+        cd ~/Downloads
         sudo apt-get install libgsl-dev
         git clone https://github.com/tingchenlab/CROP.git
         cd CROP
@@ -69,6 +70,7 @@ Install CROP
 
 Install Vsearch
 
+        cd ~/Downloads
         wget https://github.com/torognes/vsearch/archive/v2.13.4.tar.gz
         tar xzf v2.13.4.tar.gz
         cd vsearch-2.13.4
