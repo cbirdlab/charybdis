@@ -39,8 +39,47 @@ could be located anywhere on your system.
 Dependencies:
 - R: 
 - BLAST:
+- parallel:
+- [fastx-toolkit](http://hannonlab.cshl.edu/fastx_toolkit): 
+- [GenomeTools](https://github.com/genometools/genometools):
+- [Obitools](https://pythonhosted.org/OBITools/welcome.html#installing-the-obitools): 
+- [CROP](https://github.com/tingchenlab/CROP): Clustering Sequences for OTU Prediction
+- [Vsearch](wget https://github.com/torognes/vsearch/archive/v2.13.4.tar.gz): 
 
-        sudo apt-get install r-base sudo apt install ncbi-blast+
+        sudo apt-get install r-base sudo apt install ncbi-blast+ genometools parallel 
+        sudo apt-get install libcurl4-openssl-dev libxml2-dev
+
+Install Obitools
+
+        cd /usr/local/bin/
+        sudo wget https://git.metabarcoding.org/obitools/obitools/raw/master/get_obitools/get-obitools.py
+        sudo python get-obitools.py
+        
+Add the following to ~/.bashrc: 
+
+        export PATH="$PATH:/usr/local/bin/OBITools-1.2.13/export/bin"
+
+Install CROP
+
+        sudo apt-get install libgsl-dev
+        git clone https://github.com/tingchenlab/CROP.git
+        cd CROP
+        make
+        sudo cp CROPLinux /usr/local/bin/
+
+Install Vsearch
+
+        wget https://github.com/torognes/vsearch/archive/v2.13.4.tar.gz
+        tar xzf v2.13.4.tar.gz
+        cd vsearch-2.13.4
+        ./autogen.sh
+        ./configure
+        make 
+        sudo make install
+
+Install R packages: pracma, CHNOSZ, bold
+
+
 
 ### Download, setup BLAST nucleotide database
 
@@ -61,6 +100,12 @@ Download NCBI taxonomy database (Warning: >100 GB!)
         mkdir taxo
         cd taxo
         wget ftp://ftp.ncbi.nih.gov/pub/taxonomy/*
+        md5sum -c gi_taxid_nucl.dmp.gz.md5
+        gunzip gi_taxid_nucl.dmp.gz
+        md5sum -c gi_taxid_prot.dmp.gz.md5
+        gunzip gi_taxid_prot.dmp.gz
+        md5sum -c taxdump.tar.gz.md5
+        tar -zxf taxdump.tar.gz
 
 Create COI filter GI list.
 Before running this, you need to see how many GIs exist.
@@ -122,7 +167,6 @@ Your directory should like this:
             -b charybdis/data/blastdb_coi \
             -d charybdis/data/env.NCBI_NT_<MONTHYEARETC>.gi \
             -c !!! NEED TO REMOVE THIS CHIMERA DEPENDENCY !!!
-
 
 ## Pipelines Directory
 

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Pipeline for generic metabarcoding
-# For more details, see the GCL Metabarcoding manual 
+# For more details, see the GCL Metabarcoding manual
 # (should be included wherever this file was found)
 
 # Prerequisites:
@@ -27,7 +27,7 @@ TAXON_DIR=""    # -t  Directory with NCBI taxonomic database
 # Parse options
 while getopts ":p:i:o:n:b:d:v:f:c:s:x:g:t:e:" opt; do
 	case $opt in
-		p) 
+		p)
 			PREFIX=$OPTARG
 			;;
 		i)
@@ -39,12 +39,12 @@ while getopts ":p:i:o:n:b:d:v:f:c:s:x:g:t:e:" opt; do
 		n)
 			CHUNKS=$OPTARG
 			;;
-		b) 
+		b)
 			BLAST_DB=$OPTARG
 			;;
 		d)
 			BLAST_IGNORE=$OPTARG
-			;;	
+			;;
 		v)
 			VSEARCH_DB=$OPTARG
 			;;
@@ -137,7 +137,7 @@ then
 	exit 1
 else
 	BASEPAIRS_LOWER=$(($BASEPAIRS - 15))
-	BASEPAIRS_HIGHER=$(($BASEPAIRS + 15)) 
+	BASEPAIRS_HIGHER=$(($BASEPAIRS + 15))
 	echo "Basepairs: $BASEPAIRS"
 fi
 
@@ -164,54 +164,53 @@ awk '{print $2}' $INDIR""/$PREFIX"".barcodes.txt \
 	> $INDIR""/$PREFIX"".samples.txt
 
 # Merge Reads
-JOB_ID1=$(sbatch $GCL_BIN""/mergeReads.slurm \
-	$PREFIX $INDIR $OUTDIR $CHUNKS $GCL_BIN | grep -oh "[0-9]*")
+JOB_ID1=$($GCL_BIN""/sbatch $GCL_BIN""/mergeReads.slurm \
+	$PREFIX $INDIR $OUTDIR $CHUNKS $GCL_BIN | grep -oh "[0-9]*" | grep -oh '^[^ ]* ')
 echo Submitted job: $JOB_ID1
 
-
 # Filter Reads
-JOB_ID2=$(sbatch --dependency=afterany:$JOB_ID1 \
+JOB_ID2=$($GCL_BIN""/sbatch --dependency=afterany:$JOB_ID1 \
 	$GCL_BIN""/filterReads.slurm \
 	$PREFIX $INDIR $OUTDIR $CHUNKS \
-	$BASEPAIRS_LOWER $BASEPAIRS_HIGHER $CHIMERA_DB $GCL_BIN | grep -oh "[0-9]*")
+	$BASEPAIRS_LOWER $BASEPAIRS_HIGHER $CHIMERA_DB $GCL_BIN | grep -oh "[0-9]*" | grep -oh '^[^ ]* ')
 echo Submitted job: $JOB_ID2
 
 # Cluster into OTUs
-JOB_ID3=$(sbatch --dependency=afterany:$JOB_ID2 \
+JOB_ID3=$($GCL_BIN""/sbatch --dependency=afterany:$JOB_ID2 \
 	$GCL_BIN""/ClusterOTU.slurm \
-	$PREFIX $BASEPAIRS $INDIR $OUTDIR $CHUNKS $GCL_BIN | grep -oh "[0-9]*")
+	$PREFIX $BASEPAIRS $INDIR $OUTDIR $CHUNKS $GCL_BIN | grep -oh "[0-9]*" | grep -oh '^[^ ]* ')
 echo Submitted job: $JOB_ID3
 
-# BLAST 
+# BLAST
 if [ "$BLAST_DB" != "" ]
 then
 	# Taxonomic Assignment with BLAST
-	JOB_ID4B=$(sbatch --dependency=afterany:$JOB_ID3 \
+	JOB_ID4B=$($GCL_BIN""/sbatch --dependency=afterany:$JOB_ID3 \
 		$GCL_BIN""/BlastMeta.slurm \
  		$PREFIX $INDIR $OUTDIR $CHUNKS 0.7 \
 		$BLAST_DB $GCL_BIN $TAXON_DIR $BLAST_IGNORE \
-		| grep -oh "[0-9]*")
+		| grep -oh "[0-9]*" | grep -oh '^[^ ]* ')
 	echo Submitted job: $JOB_ID4B
 
      	# Create OTUvsTubes
-	JOB_ID5B=$(sbatch --dependency=afterany:$JOB_ID4B \
+	JOB_ID5B=$($GCL_BIN""/sbatch --dependency=afterany:$JOB_ID4B \
 		$GCL_BIN""/OTUvsTube.slurm \
 		$PREFIX $INDIR $OUTDIR $TAXON_DIR $GCL_BIN blast\
-		| grep -oh "[0-9]*")
+		| grep -oh "[0-9]*" | grep -oh '^[^ ]* ')
 	echo Submitted job: $JOB_ID5B
 
 	# Add descriptive names to OTUvsTubes
-	JOB_ID6B=$(sbatch --dependency=afterany:$JOB_ID5B \
+	JOB_ID6B=$($GCL_BIN""/sbatch --dependency=afterany:$JOB_ID5B \
 		$GCL_BIN""/OTU_CVT_addSampleDescs.slurm \
 		$PREFIX $INDIR $OUTDIR $GCL_BIN blast \
-		| grep -oh "[0-9]*")
+		| grep -oh "[0-9]*" | grep -oh '^[^ ]* ')
 	echo Submitted job: $JOB_ID6B
 
 	# Add BLAST information
-	JOB_ID7B=$(sbatch --dependency=afterany:$JOB_ID6B \
+	JOB_ID7B=$($GCL_BIN""/sbatch --dependency=afterany:$JOB_ID6B \
 		$GCL_BIN/AddBlast.slurm \
 		$PREFIX $INDIR $OUTDIR NCBI_BLAST $GCL_BIN \
-		| grep -oh "[0-9]*")
+		| grep -oh "[0-9]*" | grep -oh '^[^ ]* ')
 	echo Submitted job: $JOB_ID7B
 
 fi
@@ -222,31 +221,31 @@ if [ "$VSEARCH_DB" != "" ]
 then
 
 	# Taxonomic Assignment with VSEARCH
-	JOB_ID4V=$(sbatch --dependency=afterany:$JOB_ID3 \
+	JOB_ID4V=$($GCL_BIN""/sbatch --dependency=afterany:$JOB_ID3 \
 		$GCL_BIN""/Vsearch.slurm \
 		$PREFIX $INDIR $OUTDIR 0.7 $VSEARCH_DB $TAXON_DIR \
-		| grep -oh "[0-9]*")
+		| grep -oh "[0-9]*" | grep -oh '^[^ ]* ')
 	echo Submitted job: $JOB_ID4V
 
 	# Create OTUvsTubes
-	JOB_ID5V=$(sbatch --dependency=afterany:$JOB_ID4V \
+	JOB_ID5V=$($GCL_BIN""/sbatch --dependency=afterany:$JOB_ID4V \
 		$GCL_BIN""/OTUvsTube.slurm \
 		$PREFIX $INDIR $OUTDIR $TAXON_DIR $GCL_BIN vsearch \
-		| grep -oh "[0-9]*")
+		| grep -oh "[0-9]*" | grep -oh '^[^ ]* ')
 	echo Submitted job: $JOB_ID5V
-	
+
 	# Add descriptive names to OTUvsTubes
-	JOB_ID6V=$(sbatch --dependency=afterany:$JOB_ID5V \
+	JOB_ID6V=$($GCL_BIN""/sbatch --dependency=afterany:$JOB_ID5V \
 		$GCL_BIN""/OTU_CVT_addSampleDescs.slurm \
 		$PREFIX $INDIR $OUTDIR vsearch \
-		| grep -oh "[0-9]*")
+		| grep -oh "[0-9]*" | grep -oh '^[^ ]* ')
 	echo Submitted job: $JOB_ID6V
-	
+
 	# Add VSEARCH information
-	JOB_ID7V=$(sbatch --dependency=afterany:$JOB_ID6V \
+	JOB_ID7V=$($GCL_BIN""/sbatch --dependency=afterany:$JOB_ID6V \
 		$GCL_BIN/AddVsearch.slurm \
 		$PREFIX $INDIR $OUTDIR \
-		| grep -oh "[0-9]*")
+		| grep -oh "[0-9]*" | grep -oh '^[^ ]* ')
 	echo Submitted job: $JOB_ID7V
 
 fi
@@ -257,26 +256,26 @@ then
 	echo "SAP not yet implemented"
 
 	# Taxonomic assignment with SAP
-	JOB_ID4S=$(sbatch --dependency=afterany:$JOB_ID3 \
+	JOB_ID4S=$($GCL_BIN""/sbatch --dependency=afterany:$JOB_ID3 \
 		$GCL_BIN""/SAP.slurm \
 		$PREFIX $INDIR $OUTDIR 0.95 $SAP_DB \
-		| grep -oh "[0-9]*")
+		| grep -oh "[0-9]*" | grep -oh '^[^ ]* ')
 	echo Submitted job: $JOB_ID4S
 
 	# Create OTUvsTubes
-	JOB_ID5S=$(sbatch --dependency=afterany:$JOB_ID4S \
+	JOB_ID5S=$($GCL_BIN""/sbatch --dependency=afterany:$JOB_ID4S \
 		$GCL_BIN""/OTUvsTube.slurm \
 		$PREFIX $INDIR $OUTDIR $TAXON_DIR $GCL_BIN sap \
-		| grep -oh "[0-9]*")
+		| grep -oh "[0-9]*" | grep -oh '^[^ ]* ')
 	echo Submitted job: $JOB_ID5S
-	
+
 	# Add predator names to OTUvsTubes
-	JOB_ID6S=$(sbatch --dependency=afterany:$JOB_ID5S \
+	JOB_ID6S=$($GCL_BIN""/sbatch --dependency=afterany:$JOB_ID5S \
 		$GCL_BIN""/OTU_CVT_addSampleDescs.slurm \
 		$PREFIX $INDIR $OUTDIR sap \
-		| grep -oh "[0-9]*")
+		| grep -oh "[0-9]*" | grep -oh '^[^ ]* ')
 	echo Submitted job: $JOB_ID6S
-	
+
 	# Classify SAP results into categories
 
 	# Add SAP information

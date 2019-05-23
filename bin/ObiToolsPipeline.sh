@@ -3,7 +3,7 @@
 #########      ############      ##########      ##########      ##########
 # SPLIT # ---> # PARALLEL # ---> # CONCAT # ---> # DELETE # ---> # SERIAL # ---|
 #########      ############      ##########      ##########      ##########    |
-   # ^-------------------------------------------------------------------------- 
+   # ^--------------------------------------------------------------------------
 
 #################
 # CONSTANT DATA #
@@ -55,7 +55,7 @@ echo "obiuniq"
 echo "   Keep only unique sequences"
 ###
 CMD="obiuniq -m sample $OUTDIR/$PREFIX.ali.assigned.ann.{.}.fasta"
-CMD="$CMD --without-progress-bar" 
+CMD="$CMD --without-progress-bar"
 CMD="$CMD > $OUTDIR/$PREFIX.ali.assigned.ann.uniq.{.}.fasta"
 cat $SAMPLES_FILE | parallel -j $CHUNKS $CMD
 
@@ -69,7 +69,7 @@ CMD="$CMD > $OUTDIR/$PREFIX.ali.assigned.ann.uniq.clean.{.}.fasta"
 cat $SAMPLES_FILE | parallel -j $CHUNKS $CMD
 
 
-echo "obigrep" 
+echo "obigrep"
 echo "   length filter"
 ###
 CMD="obigrep -l $MARKER_LEN_LOWER -L $MARKER_LEN_HIGHER"
