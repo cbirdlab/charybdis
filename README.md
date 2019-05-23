@@ -195,23 +195,23 @@ Pipelines are assembled from these programs.
 Those that deal directly with the metabarcoding process.
 
 - **mergeReads.slurm:** SLURM script to merge forward, reverse reads.
-        - **mergeReads.sh:** Merge forward, reverse reads.
-                - **fastq-splitter.pl:** Split fastq files for parallel.
+- - **mergeReads.sh:** Merge forward, reverse reads.
+- - **fastq-splitter.pl:** Split fastq files for parallel.
 - **filterReads.slurm:** SLURM script to filter reads by quality.
-        - **ObiToolsPipeline.sh:** Use obitools to filter reads.
-        - **ObiToolsPipeline_stats.sh:** Get stats on filtering results.
+- - **ObiToolsPipeline.sh:** Use obitools to filter reads.
+- - **ObiToolsPipeline_stats.sh:** Get stats on filtering results.
 - **ClusterOTU.slurm:** SLURM script to cluster reads into OTUs.
-        - **ClusterOTU.sh:** Cluster reads into OTUs.
-                - **CROP_size_fix.sh:** OTUs have a count of reads in OTU. But needs to include counts done for noise-based cluster in filterReads.slurm.
+- - **ClusterOTU.sh:** Cluster reads into OTUs.
+- - - **CROP_size_fix.sh:** OTUs have a count of reads in OTU. But needs to include counts done for noise-based cluster in filterReads.slurm.
 - **BlastMeta.slurm:** SLURM script to run BLAST.
-        - **BlastMeta.sh:** Run BLAST.
-        - **blast_10custom_to_charon_OTU.R:** Convert BLAST results to our charon CSV format.
+- - **BlastMeta.sh:** Run BLAST.
+- - **blast_10custom_to_charon_OTU.R:** Convert BLAST results to our charon CSV format.
 - **OTUvsTube.slurm: SLURM script to convert charon CSV to a OTUvsTubes CSV format.
-        - **crittersVStubes_OTU.R:** Convert charon CSV to a OTUvsTubes CSV format.
+- - **crittersVStubes_OTU.R:** Convert charon CSV to a OTUvsTubes CSV format.
 - **AddBlast.slurm: SLURM script to add BLAST scores to OTUvsTubes.
-        - **OTU_CVT_addBlast.R:** Add BLAST scores to OTUvsTubes.
+- - **OTU_CVT_addBlast.R:** Add BLAST scores to OTUvsTubes.
 - **OTU_CVT_addSampleDescs.slurm:** SLURM script to add descriptions to samples (tubes) to OTUvsTubes CSV.
-        - **OTU_CVT_addSampleDescs.R:** Add descriptions to samples (tubes) to OTUvsTubes CSV.
+- - **OTU_CVT_addSampleDescs.R:** Add descriptions to samples (tubes) to OTUvsTubes CSV.
 
 ### Database utilities
 
@@ -225,23 +225,19 @@ Those that deal directly with the metabarcoding process.
 ### Archived (need to be updated)
 
 - **Vsearch.slurm**
-        - **Vsearch.sh**
-        - **vsearch_getTAXIDfromBOLDseqid.sh**
-        - **vsearch_blast6custom_to_charon_OTU.R**
+- - **Vsearch.sh**
+- - **vsearch_getTAXIDfromBOLDseqid.sh**
+- - **vsearch_blast6custom_to_charon_OTU.R**
 - **AddVsearch.slurm:** Vsearch output stats to OTUvTubes file.
 - **vsearch_blast6custom_to_charon-BLASTDB_OTU.R:** Conversion from Vsearch's 'blast6' format to charon, when using BLAST db converted to Vsearch db.
 - **SAP.slurm**
-        - **SAP.sh**
+- - **SAP.sh**
 - **SAP_to_charon_OTU.R**
 - **AssignToMarkers.slurm**
-        - **AssignToMarkers.sh**
-                - **determine_marker.R**
+- - **AssignToMarkers.sh**
+- - - **determine_marker.R**
 ### Archived (replaced by other scripts)
 
 - **CROP.slurm:** Replaced by ClusterOTU.slurm
 - **CombineAndCROP.sh:** Replaced by ClusterOTU.slurm
 - **determine_marker.sh:** Replaced by determine_marker.R
-
-
-
-
