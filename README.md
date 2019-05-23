@@ -90,7 +90,9 @@ See the documentation on [BLAST databases](ftp://ftp.ncbi.nlm.nih.gov/blast/docu
 
 Download, decompress nucleotide (nt) database
 
-        cd charybdis/data
+        cd charybdis
+        mdkir data
+        cd data
         mkdir blastdb
         cd blastdb
         wget ftp://ftp.ncbi.nlm.nih.gov/blast/db/nt* 
