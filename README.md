@@ -46,7 +46,7 @@ Dependencies:
 - [CROP](https://github.com/tingchenlab/CROP): Clustering Sequences for OTU Prediction
 - [Vsearch](https://github.com/torognes/vsearch/archive/v2.13.4.tar.gz): 
 
-        sudo apt-get install r-base ncbi-blast+ genometools parallel 
+        sudo apt-get install r-base ncbi-blast+ genometools parallel fastx-toolkit
         sudo apt-get install libcurl4-openssl-dev libxml2-dev
 
 Install Obitools
