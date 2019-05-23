@@ -151,6 +151,7 @@ You need four pieces of input data:
     - Example: testrun/TestData.barcodes.txt
 - <projname>.sampledescs.csv: Arbitrary description of each sample. 
     - Example: testrun/TestData.sampledescs.csv
+    - **Note:** barcodes cannot have 'I' basepair code. I replace with 'N'. 
 
 Your directory should like this:
 
