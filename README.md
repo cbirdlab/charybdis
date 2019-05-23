@@ -206,9 +206,9 @@ Those that deal directly with the metabarcoding process.
 - **BlastMeta.slurm:** SLURM script to run BLAST.
 - - **BlastMeta.sh:** Run BLAST.
 - - **blast_10custom_to_charon_OTU.R:** Convert BLAST results to our charon CSV format.
-- **OTUvsTube.slurm: SLURM script to convert charon CSV to a OTUvsTubes CSV format.
+- **OTUvsTube.slurm:** SLURM script to convert charon CSV to a OTUvsTubes CSV format.
 - - **crittersVStubes_OTU.R:** Convert charon CSV to a OTUvsTubes CSV format.
-- **AddBlast.slurm: SLURM script to add BLAST scores to OTUvsTubes.
+- **AddBlast.slurm:** SLURM script to add BLAST scores to OTUvsTubes.
 - - **OTU_CVT_addBlast.R:** Add BLAST scores to OTUvsTubes.
 - **OTU_CVT_addSampleDescs.slurm:** SLURM script to add descriptions to samples (tubes) to OTUvsTubes CSV.
 - - **OTU_CVT_addSampleDescs.R:** Add descriptions to samples (tubes) to OTUvsTubes CSV.
