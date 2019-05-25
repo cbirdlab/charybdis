@@ -44,9 +44,9 @@ Dependencies:
 - [GenomeTools](https://github.com/genometools/genometools):
 - [Obitools](https://pythonhosted.org/OBITools/welcome.html#installing-the-obitools): 
 - [CROP](https://github.com/tingchenlab/CROP): Clustering Sequences for OTU Prediction
-- [Vsearch](wget https://github.com/torognes/vsearch/archive/v2.13.4.tar.gz): 
+- [Vsearch](https://github.com/torognes/vsearch/archive/v2.13.4.tar.gz): 
 
-        sudo apt-get install r-base sudo apt install ncbi-blast+ genometools parallel 
+        sudo apt-get install r-base ncbi-blast+ genometools parallel fastx-toolkit
         sudo apt-get install libcurl4-openssl-dev libxml2-dev
 
 Install Obitools
@@ -61,6 +61,7 @@ Add the following to ~/.bashrc:
 
 Install CROP
 
+        cd ~/Downloads
         sudo apt-get install libgsl-dev
         git clone https://github.com/tingchenlab/CROP.git
         cd CROP
@@ -69,6 +70,7 @@ Install CROP
 
 Install Vsearch
 
+        cd ~/Downloads
         wget https://github.com/torognes/vsearch/archive/v2.13.4.tar.gz
         tar xzf v2.13.4.tar.gz
         cd vsearch-2.13.4
@@ -88,7 +90,9 @@ See the documentation on [BLAST databases](ftp://ftp.ncbi.nlm.nih.gov/blast/docu
 
 Download, decompress nucleotide (nt) database
 
-        cd charybdis/data
+        cd charybdis
+        mdkir data
+        cd data
         mkdir blastdb
         cd blastdb
         wget ftp://ftp.ncbi.nlm.nih.gov/blast/db/nt* 
@@ -147,6 +151,7 @@ You need four pieces of input data:
     - Example: testrun/TestData.barcodes.txt
 - <projname>.sampledescs.csv: Arbitrary description of each sample. 
     - Example: testrun/TestData.sampledescs.csv
+    - **Note:** barcodes cannot have 'I' basepair code. I replace with 'N'. 
 
 Your directory should like this:
 
@@ -181,4 +186,92 @@ This directory has example pipeline scripts which use the programs in charybdis/
 
 See the testrun directory to get started
 
+## Bin Directory
+
+The following are programs that are part of Charybdis.
+Pipelines are assembled from these programs.
+
+### Metabarcoding 
+Those that deal directly with the metabarcoding process.
+
+- **mergeReads.slurm:** SLURM script to merge forward, reverse reads.
+- - **mergeReads.sh:** Merge forward, reverse reads.
+- - **fastq-splitter.pl:** Split fastq files for parallel.
+- **filterReads.slurm:** SLURM script to filter reads by quality.
+- - **ObiToolsPipeline.sh:** Use obitools to filter reads.
+- - **ObiToolsPipeline_stats.sh:** Get stats on filtering results.
+- **ClusterOTU.slurm:** SLURM script to cluster reads into OTUs.
+- - **ClusterOTU.sh:** Cluster reads into OTUs.
+- - - **CROP_size_fix.sh:** OTUs have a count of reads in OTU. But needs to include counts done for noise-based cluster in filterReads.slurm.
+- **BlastMeta.slurm:** SLURM script to run BLAST.
+- - **BlastMeta.sh:** Run BLAST.
+- - **blast_10custom_to_charon_OTU.R:** Convert BLAST results to our charon CSV format.
+- **OTUvsTube.slurm:** SLURM script to convert charon CSV to a OTUvsTubes CSV format.
+- - **crittersVStubes_OTU.R:** Convert charon CSV to a OTUvsTubes CSV format.
+- **AddBlast.slurm:** SLURM script to add BLAST scores to OTUvsTubes.
+- - **OTU_CVT_addBlast.R:** Add BLAST scores to OTUvsTubes.
+- **OTU_CVT_addSampleDescs.slurm:** SLURM script to add descriptions to samples (tubes) to OTUvsTubes CSV.
+- - **OTU_CVT_addSampleDescs.R:** Add descriptions to samples (tubes) to OTUvsTubes CSV.
+
+### Database utilities
+
+- **get_mito_coi_gi_list.sh:** Get list of GIs containing COI sequences. Used to generate COI-only database.
+- **get_env_gi_list.sh:** Get list of GIs containing environmental sequences. used to filter env from database.
+
+### Misc utilities
+
+- **sbatch:** alias for SLURM's sbatch command. If real sbatch exits on system, use it. Otherwise, default to bash.
+
+### Archived (need to be updated)
+
+- **Vsearch.slurm**
+- - **Vsearch.sh**
+- - **vsearch_getTAXIDfromBOLDseqid.sh**
+- - **vsearch_blast6custom_to_charon_OTU.R**
+- **AddVsearch.slurm:** Vsearch output stats to OTUvTubes file.
+- **vsearch_blast6custom_to_charon-BLASTDB_OTU.R:** Conversion from Vsearch's 'blast6' format to charon, when using BLAST db converted to Vsearch db.
+- **SAP.slurm**
+- - **SAP.sh**
+- **SAP_to_charon_OTU.R**
+- **AssignToMarkers.slurm**
+- - **AssignToMarkers.sh**
+- - - **determine_marker.R**
+### Archived (replaced by other scripts)
+
+- **CROP.slurm:** Replaced by ClusterOTU.slurm
+- **CombineAndCROP.sh:** Replaced by ClusterOTU.slurm
+- **determine_marker.sh:** Replaced by determine_marker.R
+
+
+## Convert BLAST database to VSEARCH
+
+Create a VSEARCH-compatable FASTA from a BLAST database.
+
+Format: 
+
+	>ACCESSION|GI|TAXID
+	CTTATACTTTCTAGTTGGAATCTGAACAGGACT
+
+Assumes that BLAST database was made from NCBI's FTP-provided version,
+as described in the Quick Start above.
+
+	cd charybdis/data
+
+	# Get list of desired GIs
+	# Here we get only coi that are non-environmental
+	grep -F -v -f ../env.NCBI_NT_<MONTHYEARETC>.gi \
+		../mitochondrial_coi.NCBI_NT_<MONTHYEARETC>.gi
+		> coi_clean_NT_<MONTHYEARETC>.gi 
+
+	# Create coi, env-free BLAST database
+	blastdb_aliastool -db blastdb_coi \
+		-gilist coi_clean_NT_<MONTHYEARETC>.gi \
+		-dbtype nucl -out blastdb_coi_clean -title "blastdb_coi_clean"
+
+	# Format contents as FASTA
+	blastdbcmd -entry all -db blastdb_coi -outfmt ">%a|%g|%T,%s" \
+		| tr , '\n' > vsearchdb_coi_clean.fasta
+
+
+	
 
