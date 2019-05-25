@@ -242,7 +242,7 @@ Those that deal directly with the metabarcoding process.
 - **CombineAndCROP.sh:** Replaced by ClusterOTU.slurm
 - **determine_marker.sh:** Replaced by determine_marker.R
 
-## Convert BLAST database to VSEARCH
+## Convert BLAST database to VSEARCH database
 
 Create a VSEARCH-compatable FASTA from a BLAST database.
 
@@ -253,6 +253,13 @@ Format:
 
 Assumes that BLAST database was made from NCBI's FTP-provided version,
 as described in the Quick Start above.
+
+Unlike BLAST, we cannot use an "ignore" file.
+So we have to make the database with both the coi and env filtering.
+This tutorial assumes the same coi, env-filtering scenario as the quick start.
+Hopefully it is clear what is being done so you can adapt for your needs. 
+If you are not using an ignore list, skip to the 'blastdbcmd' step. 
+
 
 	cd charybdis/data
 
@@ -268,6 +275,56 @@ as described in the Quick Start above.
 		-dbtype nucl -out blastdb_coi_clean -title "blastdb_coi_clean"
 
 	# Format contents as FASTA
-	blastdbcmd -entry all -db blastdb_coi -outfmt ">%a|%g|%T,%s" \
+	blastdbcmd -entry all -db blastdb_coi_clean -outfmt ">%a|%g|%T,%s" \
 		| tr , '\n' > vsearchdb_coi_clean.fasta
+
+
+## Convert BLAST database to ECOTAG database. 
+
+Create a ECOTAG-compatable database from a BLAST database.
+	
+Format:
+
+	>ACCESSION|GI|TAXID taxid=TAXID;
+	CTTATACTTTCTAGTTGGAATCTGAACAGGACT
+	
+Unlike BLAST, we cannot use an "ignore" file.
+So we have to make the database with both the coi and env filtering.
+This tutorial assumes the same coi, env-filtering scenario as the quick start.
+Hopefully it is clear what is being done so you can adapt for your needs. 
+If you are not using an ignore list, skip to the 'blastdbcmd' step. 
+
+	cd charybdis/data
+
+	# Get list of desired GIs
+	# Here we get only coi that are non-environmental
+	grep -F -v -f ../env.NCBI_NT_<MONTHYEARETC>.gi \
+		../mitochondrial_coi.NCBI_NT_<MONTHYEARETC>.gi
+		> coi_clean_NT_<MONTHYEARETC>.gi 
+
+	# Create coi, env-free BLAST database
+	blastdb_aliastool -db blastdb_coi \
+		-gilist coi_clean_NT_<MONTHYEARETC>.gi \
+		-dbtype nucl -out blastdb_coi_clean -title "blastdb_coi_clean"
+
+	# Format contents as FASTA
+	blastdbcmd -entry all -db blastdb_coi_clean \
+		 -outfmt ">%a|%g|%T taxid=%T;,%s" \
+		| tr , '\n' > ecotagdb_temp_coi_clean.fasta
+
+	# Format taxonomy database for OBITools
+	obitaxonomy -t taxo/ -d taxo/
+
+	# Add taxonomy to ecotagdb fasta
+	obiaddtaxids -d taxo/ ecotagdb_temp_coi_clean.fasta \
+		> ecotagdb_coi_clean.fasta
+
+	# Convert ecotagdb fasta to native ecotag database format
+	obiconvert -d taxo/ --fasta \
+		--ecopcrdb-output=ecotagdb_coi_clean ecotagdb_coi_clean.fasta
+
+And now, how to use ecotag for assignment:
+
+	ecotag -d ecotagdb_coi_clean -R ecotagdb_coi_clean.fasta \
+		-m 0.95 -r <query fasta> 
 
