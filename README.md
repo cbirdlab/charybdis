@@ -242,7 +242,6 @@ Those that deal directly with the metabarcoding process.
 - **CombineAndCROP.sh:** Replaced by ClusterOTU.slurm
 - **determine_marker.sh:** Replaced by determine_marker.R
 
-
 ## Convert BLAST database to VSEARCH
 
 Create a VSEARCH-compatable FASTA from a BLAST database.
@@ -271,7 +270,4 @@ as described in the Quick Start above.
 	# Format contents as FASTA
 	blastdbcmd -entry all -db blastdb_coi -outfmt ">%a|%g|%T,%s" \
 		| tr , '\n' > vsearchdb_coi_clean.fasta
-
-
-	
 
