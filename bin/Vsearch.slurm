@@ -16,8 +16,8 @@ TAXDIR=$7
 module load vsearch
 
 # VSEARCH
-#bash $GCL_BIN""/Vsearch.sh \
-#	$PREFIX $INDIR $OUTDIR $ID $DB
+bash $GCL_BIN""/Vsearch.sh \
+	$PREFIX $INDIR $OUTDIR $ID $DB
 
 module unload vsearch
 module load R
