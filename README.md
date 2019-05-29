@@ -266,8 +266,8 @@ If you are not using an ignore list, skip to the 'blastdbcmd' step.
 
 	# Get list of desired GIs
 	# Here we get only coi that are non-environmental
-	grep -F -v -f ../env.NCBI_NT_<MONTHYEARETC>.gi \
-		../mitochondrial_coi.NCBI_NT_<MONTHYEARETC>.gi
+	grep -F -v -f env.NCBI_NT_<MONTHYEARETC>.gi \
+		mitochondrial_coi.NCBI_NT_<MONTHYEARETC>.gi
 		> coi_clean_NT_<MONTHYEARETC>.gi 
 
 	# Create coi, env-free BLAST database
@@ -299,8 +299,8 @@ If you are not using an ignore list, skip to the 'blastdbcmd' step.
 
 	# Get list of desired GIs
 	# Here we get only coi that are non-environmental
-	grep -F -v -f ../env.NCBI_NT_<MONTHYEARETC>.gi \
-		../mitochondrial_coi.NCBI_NT_<MONTHYEARETC>.gi
+	grep -F -v -f env.NCBI_NT_<MONTHYEARETC>.gi \
+		mitochondrial_coi.NCBI_NT_<MONTHYEARETC>.gi
 		> coi_clean_NT_<MONTHYEARETC>.gi 
 
 	# Create coi, env-free BLAST database
