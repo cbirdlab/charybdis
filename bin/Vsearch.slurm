@@ -16,24 +16,15 @@ TAXDIR=$7
 module load vsearch
 
 # VSEARCH
-bash $GCL_BIN""/Vsearch.sh \
-	$PREFIX $INDIR $OUTDIR $ID $DB
+#bash $GCL_BIN""/Vsearch.sh \
+#	$PREFIX $INDIR $OUTDIR $ID $DB
 
 module unload vsearch
 module load R
 
 # Convert to Charon format
-bash $GCL_BIN""/vsearch_getTAXIDfromBOLDseqid.sh $OUTDIR""/$PREFIX"".OTU.vsearchB6out.txt \
-	$TAXDIR | sed -e 's/ /_/g'  \
-	> $OUTDIR/$PREFIX"".OTU.vsearchTAXIDS.csv
-
-paste $OUTDIR""/$PREFIX"".OTU.vsearchB6out.txt \
-	$OUTDIR""/$PREFIX"".OTU.vsearchTAXIDS.csv  \
-	> $OUTDIR""/$PREFIX"".OTU.vsearchB6out-fix.txt
-
-Rscript $GCL_BIN""/vsearch_blast6custom_to_charon_OTU.R \
-	$OUTDIR""/$PREFIX"".OTU.vsearchB6out-fix.txt \
-	$OUTDIR""/$PREFIX"".full.nonchimeras.clean.OTU.cluster.size_fix \
-	$OUTDIR""/$PREFIX"".OTU.vsearch.charon \
-	$OUTDIR""/$PREFIX"".trash
-
+Rscript $GCL_BIN""/vsearch_B6out_to_charon.R \
+    $OUTDIR""/$PREFIX"".OTU.vsearchB6out.txt \
+    $OUTDIR""/$PREFIX"".full.nonchimeras.clean.OTU.cluster.size_fix \
+    $OUTDIR""/$PREFIX"".OTU.vsearch.charon \
+    $TAXDIR
