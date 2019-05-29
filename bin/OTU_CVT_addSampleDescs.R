@@ -10,32 +10,23 @@
 
 args <- commandArgs(TRUE)
 
-stopifnot(length(args) == 3)
+stopifnot(length(args) == 4)
 
 CVT_FILE  <- args[1]
 PRED_FILE <- args[2]
 OUT_FILE  <- args[3]
+SAMPLES_FILE <- args[4]
 
 CVT  <- read.csv (file = CVT_FILE,  header = TRUE, stringsAsFactors = FALSE)
 PRED <- read.csv (file = PRED_FILE, header = TRUE, stringsAsFactors = FALSE)
+SAMPLES <- read.csv (file = SAMPLES_FILE, header = TRUE, stringsAsFactors = FALSE)
 
 colnames <- colnames(CVT)
-count = 0
-lowest = 0
-for(c in colnames){
-        if (grepl("^(suborder)", c)){   #try using something besides suborder such as number of samples to get the column number that ends the samples columns
-                			#need to reliably identify the column after the last sample in critters vs tubes (CVT)
-		lowest = count
-        }
-        count = count + 1
-}
-print (lowest)
+numSamples = nrow(SAMPLES)
 startPos <- which(colnames == "Sample") + 1
-stopPos  <- lowest
-
+stopPos  <- startPos + numSamples - 1
 names <- colnames[startPos:stopPos]
 PRED$Sample <- make.names(PRED$Sample)
-print (names)
 
 predNames <- list()
 newCols <- list()

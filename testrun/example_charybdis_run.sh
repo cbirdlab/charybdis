@@ -5,8 +5,8 @@
 bash ../charybdis_generic.sh \
     -p TestData -i . -o out -n 20 \
     -x 313 -g ../bin \
-    -t <Path to NCBI Taxonomy Database> \
-    -b <Path to Blast Database \
+    -t ../data/taxo \
+    -b ../data/blastdb/nt \
     -d blast_ignore_stub.txt \
     -c chimera_db_stub.txt
 
