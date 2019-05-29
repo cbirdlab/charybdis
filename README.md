@@ -122,7 +122,7 @@ Go to this [link](https://www.ncbi.nlm.nih.gov/nuccore/?term=mitochondria+or+cyt
 
 Filter BLAST database with list of GIs of COI sequences
 
-        blastdb_aliastool -db charybdis/data/blastdb/nt -gilist \
+        blastdb_aliastool -db charybdis/data/blastdb/nt -gilist \     #in this line, nt is the file prefix, not a dir
             mitochondrial_coi.NCBI_NT_<MONTHYEARETC>.gi \
             -dbtype nucl -out blastdb_coi -title "blastdb_coi"
 
@@ -160,7 +160,7 @@ Your directory should like this:
         ├── out
         ├── in
         │   ├── <projname>.barcodes.txt
-        │   ├── <projname>_forward.fasta
+        │   ├── <projname>_forward.fastq
         │   ├── <projname>_reverse.fastq
         └── └── <projname>.sampledescs.csv
 
@@ -170,13 +170,13 @@ Your directory should like this:
             -p <projname> -i in -o out -n 20 \
             -x 313 -g charybdis/bin \
             -t charybdis/data/taxo \
-            -b charybdis/data/blastdb_coi \
+            -b charybdis/data/blastdb_coi \     #in this line, the blastdb_coi is a file prefix, not a dir
             -d charybdis/data/env.NCBI_NT_<MONTHYEARETC>.gi \
             -c !!! NEED TO REMOVE THIS CHIMERA DEPENDENCY !!!
 
-## Pipelines Directory
+## Pipelines 
 
-This directory has example pipeline scripts which use the programs in charybdis/bin to perform metabarcoding 
+Example pipeline scripts which use the programs in charybdis/bin to perform metabarcoding are: 
 
   charybdis_generic.sh      The "default" metabarcoding process
 
