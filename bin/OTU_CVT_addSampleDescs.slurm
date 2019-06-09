@@ -18,5 +18,5 @@ Rscript $GCL_BIN""/OTU_CVT_addSampleDescs.R \
 	$OUTDIR""/$PREFIX.OTUvsTubes.$METHOD"".S.csv \
 	$INDIR""/$PREFIX.sampledescs.csv \
 	$OUTDIR""/$PREFIX.OTUvsTubes.$METHOD"".SP.csv \
-    $INDIR""/$PREFIX.samples.txt
+	$INDIR""/$PREFIX.samples.txt
 

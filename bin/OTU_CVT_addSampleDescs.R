@@ -24,6 +24,10 @@ SAMPLES <- read.csv (file = SAMPLES_FILE, header = TRUE, stringsAsFactors = FALS
 colnames <- colnames(CVT)
 numSamples = nrow(SAMPLES)
 startPos <- which(colnames == "Sample") + 1
+if (identical(startPos, numeric(0))) {
+	startPos <- which(colnames == "sample") + 1
+}
+
 stopPos  <- startPos + numSamples - 1
 names <- colnames[startPos:stopPos]
 PRED$Sample <- make.names(PRED$Sample)

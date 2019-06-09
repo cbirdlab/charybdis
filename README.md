@@ -20,6 +20,8 @@ Multiple assignment methods are supported and my be run simultaneously. For exam
 
 A complete manual (PDF) is located at [charybdis_man.pdf](charybdis_man.pdf).
 
+Warning: charybdis is undergoing major renovations. This README is much more up to date than the manual. Once the changes have slowed down, the manual will be updated. 
+
 ## Quick Start
 
 The following tutorial is for COI barcoding using a local BLAST nucleotide database.
@@ -47,8 +49,8 @@ Dependencies:
 - [Vsearch](https://github.com/torognes/vsearch/archive/v2.13.4.tar.gz): 
 
         sudo apt-get install r-base ncbi-blast+ genometools parallel fastx-toolkit
-        sudo apt-get install libcurl4-openssl-dev libxml2-dev
-	sudo apt-get install python-dev
+       	sudo apt-get install libcurl4-openssl-dev libxml2-dev
+        sudo apt-get install python-dev
 
 Install Obitools
 
@@ -166,6 +168,8 @@ Your directory should like this:
 
 # Run pipeline
 
+### Assignment with BLAST:
+
         bash charybdis_generic.sh \
             -p <projname> -i in -o out -n 20 \
             -x 313 -g charybdis/bin \
@@ -173,6 +177,30 @@ Your directory should like this:
             -b charybdis/data/blastdb_coi \     #in this line, the blastdb_coi is a file prefix, not a dir
             -d charybdis/data/env.NCBI_NT_<MONTHYEARETC>.gi \
             -c !!! NEED TO REMOVE THIS CHIMERA DEPENDENCY !!!
+
+### Assignment with VSEARCH:
+
+See further details in this README for creating VSEARCH database
+
+        bash charybdis_generic.sh \
+            -p <projname> -i in -o out -n 20 \
+            -x 313 -g charybdis/bin \
+            -t charybdis/data/taxo \
+            -v charybdis/data/vsearchdb_coi_clean.fasta \
+            -c !!! NEED TO REMOVE THIS CHIMERA DEPENDENCY !!!
+
+### Assignment with ECOTAG:
+
+See further details in this README for creating ECOTAG database
+
+        bash charybdis_generic.sh \
+            -p <projname> -i in -o out -n 20 \
+            -x 313 -g charybdis/bin \
+            -t charybdis/data/taxo \
+            -e charybdis/data/ecotagdb_coi_clean \
+            -f charybdis/data/ecotagdb_coi_clean.fasta \
+            -c !!! NEED TO REMOVE THIS CHIMERA DEPENDENCY !!!
+
 
 ## Pipelines 
 

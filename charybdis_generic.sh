@@ -7,22 +7,21 @@
 # Prerequisites:
 # Set up working directory structure
 
-
-
-
 # Define options
-PREFIX=""       # -p  Pipeline finds inputs and writes outputs using project name
-INDIR=""        # -i  Where input files are stored
-OUTDIR=""       # -o  Where to write output files
-CHUNKS=1        # -n  Number of instances of parallel execution
-BLAST_DB=""     # -b  Path to BLAST database
-BLAST_IGNORE="" # -d  List of NCBI TAXIDs to ignore from BLAST database
-VSEARCH_DB=""   # -v  Path to VSEARCH database
-SAP_DB=""       # -s  Path to SAP database (SAP-formatted FASTA)
-CHIMERA_DB=""   # -c  Path to Chimera database
-BASEPAIRS=-1    # -x  Number of basepairs in target genetic region
-GCL_BIN=""      # -g  Where the pipeline scripts are stored
-TAXON_DIR=""    # -t  Directory with NCBI taxonomic database
+PREFIX=""          # -p  Pipeline finds inputs and writes outputs using project name
+INDIR=""           # -i  Where input files are stored
+OUTDIR=""          # -o  Where to write output files
+CHUNKS=1           # -n  Number of instances of parallel execution
+BLAST_DB=""        # -b  Path to BLAST database
+BLAST_IGNORE=""    # -d  List of NCBI TAXIDs to ignore from BLAST database
+VSEARCH_DB=""      # -v  Path to VSEARCH database
+SAP_DB=""          # -s  Path to SAP database (SAP-formatted FASTA)
+CHIMERA_DB=""      # -c  Path to Chimera database
+BASEPAIRS=-1       # -x  Number of basepairs in target genetic region
+GCL_BIN=""         # -g  Where the pipeline scripts are stored
+TAXON_DIR=""       # -t  Directory with NCBI taxonomic database
+ECOTAG_DB=""       # -e  Path to ECOTAG database (not the fasta)
+ECOTAG_FASTA_DB="" # -f Path to ECOTAG database (fasta)
 
 # Parse options
 while getopts ":p:i:o:n:b:d:v:f:c:s:x:g:t:e:" opt; do
@@ -63,6 +62,12 @@ while getopts ":p:i:o:n:b:d:v:f:c:s:x:g:t:e:" opt; do
 			;;
 		t)
 			TAXON_DIR=$OPTARG
+			;;
+		e)
+			ECOTAG_DB=$OPTARG
+			;;
+		f)
+			ECOTAG_FASTA_DB=$OPTARG
 			;;
 		\?)
 			echo "Invalid option: -$OPTARG" >&2
@@ -118,6 +123,17 @@ then
 	fi
 fi
 
+if [ "$ECOTAG_DB" != "" ]
+then
+	echo "ECOTAG database path: $ECOTAG_DB"
+	if [ "$ECOTAG_FASTA_DB" == "" ]
+	then
+		echo "Using '-e' required '-f': 'Path to ECOTAG FASTA'"
+	else
+		echo "ECOTAG_FASTA_DB: $ECOTAG_FASTA_DB"
+	fi
+fi
+
 if [ "$VSEARCH_DB" != "" ]
 then
 	echo "VSEARCH path: $VSEARCH_DB"
@@ -151,8 +167,6 @@ fi
 
 
 echo "Parallel instances: $CHUNKS"
-
-
 
 echo "GCL Charybdis metabarcoding pipeline initiated"
 echo "Run with options:"
@@ -209,7 +223,7 @@ then
 	# Add BLAST information
 	JOB_ID7B=$($GCL_BIN""/sbatch --dependency=afterany:$JOB_ID6B \
 		$GCL_BIN/AddBlast.slurm \
-		$PREFIX $INDIR $OUTDIR NCBI_BLAST $GCL_BIN \
+		$PREFIX $INDIR $OUTDIR NCBI $GCL_BIN \
 		| grep -oh "[0-9]*" | grep -oh '^[^ ]* ')
 	echo Submitted job: $JOB_ID7B
 
@@ -244,11 +258,43 @@ then
 	# Add VSEARCH information
 	JOB_ID7V=$($GCL_BIN""/sbatch --dependency=afterany:$JOB_ID6V \
 		$GCL_BIN/AddVsearch.slurm \
-        $PREFIX $INDIR $OUTDIR NCBI_BLAST $GCL_BIN \
+        $PREFIX $INDIR $OUTDIR NCBI $GCL_BIN \
 		| grep -oh "[0-9]*" | grep -oh '^[^ ]* ')
 	echo Submitted job: $JOB_ID7V
 fi
 
+# ECOTAG
+if [ "$ECOTAG_DB" != "" ]
+then
+
+	# Taxonomic Assignment with ECOTAG
+	JOB_ID4E=$($GCL_BIN""/sbatch --dependency=afterany:$JOB_ID3 \
+		$GCL_BIN""/Ecotag.slurm \
+		$PREFIX $INDIR $OUTDIR 0.7 $ECOTAG_DB $ECOTAG_FASTA_DB $GCL_BIN $TAXON_DIR \
+		| grep -oh "[0-9]*" | grep -oh '^[^ ]* ')
+	echo Submitted job: $JOB_ID4E
+
+	# Create OTUvsTubes
+	JOB_ID5E=$($GCL_BIN""/sbatch --dependency=afterany:$JOB_ID4E \
+		$GCL_BIN""/OTUvsTube.slurm \
+		$PREFIX $INDIR $OUTDIR $TAXON_DIR $GCL_BIN ecotag \
+		| grep -oh "[0-9]*" | grep -oh '^[^ ]* ')
+	echo Submitted job: $JOB_ID5E
+
+	# Add descriptive names to OTUvsTubes
+	JOB_ID6E=$($GCL_BIN""/sbatch --dependency=afterany:$JOB_ID5E \
+		$GCL_BIN""/OTU_CVT_addSampleDescs.slurm \
+		$PREFIX $INDIR $OUTDIR $GCL_BIN ecotag \
+		| grep -oh "[0-9]*" | grep -oh '^[^ ]* ')
+	echo Submitted job: $JOB_ID6E
+
+	# Add ECOTAG information
+	JOB_ID7E=$($GCL_BIN""/sbatch --dependency=afterany:$JOB_ID6E \
+		$GCL_BIN/AddEcotag.slurm \
+        $PREFIX $INDIR $OUTDIR NCBI $GCL_BIN \
+		| grep -oh "[0-9]*" | grep -oh '^[^ ]* ')
+	echo Submitted job: $JOB_ID7E
+fi
 
 if [ "$SAP_DB" != "" ]
 then
