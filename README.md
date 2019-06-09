@@ -49,7 +49,7 @@ Dependencies:
 - [Vsearch](https://github.com/torognes/vsearch/archive/v2.13.4.tar.gz): 
 
         sudo apt-get install r-base ncbi-blast+ genometools parallel fastx-toolkit
-	sudo apt-get install libcurl4-openssl-dev libxml2-dev
+        sudo apt-get install libcurl4-openssl-dev libxml2-dev
         sudo apt-get install python-dev
 
 Install Obitools
