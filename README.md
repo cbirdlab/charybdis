@@ -398,7 +398,8 @@ If you are not using an ignore list, skip to the 'blastdbcmd' step.
 
 	# Convert coi, env-free BLAST database to (mostly) suitable FASTA: temp SAP db
  	# Another step will replace the ____ placeholder with taxonomic lineage
-	blastdbcmd 
+	blastdbcmd -entry all -db blastdb_coi_clean \ 
+	    -outfmt ">%a|%g|%T ; ____ ; %t####%s" | sed 's/####/\n/' > sapdb_coi_clean_temp.fasta
 
 	# Insert taxonomic lineage into temp SAP db.
 	# Note that some NCBI TAXIDs will not be found, despite using NCBI taxonomy browser..
