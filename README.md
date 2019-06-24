@@ -357,3 +357,66 @@ And now, how to use ecotag for assignment:
 	ecotag -d ecotagdb_coi_clean -R ecotagdb_coi_clean.fasta \
 		-m 0.95 -r <query fasta> 
 
+## Convert BLAST database to SAP database. 
+
+Create a SAP-compatable database from a BLAST database.
+	
+Format:
+
+	>ACCESSION|GI|TAXID ; rank1: name1, rank2: name2, ...  ; Sequence title 
+	CTTATACTTTCTAGTTGGAATCTGAACAGGACT
+
+Example: 
+
+	>NM_176613.2|31341268|9913 ; species: Bos taurus, genus: Bos, family: Bovidae, class: Mammalia, phylum: Chordata ; Bos taurus ATP synthase membrane subunit c locus 2 (ATP5MC2), mRNA
+	TGCCGTAGCCCTTCATCCCCTGAAAATGTACACTTGCGCCAAGTTCGTCTCCACCCCCTCCTTGATCAGGAGAACCTCTACAGTATT
+
+
+Unlike BLAST, we cannot use an "ignore" file.
+So we have to make the database with both the coi and env filtering.
+This tutorial assumes the same coi, env-filtering scenario as the quick start.
+Hopefully it is clear what is being done so you can adapt for your needs. 
+If you are not using an ignore list, skip to the 'blastdbcmd' step. 
+
+	cd charybdis/data
+
+	# Get list of desired GIs
+	# Here we get only coi that are non-environmental
+	grep -F -v -f env.NCBI_NT_<MONTHYEARETC>.gi \
+		mitochondrial_coi.NCBI_NT_<MONTHYEARETC>.gi
+		> coi_clean_NT_<MONTHYEARETC>.gi 
+
+	# Create coi, env-free BLAST database
+	blastdb_aliastool -db blastdb_coi \
+		-gilist coi_clean_NT_<MONTHYEARETC>.gi \
+		-dbtype nucl -out blastdb_coi_clean -title "blastdb_coi_clean"
+
+	# Update taxonomy database
+	# Sadly, redundant with setting up taxonomy database previously,
+	# but now python library ete3 has very specific setup it looks for. 
+        ../bin/ete3_ncbi_update_taxonomy.py
+
+	# Convert coi, env-free BLAST database to (mostly) suitable FASTA: temp SAP db
+ 	# Another step will replace the ____ placeholder with taxonomic lineage
+	blastdbcmd 
+
+	# Insert taxonomic lineage into temp SAP db.
+	# Note that some NCBI TAXIDs will not be found, despite using NCBI taxonomy browser..
+	# In my experience, these are not useful sequences so we get an additional env/junk filter...
+	../bin/makesapdb.py -i sapdb_coi_clean_temp.fasta > sapdb_coi_clean.fasta
+
+And now, how to use SAP for assignment.
+
+	# Run SAP
+	sap --database sapdb_coi_clean.fasta --project <project name> <query_fasta>
+
+Things to note about SAP database creation.
+
+Occassional FASTA entries will fail during SAP database creation, but these will be skipped.
+This is because of special characters present in the scientific names in the taxonomy database.
+Typically useless sequences, but this could be fixed by removing special characters in makesapdb.py.
+	
+	
+	
+
+
