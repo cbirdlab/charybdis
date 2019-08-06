@@ -5,8 +5,12 @@
 #SBATCH -p normal
 #SBATCH --nodes=1
 
-module load obitools
-module load parallel
+if [ -z "$SLURM_JOB_ID" ]; then
+  module load obitools
+  module load parallel
+fi
+
+echo; echo `date` Running mergeReads.* ...
 
 PREFIX=$1
 INDIR=$2
