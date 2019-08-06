@@ -5,7 +5,7 @@
 #SBATCH -p normal
 #SBATCH --nodes=1
 
-if [ -z "$SLURM_JOB_ID" ]; then
+if [ -v "$SLURM_JOB_ID" ]; then
   module load obitools
   module load parallel
 fi
