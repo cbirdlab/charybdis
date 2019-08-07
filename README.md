@@ -140,7 +140,7 @@ Optional only because you could instead use the list provided with Charybdis.
 
 Goto the testrun directory and run example_charybdis_run.sh
         
-	`. example_charybdis_run.sh`
+	. example_charybdis_run.sh
 
 ### Get required data, setup directory
 
