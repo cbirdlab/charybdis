@@ -163,7 +163,7 @@ You need four pieces of input data:
     - Example: testrun/TestData.sampledescs.csv
     - **Note:** barcodes cannot have 'I' basepair code. I replace with 'N'. 
 
-Your directory should like this:
+Your project directory should like this:
 
         <projname>/ 
         ├── out
@@ -176,11 +176,13 @@ Your directory should like this:
 
 ### Assignment with BLAST:
 
+The following commands assume that your present working directory (pwd) is the project directory
+
         bash charybdis_generic.sh \
-            -p <projname> -i in -o out -n 20 \
-            -x 313 -g charybdis/bin \
-            -t charybdis/data/taxo \
-            -b charybdis/data/blastdb_coi \     #in this line, the blastdb_coi is a file prefix, not a dir
+            -p <projname> -i . -o out -n 20 \    #n is number of threads
+            -x 313 -g ../bin \
+            -t ../data/taxo \
+            -b ../data/blastdb_coi \       #in this line, the blastdb_coi is a file prefix, not a dir
             -d charybdis/data/env.NCBI_NT_<MONTHYEARETC>.gi \
             -c !!! NEED TO REMOVE THIS CHIMERA DEPENDENCY !!!
 
