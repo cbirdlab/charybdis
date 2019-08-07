@@ -152,7 +152,7 @@ You need four pieces of input data:
     - Example: testrun/TestData_reverse.fastq
 - <projname>.barcodes.txt: Barcodes that label sequence sample.
     - Example: testrun/TestData.barcodes.txt
-	-NOTE: it is critical that only standard IUPAC code be used, use N rather than I for inosines
+    - NOTE: it is critical that only standard IUPAC code be used, use N rather than I for inosines
 - <projname>.sampledescs.csv: Arbitrary description of each sample. 
     - Example: testrun/TestData.sampledescs.csv
     - **Note:** barcodes cannot have 'I' basepair code. I replace with 'N'. 
