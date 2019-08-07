@@ -36,7 +36,7 @@ the absolute path to charybdis is left out since we can't know
 where you downloaded it to. Similarly, \<projname\> as a directory name
 could be located anywhere on your system.
 
-# Install dependencies
+### Install dependencies
 
 Dependencies:
 - R: 
@@ -139,7 +139,8 @@ Optional only because you could instead use the list provided with Charybdis.
 ### Try the testrun before running your own data
 
 Goto the testrun directory and run example_charybdis_run.sh
-        `. example_charybdis_run.sh`
+        
+	`. example_charybdis_run.sh`
 
 ### Get required data, setup directory
 
