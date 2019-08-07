@@ -136,6 +136,11 @@ Optional only because you could instead use the list provided with Charybdis.
         bash ../bin/get_env_gi_list.sh <NUM_ENV>
         mv env.NCBI_nucl.gi env.NCBI_NT_MAY2019.gi
 
+### Try the testrun before running your own data
+
+Goto the testrun directory and run example_charybdis_run.sh
+        `. example_charybdis_run.sh`
+
 ### Get required data, setup directory
 
 Create directory structure
@@ -161,11 +166,10 @@ Your directory should like this:
 
         <projname>/ 
         ├── out
-        ├── in
-        │   ├── <projname>.barcodes.txt
-        │   ├── <projname>_forward.fastq
-        │   ├── <projname>_reverse.fastq
-        └── └── <projname>.sampledescs.csv
+        ├── <projname>.barcodes.txt
+        ├── <projname>_forward.fastq
+        ├── <projname>_reverse.fastq
+        └── <projname>.sampledescs.csv
 
 # Run pipeline
 
