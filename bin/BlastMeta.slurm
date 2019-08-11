@@ -5,11 +5,13 @@
 #SBATCH -p normal
 #SBATCH --nodes=1
 
-module load blast+
-module load parallel
-module load bio-misc
-module load genometools
-module load R
+if [ -v "$SLURM_JOB_ID" ]; then
+	module load blast+
+	module load parallel
+	module load bio-misc
+	module load genometools
+	module load R
+fi
 
 PREFIX=$1
 INDIR=$2
