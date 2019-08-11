@@ -4,7 +4,7 @@
 
 args <- commandArgs (TRUE)
 
-# Ensure 6 parameters
+# Ensure 7 parameters
 stopifnot (length (args) == 7)
 
 # Name of input file, minus the extension
