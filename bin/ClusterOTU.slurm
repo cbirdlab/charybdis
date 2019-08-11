@@ -5,9 +5,11 @@
 #SBATCH -p normal
 #SBATCH --nodes=1
 
-module load bio-misc 
-module load gsl
-module load obitools
+if [ -v "$SLURM_JOB_ID" ]; then
+	module load bio-misc 
+	module load gsl
+	module load obitools
+fi
 
 #export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/lib64
 
