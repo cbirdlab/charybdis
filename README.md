@@ -134,7 +134,7 @@ Go to this [link](https://www.ncbi.nlm.nih.gov/nuccore/?term=%22environmental+sa
 Optional only because you could instead use the list provided with Charybdis. 
 
         bash ../bin/get_env_gi_list.sh <NUM_ENV>
-        mv env.NCBI_nucl.gi env.NCBI_NT_MAY2019.gi
+        mv env.NCBI_nucl.gi env.NCBI_NT_MAY2019.gi   #change date as necessary
 
 ### Try the testrun before running your own data
 
@@ -163,31 +163,62 @@ You need four pieces of input data:
     - Example: testrun/TestData.sampledescs.csv
     - **Note:** barcodes cannot have 'I' basepair code. I replace with 'N'. 
 
-Your project directory should like this:
+Your project directory should like this for COI data:
 
         <projname>/ 
         ├── out
         ├── <projname>.barcodes.txt
         ├── <projname>_forward.fastq
         ├── <projname>_reverse.fastq
-        ├── example_charybdis_run.sh
+        ├── <projname>_charybdis_run.sh
         ├── chimera_db_stub.txt
-        ├── mitochondrial_coi.NCBI_NT_<MONTHYEARETC>.gi  (from charybdis/data in place of blast_ignore_stub.txt)
+        ├── env.NCBI_NT_MAY2019.gi  (get from charybdis/data in place of blast_ignore_stub.txt)
+        └── <projname>.sampledescs.csv
+
+Your project directory should like this to search the whole blast database data:
+
+        <projname>/ 
+        ├── out
+        ├── <projname>.barcodes.txt
+        ├── <projname>_forward.fastq
+        ├── <projname>_reverse.fastq
+        ├── <projname>_charybdis_run.sh
+        ├── chimera_db_stub.txt
+        ├── blast_ignore_stub.txt
         └── <projname>.sampledescs.csv
 
 # Run pipeline
 
 ### Assignment with BLAST:
 
-The following commands assume that your present working directory (pwd) is the project directory
+The following commands assume that your present working directory (pwd) is the project directory and you're barcoding COI
 
         bash charybdis_generic.sh \
-            -p <projname> -i . -o out -n 20 \    #n is number of threads
-            -x 313 -g ../bin \
+            -p <projname> \		#should match project dir name
+	    -i . \
+	    -o out \
+	    -n 2 \    			#n is number of threads
+            -x 313 \
+	    -g ../bin \
             -t ../data/taxo \
-            -b ../data/blastdb_coi \       #in this line, the blastdb_coi is a file prefix, not a dir
-            -d charybdis/data/env.NCBI_NT_<MONTHYEARETC>.gi \
-            -c !!! NEED TO REMOVE THIS CHIMERA DEPENDENCY !!!
+            -b ../data/blastdb_coi \ 	#in this line, the blastdb_coi is a file prefix, not a dir
+            -d env.NCBI_NT_MAY2019.gi \
+            -c chimera_db_stub.txt  	#!!! NEED TO REMOVE THIS CHIMERA DEPENDENCY !!!
+	    
+The following commands assume that your present working directory (pwd) is the project directory and you're barcoding from the whole blast database
+
+        bash charybdis_generic.sh \
+            -p <projname> \		#should match project dir name
+	    -i . \
+	    -o out \
+	    -n 2 \    			#n is number of threads
+            -x <length of target amplicon> \
+	    -g ../bin \
+            -t ../data/taxo \
+            -b ../data/blastdb/nt \ 	#in this line, the nt is a file prefix, not a dir
+            -d blast_ignore_stub.txt \
+            -c chimera_db_stub.txt   	#!!! NEED TO REMOVE THIS CHIMERA DEPENDENCY !!!
+
 
 ### Assignment with VSEARCH:
 
