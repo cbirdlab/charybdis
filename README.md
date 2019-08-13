@@ -147,7 +147,7 @@ Goto the testrun directory and run example_charybdis_run.sh
 Create directory structure (follows same directory structure as testrun)
 
         mkdir <projname>
-        mkdir <projname>/in <projname>/out
+        mkdir <projname>/out
 
 ### Move your data
 
@@ -170,6 +170,9 @@ Your project directory should like this:
         ├── <projname>.barcodes.txt
         ├── <projname>_forward.fastq
         ├── <projname>_reverse.fastq
+        ├── example_charybdis_run.sh
+        ├── chimera_db_stub.txt
+        ├── mitochondrial_coi.NCBI_NT_<MONTHYEARETC>.gi  (from charybdis/data in place of blast_ignore_stub.txt)
         └── <projname>.sampledescs.csv
 
 # Run pipeline
