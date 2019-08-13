@@ -50,7 +50,8 @@ options(stringsAsFactors = FALSE)
 # Load libraries
 suppressMessages (library ("CHNOSZ"))  # For NCBI database query
 suppressMessages (library ("pracma"))  # For string manipulation functions
-suppressMessages (library ("furrr"))  # For string manipulation functions
+suppressMessages (library ("furrr"))  # For parallelization
+suppressMessages (library ("tidyr")) # for reshaping data
 
 # Load taxonomic database into memory for faster access
 # This will be used to get higher level taxonomic information for 
@@ -86,6 +87,7 @@ samples <- unlist (read.table (SAMPLES_FILE, header = FALSE, stringsAsFactors = 
 samples_names <- make.names (samples)
 charon <- read.table (CHARON_FILE, sep = ",", stringsAsFactors = FALSE)
 charon$V5 <- make.names (charon$V5)
+colnames (charon) <- c ("QSEQID", "GenBankID", "SCINAME", "NCBI_TAXID", "SAMPLE_ID", "COUNT")
 seq_stats <- read.table (TOTAL_COUNTS_FILE, header = FALSE, sep = ":")
 
 
@@ -100,33 +102,22 @@ seqidQ_seqidT_sciname_taxid <- unique (seqidQ_seqidT_sciname_taxid[c ("SEQID_QUE
 sampleInit <- matrix (data = 0, nrow = nrow (seqidQ_seqidT_sciname_taxid), ncol = length (samples))
 colnames (sampleInit) <- samples_names
 
-# Combine into empty cVt
-CVT_Expanded <- cbind.data.frame (seqidQ_seqidT_sciname_taxid, sampleInit)
-
-# Assign (SeqQ, SeqT) counts
-assign <- function (seqidQ, seqidT, taxid, sampleID, count) {
-  CVT_Expanded[CVT_Expanded[,1]==seqidQ & CVT_Expanded[,2]==seqidT & CVT_Expanded[,4]==taxid, sampleID] <<- 
-      CVT_Expanded[CVT_Expanded[,1]==seqidQ & CVT_Expanded[,2]==seqidT & CVT_Expanded[,4]==taxid, sampleID] + count
-}
-
-apply (X = charon, MARGIN = 1, function (x) {assign (x[[1]], x[[2]], as.numeric (x[[4]]), x[[5]], as.numeric (x[[6]]) ) })
-
-cVT_Expanded_Backup <- CVT_Expanded
-
 ##############################
 # Section for OTU attachment #
 ##############################
 # Read the map of SEQID <-> OTU_SEQID
 samples <- read.table (file = FILE_SAMPLE, header = FALSE, sep = ',', stringsAsFactors = FALSE)
-colnames (samples) <- c ("OTU_SEQID", "QSEQID", "COUNT", "SAMPLE_ID")
+colnames (samples) <- c ("OTU_SEQID", "QSEQID", "SAMPLE_ID", "COUNT")
 OTU_Seqid_map <- samples[ c ("OTU_SEQID", "QSEQID")]
-# Add OTU_SEQID to each row
-CVT_Expanded_OTU <- merge (y = CVT_Expanded, x = OTU_Seqid_map, by.y = "SEQID_QUERY", by.x = "QSEQID")
+# Merge charon and OTU_Seqid_map
+charon_OTU_expanded <- merge (y = charon, x = OTU_Seqid_map, by.y = "QSEQID", by.x = "QSEQID")
+charon_OTU_expanded <- charon_OTU_expanded[, names (charon_OTU_expanded) != "QSEQID"]
+charon_OTU_expanded <- charon_OTU_expanded[, names (charon_OTU_expanded) != "GenBankID"]
+charon_OTU <- aggregate( . ~ SCINAME + NCBI_TAXID + SAMPLE_ID + OTU_SEQID, data = charon_OTU_expanded, FUN = sum)
+
 # Collapse by OTU 
-CVT <- CVT_Expanded_OTU[, names (CVT_Expanded_OTU) != "SEQID_QUERY"]
-CVT <- CVT[, names (CVT) != "QSEQID"]
-CVT <- CVT[, names (CVT) != "SEQID_TARGET"]
-CVT <- aggregate ( . ~ SCINAME + NCBI_TAXID + OTU_SEQID, data = CVT, FUN = sum )
+CVT <- charon_OTU %>% spread(SAMPLE_ID, COUNT) 
+CVT[is.na(CVT)] <- 0
 
 
 ######################
