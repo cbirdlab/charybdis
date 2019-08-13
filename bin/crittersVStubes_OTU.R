@@ -50,6 +50,7 @@ options(stringsAsFactors = FALSE)
 # Load libraries
 suppressMessages (library ("CHNOSZ"))  # For NCBI database query
 suppressMessages (library ("pracma"))  # For string manipulation functions
+suppressMessages (library ("furrr"))  # For string manipulation functions
 
 # Load taxonomic database into memory for faster access
 # This will be used to get higher level taxonomic information for 
@@ -166,8 +167,9 @@ fullBackup <- full
 
 # For each critter name, traverse the phylogenic tree (via NCBI database) to get higher rank classifications
 # These are returned in form of numeric TAXID
-# This is a list of lists
-higherTaxa <- sapply (X = CVT$NCBI_TAXID, function (x) {  tryCatch ({
+# This is a list of lists, CEB updated to run in parallel using furrr
+plan(multiprocess)
+higherTaxa <- future_map(CVT$NCBI_TAXID, function (x) {  tryCatch ({
   allparents (id = x, taxdir = TAXDIR, nodes = ncbi_nodes)
 }, warning = function (w){
   
