@@ -194,7 +194,7 @@ Your project directory should like this to search the whole blast database data:
 The following commands assume that your present working directory (pwd) is the project directory and you're barcoding COI
 
         bash charybdis_generic.sh \
-            -p <projname> \		#should match project dir name
+	    -p <projname> \		#should match project dir name
 	    -i . \
 	    -o out \
 	    -n 2 \    			#n is number of threads
@@ -208,7 +208,7 @@ The following commands assume that your present working directory (pwd) is the p
 The following commands assume that your present working directory (pwd) is the project directory and you're barcoding from the whole blast database
 
         bash charybdis_generic.sh \
-            -p <projname> \		#should match project dir name
+	    -p <projname> \		#should match project dir name
 	    -i . \
 	    -o out \
 	    -n 2 \    			#n is number of threads
