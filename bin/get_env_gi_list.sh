@@ -13,7 +13,7 @@
 ## Replace <TOTAL_COUNT> with that from the website
 TOTAL_COUNT=$1
 
-wget 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=nuccore&term="environmental samples"[organism]%20or%20metagenomes[orgn]%20or%20sp[Title]&retmax='"$TOTAL_COUNT"  -O env.NCBI_nucl.temp
+wget 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=nuccore&term="environmental samples"[organism]%20or%20metagenomes[orgn]%20or%20spp[Title]%20or%20sp[Title]&retmax='"$TOTAL_COUNT"  -O env.NCBI_nucl.temp
 
 ## Format as simply a list of GIs
 
