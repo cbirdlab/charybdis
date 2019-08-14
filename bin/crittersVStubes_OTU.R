@@ -195,7 +195,9 @@ for (i in 1:(length (higherTaxa))){
 # Reverse order in which taxonomic ranks are displayed in table
 #fulltest <- full [c (1, 2, ((length (taxonomicRanksOfInterest) + 2):3), ((length (taxonomicRanksOfInterest) + 3) : ( length (samples_names) + (length (taxonomicRanksOfInterest) + 3))))]
 
-
+#write csv here because next section is buggy
+full_ordered <- full[with (full, order (full$TOTAL, decreasing = TRUE)),]
+write.csv (full_ordered, OUTFILE, row.names = FALSE)
 
 ######################################################
 #### EXTRA: Use BOLD to fill in taxonomic "holes" ####
