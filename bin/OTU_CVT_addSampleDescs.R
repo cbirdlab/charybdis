@@ -27,7 +27,6 @@ numSamples = nrow(SAMPLES)
 startPos <- which(colnames == "TOTAL") + 1
 stopPos <- which(colnames == "superorder") -1
 
-stopPos  <- startPos + numSamples - 1
 names <- colnames[startPos:stopPos]
 PRED$Sample <- make.names(PRED$Sample)
 
