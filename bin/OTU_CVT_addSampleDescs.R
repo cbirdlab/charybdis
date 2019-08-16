@@ -21,8 +21,10 @@ CVT  <- read.csv (file = CVT_FILE,  header = TRUE, stringsAsFactors = FALSE)
 PRED <- read.csv (file = PRED_FILE, header = TRUE, stringsAsFactors = FALSE)
 SAMPLES <- read.csv (file = SAMPLES_FILE, header = FALSE, stringsAsFactors = FALSE)
 
+colnames(PRED) <- c("Sample", "Description")
+
 colnames <- colnames(CVT)
-numSamples = nrow(SAMPLES)
+numSamples <- nrow(SAMPLES)
 
 startPos <- which(colnames == "TOTAL") + 1
 stopPos <- which(colnames == "superorder") -1
@@ -33,7 +35,7 @@ PRED$Sample <- make.names(PRED$Sample)
 predNames <- list()
 newCols <- list()
 for (t in names){
-        prow = PRED[PRED$Sample == t, ]
+        prow <- PRED[PRED$Sample == t, ]
         predNames <- c(predNames, prow$Description)
 	newCols <- c(newCols, paste(prow$Description, t, sep="."))
 }
