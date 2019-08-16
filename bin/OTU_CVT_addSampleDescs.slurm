@@ -5,7 +5,9 @@
 #SBATCH -p normal
 #SBATCH --nodes=1
 
-module load R
+if [ -v "$SLURM_JOB_ID" ]; then
+	module load R
+fi
 
 PREFIX=$1
 INDIR=$2
