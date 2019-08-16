@@ -260,7 +260,28 @@ for (i in 1:(nrow (taxMat)-1)){
     scinameLow <- taxMat[i, lowest[[i]]]
     #print (scinameLow)
     
-    res <- bold_tax_name (scinameLow)
+    #res <- bold_tax_name (scinameLow)
+    
+    #replacing previous line with this one that should prevent crashing.  delete this comment if script runs
+    res <- tryCatch( bold_tax_name(scinameLow), 
+      error=function(cond) {
+        message("error triggered by bold_tax_name()")
+        message(paste(i,"th row with missing taxon was not fixed"))
+        message(cond)
+        message("")
+        return("NA")
+      },
+      warning=function(cond) {
+        message("warning triggered by bold_tax_name()")
+        message(paste(i,"th row with missing taxon was not fixed"))
+        message(cond)
+        message("")
+        return("NA")
+      },
+      finally={
+      }
+    )
+    
     if ("taxon" %in% colnames (res)){
       boldTaxid = res[1,]$taxid
       
