@@ -26,13 +26,6 @@ while read p; do
     echo $p | awk '{print $2}' | sed -e 's/,/\n/g' >> $FHandle.cluster.list
 done <$CROP_LIST
 
-# Separate into uniq fastas per csv
-#while read p; do
-#    FHandle=`echo $p | awk '{print $1}'`
-#    SIZE=`obigrep --id-list $FHandle.cluster.list $FASTA --without-progress-bar | grep -e 'size=[[0-9]*' -o | sed -e 's/size=//' | awk '{ SUM += $1} END {print SUM}'`
-#    echo "$FHandle,$SIZE"
-#done <$CROP_LIST
-
 # Build files where each OTU has a file containing samples and counts
 while read p; do
     FHandle=`echo $p | awk '{print $1}'`
@@ -42,16 +35,6 @@ while read p; do
 	# Sed to clean up extra characters
 	sed -e "s/merged_sample={'//" -e "s/':size=/,/" > $FHandle.cluster.samples.txt
 done <$CROP_LIST 
-
-# This builds the TABLE
-#while read p; do
-#    FHandle=`echo $p | awk '{print $1}'`
-#    obigrep --id-list $FHandle.cluster.list $FASTA --without-progress-bar | \
-#        # Grep for the Sample ID and the size 
-#        grep -e '^>[^ ]* ' -e 'merged_sample={[^:]*:' -e 'size=[0-9]*' -o  | awk '{ORS = NR%3 ? "," : "\n"}1' | \
-#	# Sed to clean up extra characters
-#	sed -e "s/merged_sample={'//" -e "s/size=//" -e "s/'://" -e "s/ //g" -e 's/>//' | sed -e "s/^/$FHandle,/"
-#done <$CROP_LIST 
 
 >SEQID_SAMPLEID.temp
 >SIZE.temp
