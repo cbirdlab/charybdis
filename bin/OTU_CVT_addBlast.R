@@ -32,6 +32,16 @@ CVT_BLAST <- merge (x = BLAST, y = CVT, by.x = "OTU_SEQID", by.y = "OTU_SEQID")
 
 CVT_BLAST$SSCINAMES = NULL
 CVT_BLAST$STAXIDS = NULL
-
-
 write.csv (x = CVT_BLAST, quote = FALSE, file = OUTPUT_FILE)
+
+#clean up this file
+CVT_BLAST$X <- NULL
+
+col_names <- colnames(CVT_BLAST)
+startcol <- which(col_names == "superorder")
+endcol <- which(col_names == "species.group")
+CVT_BLAST[,startcol:endcol] <- NULL
+
+write.csv (x = CVT_BLAST, quote = FALSE, file = paste(OUTPUT_FILE,"cleaner.csv", sep="."))
+
+                      
