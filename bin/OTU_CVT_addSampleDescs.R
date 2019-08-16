@@ -19,7 +19,7 @@ SAMPLES_FILE <- args[4]
 
 CVT  <- read.csv (file = CVT_FILE,  header = TRUE, stringsAsFactors = FALSE)
 PRED <- read.csv (file = PRED_FILE, header = TRUE, stringsAsFactors = FALSE)
-SAMPLES <- read.csv (file = SAMPLES_FILE, header = TRUE, stringsAsFactors = FALSE)
+SAMPLES <- read.csv (file = SAMPLES_FILE, header = FALSE, stringsAsFactors = FALSE)
 
 colnames <- colnames(CVT)
 numSamples = nrow(SAMPLES)
