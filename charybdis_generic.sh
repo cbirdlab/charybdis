@@ -223,7 +223,7 @@ then
 	# Add BLAST information
 	JOB_ID7B=$($GCL_BIN""/sbatch --dependency=afterany:$JOB_ID6B \
 		$GCL_BIN/AddBlast.slurm \
-		$PREFIX $INDIR $OUTDIR NCBI $GCL_BIN \
+		$PREFIX $INDIR $OUTDIR NCBI $GCL_BIN $TAXON_DIR $CHUNKS \
 		| grep -oh "[0-9]*" | grep -oh '^[^ ]* ')
 	echo Submitted job: $JOB_ID7B
 
