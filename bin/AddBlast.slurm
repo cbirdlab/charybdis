@@ -37,3 +37,5 @@ Rscript $GCL_BIN""/OTU_CVT_addBlast.R \
 	$DB_NAME \
 	$OUTDIR""/$PREFIX"".OTUvsTubes.blast.SPA.csv \
 	common_names.txt
+
+rm -f common_names.txt
