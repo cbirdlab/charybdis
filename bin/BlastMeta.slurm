@@ -22,20 +22,22 @@ BLAST_DB=$6
 GCL_BIN=$7
 TAXON_DIR=$8
 BLAST_IGNORE=$9
+BLAST_TASK=${10}
 
 # BLAST
 $GCL_BIN""/BlastMeta.sh \
 	$PREFIX $INDIR $OUTDIR $CHUNKS \
-	$THRESHOLD $BLAST_DB $BLAST_IGNORE
-
+	$THRESHOLD $BLAST_DB $BLAST_IGNORE \
+	# $BLAST_TASK
+	
 # Combine into single FASTA
-rm $OUTDIR""/$PREFIX.OTU.blastOut
-cat $OUTDIR""/$PREFIX.OTU.blastOut.* \
-	> $OUTDIR/$PREFIX.OTU.blastOut
+rm $OUTDIR""/$PREFIX.OTU.${BLAST_TASK}.Out
+cat $OUTDIR""/$PREFIX.OTU.${BLAST_TASK}.Out.* \
+	> $OUTDIR/$PREFIX.OTU.${BLAST_TASK}.Out
 
 # Convert to Charon format
 Rscript $GCL_BIN""/blast_10custom_to_charon_OTU.R \
-	$OUTDIR/$PREFIX.OTU.blastOut \
+	$OUTDIR/$PREFIX.OTU.${BLAST_TASK}.Out \
 	$OUTDIR/$PREFIX.full.nonchimeras.clean.OTU.cluster.size_fix \
-	$OUTDIR/$PREFIX.OTU.blast.charon \
-	$TAXON_DIR
+	$OUTDIR/$PREFIX.OTU.${BLAST_TASK}.charon \
+	$TAXON_DIR 
