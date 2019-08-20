@@ -9,5 +9,6 @@ bash ../charybdis_generic.sh \
     -b ../data/blastdb/nt \
     -v ../data/vsearchdb_coi_clean.fasta \
     -d blast_ignore_stub.txt \
+    -T dc-megablast \
     -c chimera_db_stub.txt
 
