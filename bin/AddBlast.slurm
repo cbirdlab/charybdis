@@ -5,8 +5,12 @@
 #SBATCH -p normal
 #SBATCH --nodes=1
 
+>&2 echo ""
+>&2 echo `date` "Running AddBlast.slurm"
+
 if [ -v "$SLURM_JOB_ID" ]; then
 	module load R
+	module load parallel
 fi
 
 PREFIX=$1
@@ -16,8 +20,10 @@ DB_NAME=$4
 GCL_BIN=$5
 TAXON_DIR=$6
 THREADS=$7
+METHOD=$8
 
 #get common names from taxonomic db
+>&2 echo `date` "     Extract common names from NCBI tax db"
 OvT_FILE=$OUTDIR""/$PREFIX"".OTUvsTubes.blast.SP.csv
 get_common_name(){
 	PATTERN=$1
@@ -31,11 +37,15 @@ get_common_name(){
 export -f get_common_name
 awk -F "\"*,\"*" '{print $3}' $OvT_FILE  | tail -n +2 | parallel --no-notice -j $THREADS -k "get_common_name {} $TAXON_DIR" > common_names.txt
 
+>&2 echo `date` "     Run OTU_CVT_addBlast.R"
+
+>&2 cat $GCL_BIN""/OTU_CVT_addBlast.R
+
 Rscript $GCL_BIN""/OTU_CVT_addBlast.R \
-	$OUTDIR""/$PREFIX"".OTUvsTubes.blast.SP.csv \
-	$OUTDIR""/$PREFIX"".OTU.blastOut \
+	$OUTDIR""/$PREFIX"".OTUvsTubes.$METHOD.SP.csv \
+	$OUTDIR""/$PREFIX"".OTU.$METHOD.Out \
 	$DB_NAME \
-	$OUTDIR""/$PREFIX"".OTUvsTubes.blast.SPA.csv \
+	$OUTDIR""/$PREFIX"".OTUvsTubes.$METHOD.SPA.csv \
 	common_names.txt
 
 rm -f common_names.txt
