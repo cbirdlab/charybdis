@@ -13,6 +13,7 @@ INDIR=""           # -i  Where input files are stored
 OUTDIR=""          # -o  Where to write output files
 CHUNKS=1           # -n  Number of instances of parallel execution
 BLAST_DB=""        # -b  Path to BLAST database
+BLAST_TASK=""      # -T  Blast algorithm
 BLAST_IGNORE=""    # -d  List of NCBI TAXIDs to ignore from BLAST database
 VSEARCH_DB=""      # -v  Path to VSEARCH database
 SAP_DB=""          # -s  Path to SAP database (SAP-formatted FASTA)
@@ -24,7 +25,7 @@ ECOTAG_DB=""       # -e  Path to ECOTAG database (not the fasta)
 ECOTAG_FASTA_DB="" # -f Path to ECOTAG database (fasta)
 
 # Parse options
-while getopts ":p:i:o:n:b:d:v:f:c:s:x:g:t:e:" opt; do
+while getopts ":p:i:o:n:b:d:T:v:f:c:s:x:g:t:e:" opt; do
 	case $opt in
 		p)
 			PREFIX=$OPTARG
@@ -43,6 +44,9 @@ while getopts ":p:i:o:n:b:d:v:f:c:s:x:g:t:e:" opt; do
 			;;
 		d)
 			BLAST_IGNORE=$OPTARG
+			;;
+		T)
+			BLAST_TASK=$OPTARG
 			;;
 		v)
 			VSEARCH_DB=$OPTARG
@@ -110,7 +114,6 @@ else
 	echo "GCL bin: $GCL_BIN"
 fi
 
-
 if [ "$BLAST_DB" != "" ]
 then
 	echo "BLAST path: $BLAST_DB"
@@ -121,6 +124,15 @@ then
 	else
 		echo "BLAST_IGNORE: $BLAST_IGNORE"
 	fi
+	if [ "$BLAST_TASK" == "" ]
+	then
+		echo "Option not set '-T': 'Default megablast search will be used'"
+		BLAST_TASK=megablast
+	else
+		echo "BLAST_TASK: $BLAST_TASK"
+	fi
+else
+	echo "Blast datbase '-b' was not specifed"
 fi
 
 if [ "$ECOTAG_DB" != "" ]
@@ -175,6 +187,7 @@ echo "    $@"
 
 # Make 'samples.txt'
 awk '{print $2}' $INDIR""/$PREFIX"".barcodes.txt \
+	| tail -n +2 \
 	> $INDIR""/$PREFIX"".samples.txt
 
 # Merge Reads
@@ -202,28 +215,28 @@ then
 	JOB_ID4B=$($GCL_BIN""/sbatch --dependency=afterany:$JOB_ID3 \
 		$GCL_BIN""/BlastMeta.slurm \
  		$PREFIX $INDIR $OUTDIR $CHUNKS 0.7 \
-		$BLAST_DB $GCL_BIN $TAXON_DIR $BLAST_IGNORE \
+		$BLAST_DB $GCL_BIN $TAXON_DIR $BLAST_IGNORE $BLAST_TASK \
 		| grep -oh "[0-9]*" | grep -oh '^[^ ]* ')
 	echo Submitted job: $JOB_ID4B
 
      	# Create OTUvsTubes
 	JOB_ID5B=$($GCL_BIN""/sbatch --dependency=afterany:$JOB_ID4B \
 		$GCL_BIN""/OTUvsTube.slurm \
-		$PREFIX $INDIR $OUTDIR $TAXON_DIR $GCL_BIN blast\
+		$PREFIX $INDIR $OUTDIR $TAXON_DIR $GCL_BIN $BLAST_TASK \
 		| grep -oh "[0-9]*" | grep -oh '^[^ ]* ')
 	echo Submitted job: $JOB_ID5B
 
 	# Add descriptive names to OTUvsTubes
 	JOB_ID6B=$($GCL_BIN""/sbatch --dependency=afterany:$JOB_ID5B \
 		$GCL_BIN""/OTU_CVT_addSampleDescs.slurm \
-		$PREFIX $INDIR $OUTDIR $GCL_BIN blast \
+		$PREFIX $INDIR $OUTDIR $GCL_BIN $BLAST_TASK \
 		| grep -oh "[0-9]*" | grep -oh '^[^ ]* ')
 	echo Submitted job: $JOB_ID6B
 
 	# Add BLAST information
 	JOB_ID7B=$($GCL_BIN""/sbatch --dependency=afterany:$JOB_ID6B \
 		$GCL_BIN/AddBlast.slurm \
-		$PREFIX $INDIR $OUTDIR NCBI $GCL_BIN $TAXON_DIR $CHUNKS \
+		$PREFIX $INDIR $OUTDIR NCBI $GCL_BIN $TAXON_DIR $CHUNKS $BLAST_TASK \
 		| grep -oh "[0-9]*" | grep -oh '^[^ ]* ')
 	echo Submitted job: $JOB_ID7B
 
