@@ -7,6 +7,7 @@ bash ../charybdis_generic.sh \
     -x 313 -g ../bin \
     -t ../data/taxo \
     -b ../data/blastdb/nt \
+    -T megablast \
     -v ../data/vsearchdb_coi_clean.fasta \
     -d blast_ignore_stub.txt \
     -T dc-megablast \
