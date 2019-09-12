@@ -24,7 +24,7 @@ METHOD=$8
 
 #get common names from taxonomic db
 >&2 echo `date` "     Extract common names from NCBI tax db"
-OvT_FILE=$OUTDIR""/$PREFIX"".OTUvsTubes.blast.SP.csv
+OvT_FILE=$OUTDIR""/$PREFIX"".OTUvsTubes.$METHOD.SP.csv
 get_common_name(){
 	PATTERN=$1
 	TAXON_DIR=$2
@@ -36,6 +36,9 @@ get_common_name(){
 }
 export -f get_common_name
 awk -F "\"*,\"*" '{print $3}' $OvT_FILE  | tail -n +2 | parallel --no-notice -j $THREADS -k "get_common_name {} $TAXON_DIR" > common_names.txt
+
+# Ensure no commas since CSV
+sed -i -e 's/,/_/g' common_names.txt
 
 >&2 echo `date` "     Run OTU_CVT_addBlast.R"
 

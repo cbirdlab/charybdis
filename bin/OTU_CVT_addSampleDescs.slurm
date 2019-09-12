@@ -15,7 +15,6 @@ OUTDIR=$3
 GCL_BIN=$4
 METHOD=$5
 
-
 Rscript $GCL_BIN""/OTU_CVT_addSampleDescs.R \
 	$OUTDIR""/$PREFIX.OTUvsTubes.$METHOD"".S.csv \
 	$INDIR""/$PREFIX.sampledescs.csv \
