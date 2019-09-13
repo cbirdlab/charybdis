@@ -189,25 +189,25 @@ echo "    $@"
 awk '{print $2}' $INDIR""/$PREFIX"".barcodes.txt \
 	| tail -n +2 \
 	> $INDIR""/$PREFIX"".samples.txt
-
-# Merge Reads
-JOB_ID1=$($GCL_BIN""/sbatch $GCL_BIN""/mergeReads.slurm \
-	$PREFIX $INDIR $OUTDIR $CHUNKS $GCL_BIN | grep -oh "[0-9]*" | grep -oh '^[^ ]* ')
-echo Submitted job: $JOB_ID1
-
-# Filter Reads
-JOB_ID2=$($GCL_BIN""/sbatch --dependency=afterany:$JOB_ID1 \
-	$GCL_BIN""/filterReads.slurm \
-	$PREFIX $INDIR $OUTDIR $CHUNKS \
-	$BASEPAIRS_LOWER $BASEPAIRS_HIGHER $CHIMERA_DB $GCL_BIN | grep -oh "[0-9]*" | grep -oh '^[^ ]* ')
-echo Submitted job: $JOB_ID2
-
-# Cluster into OTUs
-JOB_ID3=$($GCL_BIN""/sbatch --dependency=afterany:$JOB_ID2 \
-	$GCL_BIN""/ClusterOTU.slurm \
-	$PREFIX $BASEPAIRS $INDIR $OUTDIR $CHUNKS $GCL_BIN | grep -oh "[0-9]*" | grep -oh '^[^ ]* ')
-echo Submitted job: $JOB_ID3
-
+#
+## Merge Reads
+#JOB_ID1=$($GCL_BIN""/sbatch $GCL_BIN""/mergeReads.slurm \
+#	$PREFIX $INDIR $OUTDIR $CHUNKS $GCL_BIN | grep -oh "[0-9]*" | grep -oh '^[^ ]* ')
+#echo Submitted job: $JOB_ID1
+#
+## Filter Reads
+#JOB_ID2=$($GCL_BIN""/sbatch --dependency=afterany:$JOB_ID1 \
+#	$GCL_BIN""/filterReads.slurm \
+#	$PREFIX $INDIR $OUTDIR $CHUNKS \
+#	$BASEPAIRS_LOWER $BASEPAIRS_HIGHER $CHIMERA_DB $GCL_BIN | grep -oh "[0-9]*" | grep -oh '^[^ ]* ')
+#echo Submitted job: $JOB_ID2
+#
+## Cluster into OTUs
+#JOB_ID3=$($GCL_BIN""/sbatch --dependency=afterany:$JOB_ID2 \
+#	$GCL_BIN""/ClusterOTU.slurm \
+#	$PREFIX $BASEPAIRS $INDIR $OUTDIR $CHUNKS $GCL_BIN | grep -oh "[0-9]*" | grep -oh '^[^ ]* ')
+#echo Submitted job: $JOB_ID3
+#
 # BLAST
 if [ "$BLAST_DB" != "" ]
 then
@@ -247,19 +247,19 @@ fi
 if [ "$VSEARCH_DB" != "" ]
 then
 
-	# Taxonomic Assignment with VSEARCH
-	JOB_ID4V=$($GCL_BIN""/sbatch --dependency=afterany:$JOB_ID3 \
-		$GCL_BIN""/Vsearch.slurm \
-		$PREFIX $INDIR $OUTDIR 0.7 $VSEARCH_DB $GCL_BIN $TAXON_DIR \
-		| grep -oh "[0-9]*" | grep -oh '^[^ ]* ')
-	echo Submitted job: $JOB_ID4V
+	#### Taxonomic Assignment with VSEARCH
+	###JOB_ID4V=$($GCL_BIN""/sbatch --dependency=afterany:$JOB_ID3 \
+	###	$GCL_BIN""/Vsearch.slurm \
+	###	$PREFIX $INDIR $OUTDIR 0.7 $VSEARCH_DB $GCL_BIN $TAXON_DIR \
+	###	| grep -oh "[0-9]*" | grep -oh '^[^ ]* ')
+	###echo Submitted job: $JOB_ID4V
 
-	# Create OTUvsTubes
-	JOB_ID5V=$($GCL_BIN""/sbatch --dependency=afterany:$JOB_ID4V \
-		$GCL_BIN""/OTUvsTube.slurm \
-		$PREFIX $INDIR $OUTDIR $TAXON_DIR $GCL_BIN vsearch \
-		| grep -oh "[0-9]*" | grep -oh '^[^ ]* ')
-	echo Submitted job: $JOB_ID5V
+	#### Create OTUvsTubes
+	###JOB_ID5V=$($GCL_BIN""/sbatch --dependency=afterany:$JOB_ID4V \
+	###	$GCL_BIN""/OTUvsTube.slurm \
+	###	$PREFIX $INDIR $OUTDIR $TAXON_DIR $GCL_BIN vsearch \
+	###	| grep -oh "[0-9]*" | grep -oh '^[^ ]* ')
+	###echo Submitted job: $JOB_ID5V
 
 	# Add descriptive names to OTUvsTubes
 	JOB_ID6V=$($GCL_BIN""/sbatch --dependency=afterany:$JOB_ID5V \
@@ -283,7 +283,7 @@ then
 	# Taxonomic Assignment with ECOTAG
 	JOB_ID4E=$($GCL_BIN""/sbatch --dependency=afterany:$JOB_ID3 \
 		$GCL_BIN""/Ecotag.slurm \
-		$PREFIX $INDIR $OUTDIR 0.7 $ECOTAG_DB $ECOTAG_FASTA_DB $GCL_BIN $TAXON_DIR \
+		$PREFIX $INDIR $OUTDIR 0.7 $ECOTAG_DB $ECOTAG_FASTA_DB $GCL_BIN $TAXON_DIR $CHUNKS \
 		| grep -oh "[0-9]*" | grep -oh '^[^ ]* ')
 	echo Submitted job: $JOB_ID4E
 

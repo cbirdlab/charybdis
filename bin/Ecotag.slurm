@@ -13,12 +13,13 @@ DB_ECO=$5
 DB_FASTA=$6
 GCL_BIN=$7
 TAXDIR=$8
+CHUNKS=$9
 
 module load obitools
 
 # ECOTAG
 bash $GCL_BIN""/Ecotag.sh \
-	$PREFIX $INDIR $OUTDIR $ID $DB_ECO $DB_FASTA
+	$PREFIX $INDIR $OUTDIR $ID $DB_ECO $DB_FASTA $CHUNKS
 
 # Convert assigned FASTA to CSV
 obitab $OUTDIR""/$PREFIX"".OTU.ecotag.fasta \
