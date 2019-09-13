@@ -15,10 +15,12 @@ options(stringsAsFactors = FALSE)
 # Load data
 data <- read.table(file = FILE_ECOTAG, row.names = NULL,
 	header = TRUE, sep = ",", stringsAsFactors = FALSE)
-
 samples <- read.table (file = FILE_SAMPLE, 
 	header = FALSE, sep = ',', stringsAsFactors = FALSE)
 colnames (samples) <- c ("OTU_SEQID", "QSEQID", "SAMPLE_ID", "COUNT")
+
+# Filter unassigned sequences
+data <- data[!is.na(data$best_match),]
 
 # Extract data needed from Ecotag results
 OTU_SEQID <- data$id
@@ -32,7 +34,9 @@ charon <- data.frame ("ACCESSION", "GI", "TAXID")
 names(charon) <- c("ACCESSION", "GI", "TAXID")
 charon = charon[FALSE, ]
 for (seq in sepseqs){ 
+	print(seq)
 	charon[nrow(charon) + 1, ] = list(seq[[1]], seq[[2]], seq[[3]])
+	print("---")
 }
 
 # Add additional columns to charon
