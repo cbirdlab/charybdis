@@ -82,7 +82,7 @@ Install Vsearch
         make 
         sudo make install
 
-Install R packages: pracma, CHNOSZ, bold, furrr, tidyr
+Install R packages: `pracma`, `CHNOSZ`, `bold`, `furrr`, `tidyr`, `future`
 
 
 
