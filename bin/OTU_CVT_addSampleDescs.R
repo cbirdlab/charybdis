@@ -37,7 +37,7 @@ newCols <- list()
 for (t in names){
         prow <- PRED[PRED$Sample == t, ]
         predNames <- c(predNames, prow$Description)
-	newCols <- c(newCols, paste(prow$Description, t, sep="."))
+	newCols <- c(newCols, paste(prow$Description, t, sep="|"))
 }
 predNames <- unlist(predNames)
 newCols <- unlist(newCols)
