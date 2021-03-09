@@ -62,9 +62,8 @@ Dependencies:
 	cd /usr/local/bin/
 	sudo wget https://git.metabarcoding.org/obitools/obitools/raw/master/get_obitools/get-obitools.py
 	sudo python get-obitools.py
-
-* Add the following to ~/.bashrc: 
-
+	
+	# Add the following manually to ~/.bashrc using `nano ~/.bashrc`:
         export PATH="$PATH:/usr/local/bin/OBITools-1.2.13/export/bin"
 	
 #### Install Obitools3
@@ -84,8 +83,9 @@ Dependencies:
     pip3 install cython
     python3 setup.py install
     source obi_completion_script.bash
-        
-
+    
+    # test the install
+    obi test
 
 #### Install CROP
 
