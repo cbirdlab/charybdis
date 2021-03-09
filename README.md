@@ -106,16 +106,18 @@ Dependencies:
 #### Install Vsearch
 
         cd ~/Downloads
-        wget https://github.com/torognes/vsearch/archive/v2.13.4.tar.gz
-        tar xzf v2.13.4.tar.gz
-        cd vsearch-2.13.4
-        ./autogen.sh
-        ./configure
-        make 
-        sudo make install
+	wget https://github.com/torognes/vsearch/archive/v2.15.2.tar.gz
+	tar xzf v2.15.2.tar.gz
+	cd vsearch-2.15.2
+	./autogen.sh
+	./configure
+	make
+	sudo make install  # as root or sudo make install
 
 #### Install R packages: `pracma`, `CHNOSZ`, `bold`, `furrr`, `tidyr`, `future`
 
+	R
+	install.packages(c('pracma', 'CHNOSZ', 'bold', 'furrr', 'tidyr', 'future'))
 
 
 ### Download, setup BLAST nucleotide database
