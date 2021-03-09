@@ -53,19 +53,30 @@ Dependencies:
         sudo apt-get install libcurl4-openssl-dev libxml2-dev
         sudo apt-get install python-dev
 	
-Install `fastx-toolkit`
+#### Install `fastx-toolkit`
 * follow [instructions](http://hannonlab.cshl.edu/fastx_toolkit)
 
-Install Obitools
+#### Install Obitools
 
 	# obitools has been upgraded to work with python3, we are in the process of making sure charybdis is compatible
 	cd /usr/local/bin/
 	sudo wget https://git.metabarcoding.org/obitools/obitools/raw/master/get_obitools/get-obitools.py
 	sudo python get-obitools.py
-	
-Install Obitools3
 
-    cd /usr/local/bin/
+* Add the following to ~/.bashrc: 
+
+        export PATH="$PATH:/usr/local/bin/OBITools-1.2.13/export/bin"
+	
+#### Install Obitools3
+
+    # obitools has been upgraded to work with python3, we are in the process of making sure charybdis is compatible
+
+    # tested this with conda on, installation of conda recommended prior to obitools 3
+    sudo apt install python3-venv
+    
+    cd ~
+    mkdir Downloads
+    cd Downloads
     git clone https://git.metabarcoding.org/obitools/obitools3.git
     cd obitools3
     python3 -m venv obi3-env
@@ -73,13 +84,10 @@ Install Obitools3
     pip3 install cython
     python3 setup.py install
     source obi_completion_script.bash
-
         
-Add the following to ~/.bashrc: 
 
-        export PATH="$PATH:/usr/local/bin/OBITools-1.2.13/export/bin"
 
-Install CROP
+#### Install CROP
 
         cd ~/Downloads
         sudo apt-get install libgsl-dev
@@ -88,7 +96,7 @@ Install CROP
         make
         sudo cp CROPLinux /usr/local/bin/
 
-Install Vsearch
+#### Install Vsearch
 
         cd ~/Downloads
         wget https://github.com/torognes/vsearch/archive/v2.13.4.tar.gz
@@ -99,7 +107,7 @@ Install Vsearch
         make 
         sudo make install
 
-Install R packages: `pracma`, `CHNOSZ`, `bold`, `furrr`, `tidyr`, `future`
+#### Install R packages: `pracma`, `CHNOSZ`, `bold`, `furrr`, `tidyr`, `future`
 
 
 
