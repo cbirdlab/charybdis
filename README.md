@@ -68,6 +68,7 @@ Dependencies:
 	
 #### Install Obitools3
 
+```bash
     # obitools has been upgraded to work with python3, we are in the process of making sure charybdis is compatible
 
     # tested this with conda on, installation of conda recommended prior to obitools 3
@@ -92,7 +93,7 @@ Dependencies:
     
     # Add the following manually to ~/.bashrc using `nano ~/.bashrc`:
     source /usr/local/bin/obitools3/obi3-env/bin/activate
-
+```
 
 #### Install CROP
 
@@ -116,9 +117,10 @@ Dependencies:
 
 #### Install R packages: `pracma`, `CHNOSZ`, `bold`, `furrr`, `tidyr`, `future`
 
+```R
 	R
 	install.packages(c('pracma', 'CHNOSZ', 'bold', 'furrr', 'tidyr', 'future'))
-
+```
 
 ### Download, setup BLAST nucleotide database
 
