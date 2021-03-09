@@ -40,8 +40,8 @@ could be located anywhere on your system.
 
 Dependencies:
 - R: 
-- BLAST:
-- parallel:
+- [BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Web&PAGE_TYPE=BlastDocs&DOC_TYPE=Download):
+- [parallel](https://www.gnu.org/software/parallel/):
 - [fastx-toolkit](http://hannonlab.cshl.edu/fastx_toolkit): 
 - [GenomeTools](https://github.com/genometools/genometools):
 - [Obitools](https://pythonhosted.org/OBITools/welcome.html#installing-the-obitools): 
