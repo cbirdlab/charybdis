@@ -45,6 +45,7 @@ Dependencies:
 - [fastx-toolkit](http://hannonlab.cshl.edu/fastx_toolkit): 
 - [GenomeTools](https://github.com/genometools/genometools):
 - [Obitools](https://pythonhosted.org/OBITools/welcome.html#installing-the-obitools): 
+- [obitools3](https://git.metabarcoding.org/obitools/obitools3)
 - [CROP](https://github.com/tingchenlab/CROP): Clustering Sequences for OTU Prediction
 - [Vsearch](https://github.com/torognes/vsearch/archive/v2.13.4.tar.gz): 
 
