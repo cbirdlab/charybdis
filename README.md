@@ -145,12 +145,18 @@ Dependencies:
 	install.packages(c('pracma', 'CHNOSZ', 'bold', 'furrr', 'tidyr', 'future'))
 ```
 
+### Install charybdis
+
+```bash
+	git clone https://github.com/cbirdlab/charybdis.git
+```
+
 ### Download, setup BLAST nucleotide database
 
 Note that we download the nucleotide database because we are working with COI sequences.
 See the documentation on [BLAST databases](ftp://ftp.ncbi.nlm.nih.gov/blast/documents/blastdb.html) for all options.
 
-Download, decompress nucleotide (nt) database
+Download, decompress nucleotide (nt) database (Warning: >100 GB!)
 
 ```bash
         cd charybdis
@@ -162,7 +168,7 @@ Download, decompress nucleotide (nt) database
         for a in `ls -1 nt*.tar.gz`; do gzip -dc $a | tar xf -; done
 ```
 
-Download NCBI taxonomy database (Warning: >100 GB!)
+Download NCBI taxonomy database 
 
 ```bash
         cd charybdis/data
