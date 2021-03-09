@@ -40,14 +40,14 @@ could be located anywhere on your system.
 
 Dependencies:
 - R: 
-- [BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Web&PAGE_TYPE=BlastDocs&DOC_TYPE=Download):
-- [parallel](https://www.gnu.org/software/parallel/):
-- [fastx-toolkit](http://hannonlab.cshl.edu/fastx_toolkit): 
-- [GenomeTools](https://github.com/genometools/genometools):
-- [Obitools](https://pythonhosted.org/OBITools/welcome.html#installing-the-obitools): 
-- [obitools3](https://git.metabarcoding.org/obitools/obitools3)
+- [BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Web&PAGE_TYPE=BlastDocs&DOC_TYPE=Download)
+- [parallel](https://www.gnu.org/software/parallel/)
+- [fastx-toolkit](http://hannonlab.cshl.edu/fastx_toolkit) 
+- [GenomeTools](https://github.com/genometools/genometools)
+- [Obitools](https://pythonhosted.org/OBITools/welcome.html#installing-the-obitools) 
+- [obitools3](https://git.metabarcoding.org/obitools/obitools3/wikis/home)
 - [CROP](https://github.com/tingchenlab/CROP): Clustering Sequences for OTU Prediction
-- [Vsearch](https://github.com/torognes/vsearch/archive/v2.13.4.tar.gz): 
+- [Vsearch](https://github.com/torognes/vsearch/archive/v2.13.4.tar.gz)
 
         sudo apt-get install r-base ncbi-blast+ genometools parallel fastx-toolkit
         sudo apt-get install libcurl4-openssl-dev libxml2-dev
