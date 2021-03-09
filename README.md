@@ -59,6 +59,20 @@ Dependencies:
 
 * follow [instructions](http://hannonlab.cshl.edu/fastx_toolkit)
 
+#### Install NCBI BLAST
+
+```bash
+	# find newest version here https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/ 
+	# if it is newer than version installed using apt then remove apt installation of blast
+	sudo apt --purge remove ncbi-blast+ 
+	
+	# replace URL, tar file, and directory below with newest version name
+	wget https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/ncbi-blast-2.11.0+-x64-linux.tar.gz
+	tar -xf ncbi-blast-2.11.0+-x64-linux.tar.gz
+	sudo cp ncbi-blast-2.11.0+/bin/* /usr/local/bin
+	
+```
+
 #### Install Obitools
 
 ```bash
