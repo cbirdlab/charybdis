@@ -83,9 +83,16 @@ Dependencies:
     pip3 install cython
     python3 setup.py install
     source obi_completion_script.bash
-    
+        
     # test the install
     obi test
+    
+    # copy to an appropriate directory in the path
+    sudo cp -r ../obitools3 /usr/local/bin
+    
+    # Add the following manually to ~/.bashrc using `nano ~/.bashrc`:
+    source /usr/local/bin/obitools3/obi3-env/bin/activate
+
 
 #### Install CROP
 
