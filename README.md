@@ -49,15 +49,19 @@ Dependencies:
 - [CROP](https://github.com/tingchenlab/CROP): Clustering Sequences for OTU Prediction
 - [Vsearch](https://github.com/torognes/vsearch/archive/v2.13.4.tar.gz)
 
+```bash
         sudo apt-get install r-base ncbi-blast+ genometools parallel 
         sudo apt-get install libcurl4-openssl-dev libxml2-dev
         sudo apt-get install python-dev
-	
+```
+
 #### Install `fastx-toolkit`
+
 * follow [instructions](http://hannonlab.cshl.edu/fastx_toolkit)
 
 #### Install Obitools
 
+```bash
 	# obitools has been upgraded to work with python3, we are in the process of making sure charybdis is compatible
 	cd /usr/local/bin/
 	sudo wget https://git.metabarcoding.org/obitools/obitools/raw/master/get_obitools/get-obitools.py
@@ -65,7 +69,8 @@ Dependencies:
 	
 	# Add the following manually to ~/.bashrc using `nano ~/.bashrc`:
         export PATH="$PATH:/usr/local/bin/OBITools-1.2.13/export/bin"
-	
+```
+
 #### Install Obitools3
 
 ```bash
@@ -97,15 +102,18 @@ Dependencies:
 
 #### Install CROP
 
+```bash
         cd ~/Downloads
         sudo apt-get install libgsl-dev
         git clone https://github.com/tingchenlab/CROP.git
         cd CROP
         make
         sudo cp CROPLinux /usr/local/bin/
+```
 
 #### Install Vsearch
 
+```bash
         cd ~/Downloads
 	wget https://github.com/torognes/vsearch/archive/v2.15.2.tar.gz
 	tar xzf v2.15.2.tar.gz
@@ -114,6 +122,7 @@ Dependencies:
 	./configure
 	make
 	sudo make install  # as root or sudo make install
+```
 
 #### Install R packages: `pracma`, `CHNOSZ`, `bold`, `furrr`, `tidyr`, `future`
 
@@ -129,6 +138,7 @@ See the documentation on [BLAST databases](ftp://ftp.ncbi.nlm.nih.gov/blast/docu
 
 Download, decompress nucleotide (nt) database
 
+```bash
         cd charybdis
         mdkir data
         cd data
@@ -136,9 +146,11 @@ Download, decompress nucleotide (nt) database
         cd blastdb
         wget ftp://ftp.ncbi.nlm.nih.gov/blast/db/nt* 
         for a in `ls -1 nt*.tar.gz`; do gzip -dc $a | tar xf -; done
+```
 
 Download NCBI taxonomy database (Warning: >100 GB!)
 
+```bash
         cd charybdis/data
         mkdir taxo
         cd taxo
@@ -149,6 +161,7 @@ Download NCBI taxonomy database (Warning: >100 GB!)
         gunzip gi_taxid_prot.dmp.gz
         md5sum -c taxdump.tar.gz.md5
         tar -zxf taxdump.tar.gz
+```
 
 Create COI filter GI list.
 Before running this, you need to see how many GIs exist.
