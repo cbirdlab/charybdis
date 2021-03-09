@@ -189,25 +189,25 @@ echo "    $@"
 awk '{print $2}' $INDIR""/$PREFIX"".barcodes.txt \
 	| tail -n +2 \
 	> $INDIR""/$PREFIX"".samples.txt
-#
-## Merge Reads
-#JOB_ID1=$($GCL_BIN""/sbatch $GCL_BIN""/mergeReads.slurm \
-#	$PREFIX $INDIR $OUTDIR $CHUNKS $GCL_BIN | grep -oh "[0-9]*" | grep -oh '^[^ ]* ')
-#echo Submitted job: $JOB_ID1
-#
-## Filter Reads
-#JOB_ID2=$($GCL_BIN""/sbatch --dependency=afterany:$JOB_ID1 \
-#	$GCL_BIN""/filterReads.slurm \
-#	$PREFIX $INDIR $OUTDIR $CHUNKS \
-#	$BASEPAIRS_LOWER $BASEPAIRS_HIGHER $CHIMERA_DB $GCL_BIN | grep -oh "[0-9]*" | grep -oh '^[^ ]* ')
-#echo Submitted job: $JOB_ID2
-#
-## Cluster into OTUs
-#JOB_ID3=$($GCL_BIN""/sbatch --dependency=afterany:$JOB_ID2 \
-#	$GCL_BIN""/ClusterOTU.slurm \
-#	$PREFIX $BASEPAIRS $INDIR $OUTDIR $CHUNKS $GCL_BIN | grep -oh "[0-9]*" | grep -oh '^[^ ]* ')
-#echo Submitted job: $JOB_ID3
-#
+
+# Merge Reads
+JOB_ID1=$($GCL_BIN""/sbatch $GCL_BIN""/mergeReads.slurm \
+	$PREFIX $INDIR $OUTDIR $CHUNKS $GCL_BIN | grep -oh "[0-9]*" | grep -oh '^[^ ]* ')
+echo Submitted job: $JOB_ID1
+
+# Filter Reads
+JOB_ID2=$($GCL_BIN""/sbatch --dependency=afterany:$JOB_ID1 \
+	$GCL_BIN""/filterReads.slurm \
+	$PREFIX $INDIR $OUTDIR $CHUNKS \
+	$BASEPAIRS_LOWER $BASEPAIRS_HIGHER $CHIMERA_DB $GCL_BIN | grep -oh "[0-9]*" | grep -oh '^[^ ]* ')
+echo Submitted job: $JOB_ID2
+
+# Cluster into OTUs
+JOB_ID3=$($GCL_BIN""/sbatch --dependency=afterany:$JOB_ID2 \
+	$GCL_BIN""/ClusterOTU.slurm \
+	$PREFIX $BASEPAIRS $INDIR $OUTDIR $CHUNKS $GCL_BIN | grep -oh "[0-9]*" | grep -oh '^[^ ]* ')
+echo Submitted job: $JOB_ID3
+
 # BLAST
 if [ "$BLAST_DB" != "" ]
 then
