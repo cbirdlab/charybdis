@@ -58,7 +58,7 @@ Install `fastx-toolkit`
 
 Install Obitools
 
-	# obitools has been upgraded to work with python3
+	# obitools has been upgraded to work with python3, we are in the process of making sure charybdis is compatible
 	cd /usr/local/bin/
 	sudo wget https://git.metabarcoding.org/obitools/obitools/raw/master/get_obitools/get-obitools.py
 	sudo python get-obitools.py
