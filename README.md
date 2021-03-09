@@ -49,15 +49,31 @@ Dependencies:
 - [CROP](https://github.com/tingchenlab/CROP): Clustering Sequences for OTU Prediction
 - [Vsearch](https://github.com/torognes/vsearch/archive/v2.13.4.tar.gz)
 
-        sudo apt-get install r-base ncbi-blast+ genometools parallel fastx-toolkit
+        sudo apt-get install r-base ncbi-blast+ genometools parallel 
         sudo apt-get install libcurl4-openssl-dev libxml2-dev
         sudo apt-get install python-dev
+	
+Install `fastx-toolkit`
+* follow [instructions](http://hannonlab.cshl.edu/fastx_toolkit)
 
 Install Obitools
 
-        cd /usr/local/bin/
+        # obitools has been upgraded to work with python3
+	cd /usr/local/bin/
         sudo wget https://git.metabarcoding.org/obitools/obitools/raw/master/get_obitools/get-obitools.py
         sudo python get-obitools.py
+	
+Install Obitools3
+
+    cd /usr/local/bin/
+    git clone https://git.metabarcoding.org/obitools/obitools3.git
+    cd obitools3
+    python3 -m venv obi3-env
+    source obi3-env/bin/activate
+    pip3 install cython
+    python3 setup.py install
+    source obi_completion_script.bash
+
         
 Add the following to ~/.bashrc: 
 
