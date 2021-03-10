@@ -78,32 +78,32 @@ Dependencies:
 Steps adapted from Frederic Boyer's [Biostars post](https://www.biostars.org/p/235898/#237117). 
 
 ```bash
-# create python 2.7 virtual env with python 2.7
+# create python 2.7 virtual env
 cd
 mkdir OBI
 cd OBI
 virtualenv-2.7 OBI-env
 
-# get and extract the source
+# download, extract source code
 wget 'https://git.metabarcoding.org/obitools/obitools/repository/archive.tar.gz?ref=master'
 tar -zxvf "archive.tar.gz?ref=master"
 
 # activate the virtual env
 source OBI-env/bin/activate
 
-# last sphinx version has a problem, install one that is OK
+# install a specific (known working) version of sphinx
 pip install sphinx==1.4.8
 
-# enter the source folder
+# enter the source
 cd obitools-master-*
 
-# build the package
+# build
 python setup.py build
 
-# install it in the virtual env
+# install
 python setup.py install
 
-# leave the virtualenv
+# leave virtualenv
 deactivate
 
 # copy binaries to system-wide location
