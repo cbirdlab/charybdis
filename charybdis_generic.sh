@@ -247,19 +247,19 @@ fi
 if [ "$VSEARCH_DB" != "" ]
 then
 
-	#### Taxonomic Assignment with VSEARCH
-	###JOB_ID4V=$($GCL_BIN""/sbatch --dependency=afterany:$JOB_ID3 \
-	###	$GCL_BIN""/Vsearch.slurm \
-	###	$PREFIX $INDIR $OUTDIR 0.7 $VSEARCH_DB $GCL_BIN $TAXON_DIR \
-	###	| grep -oh "[0-9]*" | grep -oh '^[^ ]* ')
-	###echo Submitted job: $JOB_ID4V
+	# Taxonomic Assignment with VSEARCH
+	JOB_ID4V=$($GCL_BIN""/sbatch --dependency=afterany:$JOB_ID3 \
+		$GCL_BIN""/Vsearch.slurm \
+		$PREFIX $INDIR $OUTDIR 0.7 $VSEARCH_DB $GCL_BIN $TAXON_DIR \
+		| grep -oh "[0-9]*" | grep -oh '^[^ ]* ')
+	echo Submitted job: $JOB_ID4V
 
-	#### Create OTUvsTubes
-	###JOB_ID5V=$($GCL_BIN""/sbatch --dependency=afterany:$JOB_ID4V \
-	###	$GCL_BIN""/OTUvsTube.slurm \
-	###	$PREFIX $INDIR $OUTDIR $TAXON_DIR $GCL_BIN vsearch \
-	###	| grep -oh "[0-9]*" | grep -oh '^[^ ]* ')
-	###echo Submitted job: $JOB_ID5V
+	# Create OTUvsTubes
+	JOB_ID5V=$($GCL_BIN""/sbatch --dependency=afterany:$JOB_ID4V \
+		$GCL_BIN""/OTUvsTube.slurm \
+		$PREFIX $INDIR $OUTDIR $TAXON_DIR $GCL_BIN vsearch \
+		| grep -oh "[0-9]*" | grep -oh '^[^ ]* ')
+	echo Submitted job: $JOB_ID5V
 
 	# Add descriptive names to OTUvsTubes
 	JOB_ID6V=$($GCL_BIN""/sbatch --dependency=afterany:$JOB_ID5V \
