@@ -42,7 +42,6 @@ Dependencies:
 - R: 
 - [BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Web&PAGE_TYPE=BlastDocs&DOC_TYPE=Download)
 - [parallel](https://www.gnu.org/software/parallel/)
-- [fastx-toolkit](http://hannonlab.cshl.edu/fastx_toolkit) 
 - [GenomeTools](https://github.com/genometools/genometools)
 - [Obitools](https://pythonhosted.org/OBITools/welcome.html#installing-the-obitools) 
 - [obitools3](https://git.metabarcoding.org/obitools/obitools3/wikis/home)
@@ -54,10 +53,6 @@ Dependencies:
         sudo apt-get install libcurl4-openssl-dev libxml2-dev
         sudo apt-get install python-dev
 ```
-
-#### Install `fastx-toolkit`
-
-* follow [instructions](http://hannonlab.cshl.edu/fastx_toolkit)
 
 #### Install NCBI BLAST
 
@@ -154,7 +149,7 @@ cp OBI-env/bin/* /usr/bin/
 #### Install Vsearch
 
 ```bash
-        cd ~/Downloads
+    cd ~/Downloads
 	wget https://github.com/torognes/vsearch/archive/v2.15.2.tar.gz
 	tar xzf v2.15.2.tar.gz
 	cd vsearch-2.15.2

@@ -11,7 +11,6 @@
 module load bio-misc
 module load obitools
 module load parallel
-module load fastx_toolkit
 module load vsearch
 
 # Add your data files here

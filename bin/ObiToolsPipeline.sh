@@ -130,9 +130,9 @@ echo "Concatenate samples into single fasta"
 rm $OUTDIR/$PREFIX.full.nonchimeras.clean.fasta
 cat $OUTDIR/$PREFIX.*.nonchimeras.clean.fasta > \
 	$OUTDIR/$PREFIX.full.nonchimeras.clean.fasta
-fasta_formatter -i $OUTDIR/$PREFIX.full.nonchimeras.clean.fasta -t \
-	| sed -e 's/[^= ]*=[^;]*;//g' -e 's/>//g' -e 's/[[:blank:]]\+/,/g' \
-	> $OUTDIR/$PREFIX.full.nonchimeras.clean.csv
+$GCL_PATH/fasta2csv.awk $OUTDIR/$PREFIX.full.nonchimeras.clean.fasta \
+    | sed -e 's/[ ].*\t/,/' \
+    > $OUTDIR/$PREFIX.full.nonchimeras.clean.csv
 
 # Get sequence counts for various steps
 $GCL_PATH/ObiToolsPipeline_stats.sh $PREFIX $INDIR $OUTDIR > $OUTDIR/$PREFIX.seq_stats.txt

@@ -9,7 +9,6 @@ if [ -v "$SLURM_JOB_ID" ]; then
 	module load obitools
 	module load parallel
 	module load vsearch
-	module load fastx_toolkit
 fi
 
 PREFIX=$1
