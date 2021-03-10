@@ -75,14 +75,40 @@ Dependencies:
 
 #### Install Obitools
 
+Steps adapted from Frederic Boyer's [Biostars post](https://www.biostars.org/p/235898/#237117). 
+
 ```bash
-	# obitools has been upgraded to work with python3, we are in the process of making sure charybdis is compatible
-	cd /usr/local/bin/
-	sudo wget https://git.metabarcoding.org/obitools/obitools/raw/master/get_obitools/get-obitools.py
-	sudo python get-obitools.py
-	
-	# Add the following manually to ~/.bashrc using `nano ~/.bashrc`:
-        export PATH="$PATH:/usr/local/bin/OBITools-1.2.13/export/bin"
+# create python 2.7 virtual env with python 2.7
+cd
+mkdir OBI
+cd OBI
+virtualenv-2.7 OBI-env
+
+# get and extract the source
+wget 'https://git.metabarcoding.org/obitools/obitools/repository/archive.tar.gz?ref=master'
+tar -zxvf "archive.tar.gz?ref=master"
+
+# activate the virtual env
+source OBI-env/bin/activate
+
+# last sphinx version has a problem, install one that is OK
+pip install sphinx==1.4.8
+
+# enter the source folder
+cd obitools-master-*
+
+# build the package
+python setup.py build
+
+# install it in the virtual env
+python setup.py install
+
+# leave the virtualenv
+deactivate
+
+# copy binaries to system-wide location
+cd
+cp OBI-env/bin/* /usr/bin/
 ```
 
 #### Install Obitools3
@@ -176,12 +202,6 @@ Download NCBI taxonomy database
         mkdir taxo
         cd taxo
         wget ftp://ftp.ncbi.nih.gov/pub/taxonomy/*
-        md5sum -c gi_taxid_nucl.dmp.gz.md5
-        gunzip gi_taxid_nucl.dmp.gz
-        md5sum -c gi_taxid_prot.dmp.gz.md5
-        gunzip gi_taxid_prot.dmp.gz
-        md5sum -c taxdump.tar.gz.md5
-        tar -zxf taxdump.tar.gz
 ```
 
 Create COI filter GI list.
@@ -210,7 +230,8 @@ Optional only because you could instead use the list provided with Charybdis.
 
 Goto the testrun directory and run example_charybdis_run.sh
         
-        . example_charybdis_run.sh
+	cd testrun
+        bash example_charybdis_run.sh
 
 ### Get required data, setup directory
 
