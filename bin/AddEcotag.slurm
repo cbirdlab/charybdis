@@ -15,10 +15,10 @@ GCL_BIN=$5
 
 
 Rscript $GCL_BIN""/OTU_CVT_addEcotag.R \
-    $OUTDIR""/$PREFIX"".OTUvsTubes.ecotag.SP.csv \
+    $OUTDIR""/$PREFIX"".OTUvsTubes.ecotag.S.csv \
     $OUTDIR""/$PREFIX"".OTU.ecotag.csv \
     $DB_NAME \
-    $OUTDIR""/$PREFIX"".OTUvsTubes.ecotag.SPA.csv 
+    $OUTDIR""/$PREFIX"".OTUvsTubes.ecotag.SA.csv 
 
 
 

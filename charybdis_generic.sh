@@ -219,19 +219,12 @@ then
 		| grep -oh "[0-9]*" | grep -oh '^[^ ]* ')
 	echo Submitted job: $JOB_ID4B
 
-     	# Create OTUvsTubes
+    # Create OTUvsTubes
 	JOB_ID5B=$($GCL_BIN""/sbatch --dependency=afterany:$JOB_ID4B \
 		$GCL_BIN""/OTUvsTube.slurm \
 		$PREFIX $INDIR $OUTDIR $TAXON_DIR $GCL_BIN $BLAST_TASK \
 		| grep -oh "[0-9]*" | grep -oh '^[^ ]* ')
 	echo Submitted job: $JOB_ID5B
-
-	# Add descriptive names to OTUvsTubes
-	JOB_ID6B=$($GCL_BIN""/sbatch --dependency=afterany:$JOB_ID5B \
-		$GCL_BIN""/OTU_CVT_addSampleDescs.slurm \
-		$PREFIX $INDIR $OUTDIR $GCL_BIN $BLAST_TASK \
-		| grep -oh "[0-9]*" | grep -oh '^[^ ]* ')
-	echo Submitted job: $JOB_ID6B
 
 	# Add BLAST information
 	JOB_ID7B=$($GCL_BIN""/sbatch --dependency=afterany:$JOB_ID6B \
@@ -261,13 +254,6 @@ then
 		| grep -oh "[0-9]*" | grep -oh '^[^ ]* ')
 	echo Submitted job: $JOB_ID5V
 
-	# Add descriptive names to OTUvsTubes
-	JOB_ID6V=$($GCL_BIN""/sbatch --dependency=afterany:$JOB_ID5V \
-		$GCL_BIN""/OTU_CVT_addSampleDescs.slurm \
-		$PREFIX $INDIR $OUTDIR $GCL_BIN vsearch \
-		| grep -oh "[0-9]*" | grep -oh '^[^ ]* ')
-	echo Submitted job: $JOB_ID6V
-
 	# Add VSEARCH information
 	JOB_ID7V=$($GCL_BIN""/sbatch --dependency=afterany:$JOB_ID6V \
 		$GCL_BIN/AddVsearch.slurm \
@@ -294,13 +280,6 @@ then
 		| grep -oh "[0-9]*" | grep -oh '^[^ ]* ')
 	echo Submitted job: $JOB_ID5E
 
-	# Add descriptive names to OTUvsTubes
-	JOB_ID6E=$($GCL_BIN""/sbatch --dependency=afterany:$JOB_ID5E \
-		$GCL_BIN""/OTU_CVT_addSampleDescs.slurm \
-		$PREFIX $INDIR $OUTDIR $GCL_BIN ecotag \
-		| grep -oh "[0-9]*" | grep -oh '^[^ ]* ')
-	echo Submitted job: $JOB_ID6E
-
 	# Add ECOTAG information
 	JOB_ID7E=$($GCL_BIN""/sbatch --dependency=afterany:$JOB_ID6E \
 		$GCL_BIN/AddEcotag.slurm \
@@ -326,13 +305,6 @@ then
 		$PREFIX $INDIR $OUTDIR $TAXON_DIR $GCL_BIN sap \
 		| grep -oh "[0-9]*" | grep -oh '^[^ ]* ')
 	echo Submitted job: $JOB_ID5S
-
-	# Add predator names to OTUvsTubes
-	JOB_ID6S=$($GCL_BIN""/sbatch --dependency=afterany:$JOB_ID5S \
-		$GCL_BIN""/OTU_CVT_addSampleDescs.slurm \
-		$PREFIX $INDIR $OUTDIR sap \
-		| grep -oh "[0-9]*" | grep -oh '^[^ ]* ')
-	echo Submitted job: $JOB_ID6S
 
 	# Classify SAP results into categories
 

@@ -45,10 +45,10 @@ sed -i -e 's/,/_/g' common_names.txt
 >&2 cat $GCL_BIN""/OTU_CVT_addBlast.R
 
 Rscript $GCL_BIN""/OTU_CVT_addBlast.R \
-	$OUTDIR""/$PREFIX"".OTUvsTubes.$METHOD.SP.csv \
+	$OUTDIR""/$PREFIX"".OTUvsTubes.$METHOD.S.csv \
 	$OUTDIR""/$PREFIX"".OTU.$METHOD.Out \
 	$DB_NAME \
-	$OUTDIR""/$PREFIX"".OTUvsTubes.$METHOD.SPA.csv \
+	$OUTDIR""/$PREFIX"".OTUvsTubes.$METHOD.SA.csv \
 	common_names.txt
 
 rm -f common_names.txt

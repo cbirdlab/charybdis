@@ -14,8 +14,8 @@ DB_NAME=$4
 GCL_BIN=$5 
 
 Rscript $GCL_BIN""/OTU_CVT_addVsearch.R \
-    $OUTDIR""/$PREFIX"".OTUvsTubes.vsearch.SP.csv \
+    $OUTDIR""/$PREFIX"".OTUvsTubes.vsearch.S.csv \
     $OUTDIR""/$PREFIX"".OTU.vsearchB6out.txt \
     $DB_NAME \
-    $OUTDIR""/$PREFIX"".OTUvsTubes.vsearch.SPA.csv
+    $OUTDIR""/$PREFIX"".OTUvsTubes.vsearch.SA.csv
 

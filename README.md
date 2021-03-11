@@ -245,8 +245,6 @@ You need four pieces of input data:
 - <projname>.barcodes.txt: Barcodes that label sequence sample.
     - Example: testrun/TestData.barcodes.txt
     - **NOTE: it is critical that only standard IUPAC code be used, use N rather than I for inosines**
-- <projname>.sampledescs.csv: Arbitrary description of each sample. 
-    - Example: testrun/TestData.sampledescs.csv
     - **Note:** barcodes cannot have 'I' basepair code. I replace with 'N'. 
 
 Your project directory should like this for COI data:
@@ -259,7 +257,6 @@ Your project directory should like this for COI data:
         ├── <projname>_charybdis_run.sh
         ├── chimera_db_stub.txt
         ├── env.NCBI_NT_MAY2019.gi  (get from charybdis/data in place of blast_ignore_stub.txt)
-        └── <projname>.sampledescs.csv
 
 Your project directory should like this to search the whole blast database data:
 
@@ -271,7 +268,6 @@ Your project directory should like this to search the whole blast database data:
         ├── <projname>_charybdis_run.sh
         ├── chimera_db_stub.txt
         ├── blast_ignore_stub.txt
-        └── <projname>.sampledescs.csv
 
 # Run pipeline
 
@@ -367,8 +363,6 @@ Those that deal directly with the metabarcoding process.
 - - **crittersVStubes_OTU.R:** Convert charon CSV to a OTUvsTubes CSV format.
 - **AddBlast.slurm:** SLURM script to add BLAST scores to OTUvsTubes.
 - - **OTU_CVT_addBlast.R:** Add BLAST scores to OTUvsTubes.
-- **OTU_CVT_addSampleDescs.slurm:** SLURM script to add descriptions to samples (tubes) to OTUvsTubes CSV.
-- - **OTU_CVT_addSampleDescs.R:** Add descriptions to samples (tubes) to OTUvsTubes CSV.
 
 ### Database utilities
 
