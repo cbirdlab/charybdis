@@ -70,7 +70,16 @@ Dependencies:
 
 #### Install Obitools
 
-Steps adapted from Frederic Boyer's [Biostars post](https://www.biostars.org/p/235898/#237117). 
+If you've already installed obitools and it's not working, the first step is to remove your old installations so that they don't conflict.
+
+```bash
+#this removes obitools installed via apt
+sudo apt remove obitools
+
+#if you didn't tell obitools to install somewhere other than where it installs by default, then you should be ok.  Otherwise, you're going to have to track down all the commands that it installs (maybe in /usr/local/bin ?) and `rm` them.
+```
+
+We are not enamored with obitools3, yet, so will continue using obitools.  The following steps will help you successfully install them. Steps adapted from Frederic Boyer's [Biostars post](https://www.biostars.org/p/235898/#237117). 
 
 ```bash
 # create python 2.7 virtual env
@@ -78,6 +87,8 @@ cd
 mkdir OBI
 cd OBI
 virtualenv-2.7 OBI-env
+#the previous line didn't work for me.  I installed python 2.7.15 from source then ran the next line
+#virtualenv --python=/usr/local/bin/python2.7 OBI-env
 
 # download, extract source code
 wget 'https://git.metabarcoding.org/obitools/obitools/repository/archive.tar.gz?ref=master'
@@ -102,7 +113,7 @@ python setup.py install
 deactivate
 
 # copy binaries to system-wide location
-cd
+cd ..
 cp OBI-env/bin/* /usr/bin/
 ```
 
@@ -159,11 +170,17 @@ cp OBI-env/bin/* /usr/bin/
 	sudo make install  # as root or sudo make install
 ```
 
-#### Install R packages: `pracma`, `CHNOSZ`, `bold`, `furrr`, `tidyr`, `future`
+#### Install R
+
+There are many tutorials on installing R, here is [one](https://www.datacamp.com/community/tutorials/installing-R-windows-mac-ubuntu)
+
+
+#### Install R packages: `pracma`, `CHNOSZ`, `bold`, `furrr`, `tidyr`, `future`, `taxizedb`
 
 ```R
 	R
-	install.packages(c('pracma', 'CHNOSZ', 'bold', 'furrr', 'tidyr', 'future'))
+	install.packages(c('pracma', 'CHNOSZ', 'bold', 'furrr', 'tidyr', 'future', 'taxizedb'))
+	# ctrl-d to exit R
 ```
 
 ### Install charybdis
