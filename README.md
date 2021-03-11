@@ -116,7 +116,7 @@ python setup.py install
 deactivate
 
 # copy binaries to system-wide location
-cd
+cd ..
 cp OBI-env/bin/* /usr/bin/
 ```
 
