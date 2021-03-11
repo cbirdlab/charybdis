@@ -159,6 +159,11 @@ cp OBI-env/bin/* /usr/bin/
 	sudo make install  # as root or sudo make install
 ```
 
+#### Install R
+
+There are many tutorials on installing R, here is [one](https://www.datacamp.com/community/tutorials/installing-R-windows-mac-ubuntu)
+
+
 #### Install R packages: `pracma`, `CHNOSZ`, `bold`, `furrr`, `tidyr`, `future`
 
 ```R
