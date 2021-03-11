@@ -169,6 +169,7 @@ There are many tutorials on installing R, here is [one](https://www.datacamp.com
 ```R
 	R
 	install.packages(c('pracma', 'CHNOSZ', 'bold', 'furrr', 'tidyr', 'future'))
+	# ctrl-d to exit R
 ```
 
 ### Install charybdis
