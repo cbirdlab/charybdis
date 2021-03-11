@@ -1,68 +1,35 @@
-####################
-# Input Parameters #
-####################
-
+###########
+# Options #
+###########
 args <- commandArgs (TRUE)
+# Ensure >6 parameters 
+# (only six needed, but 7 for older scripts that call this)
+stopifnot (length (args) >= 6)
 
-# Ensure 7 parameters
-stopifnot (length (args) == 7)
-
-# Name of input file, minus the extension
-# Will be used as the prefix for all output data in order to 
-# associate each step of the pipeline with the input file
-# PREFIX <- "jones.COI"
+# Project prefix
 PREFIX <- args[1]
-
 # Samples File
-# SAMPLES_FILE <- "/media/Wapuilani/evan/Charybdis_Runs/MaryJones/in/jones.16S.samples.txt"
 SAMPLES_FILE <- args[2]
-
 # Total Counts File
-# TOTAL_COUNTS_FILE <- "/media/Wapuilani/evan/Charybdis_Runs/MaryJones/out/jones.16S.total_counts.csv"
 TOTAL_COUNTS_FILE <- args[3]
-
 # Charon file from which scientific names may be pulled
-# CHARON_FILE <- "/media/Wapuilani/evan/Charybdis_Runs/MaryJones/out/jones.16S.OTU.charon"
 CHARON_FILE <- args[4]
-
 # Samples file for attaching OTU information. 
-# FILE_SAMPLE <- "/media/Wapuilani/evan/Charybdis_Runs/MaryJones/out/jones.16S.full.nonchimeras.clean.OTU.cluster.size_fix"
 FILE_SAMPLE <- args[5]
-
 # Output file name
-# OUTFILE <- "/media/Wapuilani/evan/Charybdis_Runs/MaryJones/out/jones.16S.OTU.CVT"
 OUTFILE <- args[6]
-
-# Directory containing the NCBI flatfile taxonomic database
-# TAXDIR <- "/media/Wapuilani/Databases/NCBI_TAXO/"
-TAXDIR <- args[7]
-
-#############
-# R Options #
-#############
 
 options(stringsAsFactors = FALSE)
 
-###############
-# Dependecies #
-###############
-
 # Load libraries
-suppressMessages (library ("CHNOSZ"))  # For NCBI database query
-suppressMessages (library ("pracma"))  # For string manipulation functions
-suppressMessages (library ("furrr"))  # For parallelization
-suppressMessages (library ("tidyr")) # for reshaping data
+suppressMessages (library ("taxizedb")) # For NCBI database query
+suppressMessages (library ("pracma", warn.conflicts = FALSE))  # For string manipulation functions
+suppressMessages (library ("furrr", warn.conflicts = FALSE))  # For parallelization
+suppressMessages (library ("tidyr", warn.conflicts = FALSE)) # for reshaping data
 
-# Load taxonomic database into memory for faster access
-# This will be used to get higher level taxonomic information for 
-# a given scientific name
-ncbi_nodes <- getnodes (taxdir=TAXDIR)
-ncbi_names <- getnames (taxdir=TAXDIR)
-
-
-####################
-# Define Functions #
-####################
+#############
+# Functions #
+#############
 
 # Function: expandTaxonRankName
 # Purpose: Takes in a list of basic taxonomic rank names
@@ -72,15 +39,12 @@ expandTaxonRankName<- function (x){
   c (strcat ( c ("infra", x)), strcat ( c ("sub", x)), x, strcat ("super", x) )
 }
 
-
 ####################
 # Read, Parse Data #
 ####################
 
 # Obtain a list of taxonomic ranks in the form of "infraspecies, subspecies, species, superspecies, ......., superkingdom"
 taxonomicRanksOfInterestCompressed <- c ("species", "genus", "family", "order", "class", "phylum", "kingdom")
-#taxonomicRanksOfInterest <- sapply (X = taxonomicRanksOfInterestCompressed, function (x) expandTaxonRankName (x))
-#taxonomicRanksOfInterest <- as.vector (taxonomicRanksOfInterest)
 taxonomicRanksOfInterest <- taxonomicRanksOfInterestCompressed
 
 samples <- unlist (read.table (SAMPLES_FILE, header = FALSE, stringsAsFactors = FALSE))
@@ -89,7 +53,6 @@ charon <- read.table (CHARON_FILE, sep = ",", stringsAsFactors = FALSE)
 charon$V5 <- make.names (charon$V5)
 colnames (charon) <- c ("QSEQID", "GenBankID", "SCINAME", "NCBI_TAXID", "SAMPLE_ID", "COUNT")
 seq_stats <- read.table (TOTAL_COUNTS_FILE, header = FALSE, sep = ":")
-
 
 # Build table sequence IDs (query and target) and scientific name   
 seqidQ_seqidT_sciname_taxid <- charon[,1:4]
@@ -102,9 +65,9 @@ seqidQ_seqidT_sciname_taxid <- unique (seqidQ_seqidT_sciname_taxid[c ("SEQID_QUE
 sampleInit <- matrix (data = 0, nrow = nrow (seqidQ_seqidT_sciname_taxid), ncol = length (samples))
 colnames (sampleInit) <- samples_names
 
-##############################
-# Section for OTU attachment #
-##############################
+#########################
+# Count OTUs per Sample #
+#########################
 # Read the map of SEQID <-> OTU_SEQID
 samples <- read.table (file = FILE_SAMPLE, header = FALSE, sep = ',', stringsAsFactors = FALSE)
 colnames (samples) <- c ("OTU_SEQID", "QSEQID", "SAMPLE_ID", "COUNT")
@@ -119,29 +82,19 @@ charon_OTU <- aggregate( . ~ SCINAME + NCBI_TAXID + SAMPLE_ID + OTU_SEQID, data 
 CVT <- charon_OTU %>% spread(SAMPLE_ID, COUNT) 
 CVT[is.na(CVT)] <- 0
 
-
-######################
-# End OTU attachment #
-######################
-
 # Now, need to compress the data such that the query sequence is not considered and the total counts for 
 # each target is summed for each sample. 
-##CVT <- CVT_Expanded[, names (CVT_Expanded) != "SEQID_QUERY"]
-##CVT <- CVT[, names (CVT) != "SEQID_TARGET"]
-##CVT <- aggregate ( . ~ SCINAME + NCBI_TAXID, data = CVT, FUN = sum )
-
 critter_totals <- apply (X = CVT[, 4:ncol (CVT)], MARGIN = 1, sum)
 CVT <- cbind.data.frame (CVT$OTU_SEQID, CVT$NCBI_TAXID, CVT$SCINAME, critter_totals, CVT[, 4:ncol (CVT)])
 colnames (CVT)[1:4] <- c ("OTU_SEQID", "NCBI_TAXID", "SCINAME", "TOTAL")
 
-
-
-################################################################
-# Initialize and populate table of rank names for each critter #
-################################################################
+#####################
+# Get OTU taxonomy  #
+#####################
 
 # For each unique scientific name, get associated taxonomic rank
-ranks <- sapply (X = CVT$NCBI_TAXID, function (x) getrank (x, nodes=ncbi_nodes))
+### OLD TAXO     ranks <- sapply (X = CVT$NCBI_TAXID, function (x) getrank (x, nodes=ncbi_nodes))
+ranks <- sapply (X = CVT$NCBI_TAXID, function (x) taxid2rank (x))
 
 # Change "no rank" to "clade"
 ranks <- sapply (X = ranks, function (x) { if (!is.na (x)){  if (x == "no rank") {"clade/other"} else {x}} else {"NA"} })
@@ -159,9 +112,10 @@ fullBackup <- full
 # For each critter name, traverse the phylogenic tree (via NCBI database) to get higher rank classifications
 # These are returned in form of numeric TAXID
 # This is a list of lists, CEB updated to run in parallel using furrr
-plan(multiprocess)
+plan(multicore)
 higherTaxa <- future_map(CVT$NCBI_TAXID, function (x) {  tryCatch ({
-  allparents (id = x, taxdir = TAXDIR, nodes = ncbi_nodes)
+  ##### OLD TAXO    allparents (id = x, taxdir = TAXDIR, nodes = ncbi_nodes)
+  classification(x, db='ncbi')
 }, warning = function (w){
   
 }, error = function (e){
@@ -170,34 +124,29 @@ higherTaxa <- future_map(CVT$NCBI_TAXID, function (x) {  tryCatch ({
 }
 )})
 
-# For each TAXID returned, obtain the corrosponding rank
 for (i in 1:(length (higherTaxa))){
-  rankOfh <- sapply (X = higherTaxa[i], function (x) getrank (id = x, taxdir = TAXDIR, nodes = ncbi_nodes))
-  # Use the "names" attribute of each list to associate the rank and TAXID
-  attributes (higherTaxa[[i]])$names = rankOfh
+    ht = higherTaxa[i][[1]][[1]]
+    full[i, "species"] = ht[ht$rank=="species", ]$name
+    full[i, "genus"] = ht[ht$rank=="genus", ]$name
+    full[i, "family"] = ht[ht$rank=="family", ]$name
+    full[i, "order"] = ht[ht$rank=="order", ]$name
+    full[i, "class"] = ht[ht$rank=="class", ]$name
+    full[i, "phylum"] = ht[ht$rank=="phylum", ]$name
+    full[i, "kingdom"] = ht[ht$rank=="kingdom", ]$name
 }
 
-# Use the taxonimic rank and the TAXID as coordinates to assign the scientific name
-# in the appropriate field
-for (i in 1:(length (higherTaxa))){
-  for (j in 1:(length (higherTaxa[[i]]))){
-    if (is.na (attributes (higherTaxa[[i]][j])$names)){ 
-      break
-    }
-    
-    if (attributes (higherTaxa[[i]][j])$names != "no rank"){  # Skip "no rank"
-      colIdx <- attributes (higherTaxa[[i]][j])$names
-      full[i,colIdx] <- as.character (sciname (id = as.numeric (higherTaxa[[i]][j]), taxdir = TAXDIR, names = ncbi_names))
-    }
-  }
-}
-
-# Reverse order in which taxonomic ranks are displayed in table
-#fulltest <- full [c (1, 2, ((length (taxonomicRanksOfInterest) + 2):3), ((length (taxonomicRanksOfInterest) + 3) : ( length (samples_names) + (length (taxonomicRanksOfInterest) + 3))))]
-
-#write csv here because next section is buggy
 full_ordered <- full[with (full, order (full$TOTAL, decreasing = TRUE)),]
 write.csv (full_ordered, OUTFILE, row.names = FALSE)
+
+################################################
+# EXIT EARLY - make sure taxonomy changes work #
+# Remaining script fills in missing taxonomy,  #
+# but hoping that new NCBI data reliable       #
+################################################ 
+
+quit()
+
+
 
 ######################################################
 #### EXTRA: Use BOLD to fill in taxonomic "holes" ####
@@ -207,7 +156,7 @@ write.csv (full_ordered, OUTFILE, row.names = FALSE)
 # that is likely to be superceded
 
 BOLD_API_STR = "http://www.boldsystems.org/index.php/API_Public/specimen?format=tsv&taxon="
-suppressMessages (library ("bold"))
+suppressMessages (library ("bold" , warn.conflicts = False))
 
 # Should always have the higher taxon for any given taxon
 # for these normal categories
