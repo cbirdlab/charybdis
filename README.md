@@ -78,6 +78,8 @@ cd
 mkdir OBI
 cd OBI
 virtualenv-2.7 OBI-env
+#the previous line didn't work for me.  I installed python 2.7.15 from source then ran the next line
+#virtualenv --python=/usr/local/bin/python2.7 OBI-env
 
 # download, extract source code
 wget 'https://git.metabarcoding.org/obitools/obitools/repository/archive.tar.gz?ref=master'
