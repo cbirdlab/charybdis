@@ -164,11 +164,11 @@ cp OBI-env/bin/* /usr/bin/
 There are many tutorials on installing R, here is [one](https://www.datacamp.com/community/tutorials/installing-R-windows-mac-ubuntu)
 
 
-#### Install R packages: `pracma`, `CHNOSZ`, `bold`, `furrr`, `tidyr`, `future`
+#### Install R packages: `pracma`, `CHNOSZ`, `bold`, `furrr`, `tidyr`, `future`, `taxizedb`
 
 ```R
 	R
-	install.packages(c('pracma', 'CHNOSZ', 'bold', 'furrr', 'tidyr', 'future'))
+	install.packages(c('pracma', 'CHNOSZ', 'bold', 'furrr', 'tidyr', 'future', 'taxizedb'))
 	# ctrl-d to exit R
 ```
 
