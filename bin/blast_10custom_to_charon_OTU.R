@@ -6,7 +6,8 @@
 args <- commandArgs (TRUE)
 
 # Ensure 4 parameters
-stopifnot (length (args) == 4)
+# (only 3 needed, but 4 for older scripts that call this)
+stopifnot (length (args) >= 3)
 
 FILE_BLAST <- args[1]    # FILE_BLAST <- "/media/Wapuilani/evan/Charybdis_Runs/Combined/BlastSansEnv/blast_genbankxNT.out"
 FILE_SAMPLE <- args[2]   # FILE_SAMPLE <- "/media/Wapuilani/evan/Charybdis_Runs/Combined/OTU_size/Simons.combo.nonchimeras.clean.OTU.samples_counts.txt"
@@ -26,13 +27,7 @@ options(stringsAsFactors = FALSE)
 ###############
 
 suppressMessages (library("pracma"))
-suppressMessages (library("CHNOSZ"))
-
-# Load taxonomic database into memory for faster access
-# This will be used to get higher level taxonomic information for 
-# a given scientific name
-ncbi_nodes <- getnodes (taxdir=TAXDIR)
-ncbi_names <- getnames (taxdir=TAXDIR)
+suppressMessages (library("taxizedb"))
 
 #############
 # Load Data #
@@ -61,7 +56,7 @@ blast <- blast[!duplicated (blast$OTU_SEQID),]
 ########################
 
 # Get scientific name from TAXID
-scinames <- sciname (id = blast$STAXIDS, taxdir = TAXDIR, names = ncbi_names)
+scinames <- taxid2name (x = blast$STAXIDS)
 scinames <- gsub (x = scinames, pattern = " ", replacement = "_")
 
 # Replace SCINAME with new list

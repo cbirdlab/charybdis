@@ -38,7 +38,6 @@ suppressMessages (library ("tidyr", warn.conflicts = FALSE)) # for reshaping dat
 expandTaxonRankName<- function (x){
   c (strcat ( c ("infra", x)), strcat ( c ("sub", x)), x, strcat ("super", x) )
 }
-
 ####################
 # Read, Parse Data #
 ####################
@@ -50,6 +49,7 @@ taxonomicRanksOfInterest <- taxonomicRanksOfInterestCompressed
 samples <- unlist (read.table (SAMPLES_FILE, header = FALSE, stringsAsFactors = FALSE))
 samples_names <- make.names (samples)
 charon <- read.table (CHARON_FILE, sep = ",", stringsAsFactors = FALSE)
+print (charon)
 charon$V5 <- make.names (charon$V5)
 colnames (charon) <- c ("QSEQID", "GenBankID", "SCINAME", "NCBI_TAXID", "SAMPLE_ID", "COUNT")
 seq_stats <- read.table (TOTAL_COUNTS_FILE, header = FALSE, sep = ":")
@@ -124,15 +124,33 @@ higherTaxa <- future_map(CVT$NCBI_TAXID, function (x) {  tryCatch ({
 }
 )})
 
+
+# Assign selected ranks, if available
+# (Should be made dynamic...)
 for (i in 1:(length (higherTaxa))){
     ht = higherTaxa[i][[1]][[1]]
-    full[i, "species"] = ht[ht$rank=="species", ]$name
-    full[i, "genus"] = ht[ht$rank=="genus", ]$name
-    full[i, "family"] = ht[ht$rank=="family", ]$name
-    full[i, "order"] = ht[ht$rank=="order", ]$name
-    full[i, "class"] = ht[ht$rank=="class", ]$name
-    full[i, "phylum"] = ht[ht$rank=="phylum", ]$name
-    full[i, "kingdom"] = ht[ht$rank=="kingdom", ]$name
+
+    if (length(ht[ht$rank=="species", ]$name) > 0) {
+        full[i, "species"] = ht[ht$rank=="species", ]$name
+    }
+    if (length(ht[ht$rank=="genus", ]$name) > 0) {
+        full[i, "genus"] = ht[ht$rank=="genus", ]$name
+    }
+    if (length(ht[ht$rank=="family", ]$name) > 0) {
+        full[i, "family"] = ht[ht$rank=="family", ]$name
+    }
+    if (length(ht[ht$rank=="order", ]$name) > 0) {
+        full[i, "order"] = ht[ht$rank=="order", ]$name
+    }
+    if (length(ht[ht$rank=="class", ]$name) > 0) {
+        full[i, "class"] = ht[ht$rank=="class", ]$name
+    }
+    if (length(ht[ht$rank=="phylum", ]$name) > 0) {
+        full[i, "phylum"] = ht[ht$rank=="phylum", ]$name
+    }
+    if (length(ht[ht$rank=="kingdom", ]$name) > 0) {
+        full[i, "kingdom"] = ht[ht$rank=="kingdom", ]$name
+        }
 }
 
 full_ordered <- full[with (full, order (full$TOTAL, decreasing = TRUE)),]
