@@ -207,15 +207,6 @@ Download, decompress nucleotide (nt) database (Warning: >100 GB!)
 	ls -1 nt*.tar.gz | parallel --no-notice "gzip -dc $a | tar xf -"   #parallel
 ```
 
-Download NCBI taxonomy database 
-
-```bash
-        cd charybdis/data
-        mkdir taxo
-        cd taxo
-        wget ftp://ftp.ncbi.nih.gov/pub/taxonomy/*
-```
-
 Create COI filter GI list.
 Before running this, you need to see how many GIs exist.
 Go to this [link](https://www.ncbi.nlm.nih.gov/nuccore/?term=mitochondria+or+cytochrome+or+coi+or+co1+or+cox1+or+coxi+or+mitochondrial+genome+or+mitochondria+genome) and note the number of database entries. We call that \<NUM\_COI\>.
