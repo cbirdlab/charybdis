@@ -235,6 +235,7 @@ then
 
 fi
 
+exit 0
 
 # VSEARCH
 if [ "$VSEARCH_DB" != "" ]
@@ -314,6 +315,3 @@ fi
 # Combine method-specific OTUvTube tables into single mega table
 
 # Clean up
-
-
-

@@ -13,10 +13,11 @@ SOURCE_NAME <- args[3]  # SOURCE_NAME <- "NCBI"
 OUTPUT_FILE <- args[4]  # OUTPUT_FILE <- "out/Drymon-Fall2018.OTUvsTubes.blast.SPA.csv"
 COMMON_NAMES_FILE <- args[5] # COMMON_NAMES_FILE <- "common_names.txt"
 
+
 CVT <- read.csv (file = CVT_FILE, header = TRUE, stringsAsFactors = FALSE)
 COMMON_NAMES <- read.csv(COMMON_NAMES_FILE, header = FALSE, stringsAsFactors = FALSE)
 names(COMMON_NAMES) <- "CommonName"
-CVT<-data.frame(cbind(CVT[,2:3],COMMON_NAMES, CVT[,4:length(names(CVT))]))
+CVT<-data.frame(cbind(CVT[,1:3],COMMON_NAMES, CVT[,4:length(names(CVT))]))
 
 BLAST <- read.csv (file = BLAST_FILE, header = FALSE, stringsAsFactors = FALSE)
 
@@ -38,12 +39,3 @@ CVT_BLAST <- merge (x = BLAST, y = CVT, by.x = "OTU_SEQID", by.y = "OTU_SEQID")
 CVT_BLAST$SSCINAMES = NULL
 CVT_BLAST$STAXIDS = NULL
 write.csv (x = CVT_BLAST, quote = FALSE, file = OUTPUT_FILE)
-
-##clean up this file
-#col_names <- colnames(CVT_BLAST)
-#startcol <- which(col_names == "superorder")
-#endcol <- which(col_names == "species.group")
-#CVT_BLAST[,startcol:endcol] <- NULL
-#write.csv (x = CVT_BLAST, quote = FALSE, file = paste(OUTPUT_FILE,"cleaner.csv", sep="."))
-
-                      
