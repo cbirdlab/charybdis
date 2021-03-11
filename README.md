@@ -70,7 +70,19 @@ Dependencies:
 
 #### Install Obitools
 
-Steps adapted from Frederic Boyer's [Biostars post](https://www.biostars.org/p/235898/#237117). 
+If you've already installed obitools and it's not working, the first step is to remove your old installations so that they don't conflict.
+
+```bash
+#this removes obitools installed via apt
+sudo apt remove obitools
+
+#check for other manual installations you may have done, if there are obi commands in these places, delete them
+ls /bin/ob*
+ls /usr/local/bin/ob*
+ls /usr/bin/ob*
+```
+
+We are not enamored with obitools3, yet, so will continue using obitools.  The following steps will help you successfully install them. Steps adapted from Frederic Boyer's [Biostars post](https://www.biostars.org/p/235898/#237117). 
 
 ```bash
 # create python 2.7 virtual env
