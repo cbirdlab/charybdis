@@ -213,7 +213,7 @@ Download, decompress nucleotide (nt) database (Warning: >100 GB!)
         cd blastdb
         wget ftp://ftp.ncbi.nlm.nih.gov/blast/db/nt* 
         #for a in `ls -1 nt*.tar.gz`; do gzip -dc $a | tar xf -; done      #serial
-	ls -1 nt*.tar.gz | parallel --no-notice "gzip -dc $a | tar xf -"   #parallel
+	ls -1 nt*.tar.gz | parallel --no-notice "gzip -dc {} | tar xf -"   #parallel
 ```
 
 Create COI filter GI list.
