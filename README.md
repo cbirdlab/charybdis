@@ -96,9 +96,8 @@ We are not enamored with obitools3, yet, so will continue using obitools.  The f
 cd
 mkdir OBI
 cd OBI
-virtualenv-2.7 OBI-env
-#the previous line didn't work for me.  I installed python 2.7.15 from source then ran the next line
-#virtualenv --python=/usr/bin/python2.7 OBI-env
+# if the next line fails, replace path to python below with correct path.  perhaps `/usr/bin/python2`
+virtualenv --python=/usr/bin/python2.7 OBI-env
 
 # download, extract source code
 wget 'https://git.metabarcoding.org/obitools/obitools/repository/archive.tar.gz?ref=master'
