@@ -79,6 +79,16 @@ sudo apt remove obitools
 #if you didn't tell obitools to install somewhere other than where it installs by default, then you should be ok.  Otherwise, you're going to have to track down all the commands that it installs (maybe in /usr/local/bin ?) and `rm` them.
 ```
 
+Next, make sure you have `python2.7` and `virtualenv`
+
+```bash
+sudo apt update
+sudo apt upgrade
+sudo apt install python2
+sudo apt-get install build-essential libssl-dev libffi-dev python-dev
+sudo apt install virtualenv
+```
+
 We are not enamored with obitools3, yet, so will continue using obitools.  The following steps will help you successfully install them. Steps adapted from Frederic Boyer's [Biostars post](https://www.biostars.org/p/235898/#237117). 
 
 ```bash
@@ -88,7 +98,7 @@ mkdir OBI
 cd OBI
 virtualenv-2.7 OBI-env
 #the previous line didn't work for me.  I installed python 2.7.15 from source then ran the next line
-#virtualenv --python=/usr/local/bin/python2.7 OBI-env
+#virtualenv --python=/usr/bin/python2.7 OBI-env
 
 # download, extract source code
 wget 'https://git.metabarcoding.org/obitools/obitools/repository/archive.tar.gz?ref=master'
